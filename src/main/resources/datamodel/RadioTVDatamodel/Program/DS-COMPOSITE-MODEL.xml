@@ -30,7 +30,7 @@
     <dsTypeModel ID="PROGRAM_STRUCTURE" optional="true">
         <form MIME="text/xml"/>
         <extension name="GUI">
-            <presentAs type="editable"/>
+            <presentAs type="readonly"/>
         </extension>
         <extension name="SCHEMA">
             <reference type="datastream" value="PROGRAM_STRUCTURE_SCHEMA"/>

@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>dk.statsbiblioteket.doms.installer</groupId>
-    <artifactId>baseObjectsIngester</artifactId>
+    <artifactId>base-objects-ingester</artifactId>
     <version>0.11.4-SNAPSHOT</version>
 
     <packaging>pom</packaging>
@@ -50,7 +50,7 @@
         <Program_VIEW_file>${program.object.folder}/VIEW.xml</Program_VIEW_file>
         <GallupOriginal_file>${program.object.folder}/GallupOriginal.xsd</GallupOriginal_file>
         <PBCore_file>${program.object.folder}/PBCore.xsd</PBCore_file>
-        <ProgramBroadcast_file>${program.object.folder}/ProgramBroadCast.xsd</ProgramBroadcast_file>
+        <ProgramBroadcast_file>${program.object.folder}/ProgramBroadcast.xsd</ProgramBroadcast_file>
         <ProgramStructure_file>${program.object.folder}/ProgramStructure.xsd</ProgramStructure_file>
         <RitzauOriginal_file>${program.object.folder}/RitzauOriginal.xsd</RitzauOriginal_file>
 

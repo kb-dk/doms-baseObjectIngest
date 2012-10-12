@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created by Manzanita CrossCheck -->
+        <!-- Created by Manzanita CrossCheck -->
 <tsa-report
         version="1.1.0"
         license-serno="CC0844"
         license-username="Statsbiblioteket"
-        date="Wed Oct 10 13:04:51 2012"
-        file="/home/yousee/scratch/drp8j_yousee.2219781600-2040-05-05-00.00.00_2219785200-2040-05-05-01.00.00_ftp.ts">
+        date="Wed Oct 10 00:13:38 2012"
+
+        file="/home/yousee/scratch/100fm_yousee.2219842800-2040-05-05-17.00.00
+  _2219846400-2040-05-05-18.00.00_ftp.ts" xmlns="crosscheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="crosscheck Crosscheck.xsd">
     <configuration>
         <analysis-mode value="Auto (MPEG)"/>
         tsa-config 2
@@ -13,10 +16,10 @@
         end-config
     </configuration>
     <stream-information>
-        <average-transport-rate value="281109.3"/>
-        <minimum-transport-rate value="235017.7"/>
-        <maximum-transport-rate value="462781.3"/>
-        <duration value="00:59:59.988"/>
+        <average-transport-rate value="281109.2"/>
+        <minimum-transport-rate value="234655.1"/>
+        <maximum-transport-rate value="464395.5"/>
+        <duration value="00:59:59.981"/>
         <file-size value="126498620"/>
         <transport-packet-interval value="188"/>
         <packets-analyzed value="672865"/>
@@ -45,7 +48,7 @@
         <pid-info pid="0x0021" content="PCR" programs="2"
                   npkt="0" pkt-rate="0" payld-rate="0"/>
         <pid-info pid="0x0024" content="MPEG-1 Audio" programs="2"
-                  npkt="637497" pkt-rate="266333" payld-rate="256000"
+                  npkt="637497" pkt-rate="266334" payld-rate="256000"
                   errors="0" warnings="1"/>
     </pid-summary>
 
@@ -61,22 +64,23 @@
         </program-association-table-information>
         <packet-statistics>
             <number-of-packets value="17684"/>
-            <first-seen-in-packet-number value="22" time="00:00:00.114"/>
-            <last-seen-in-packet-number value="672841" time="00:59:59.850"/>
+            <first-seen-in-packet-number value="24" time="00:00:00.129"/>
+            <last-seen-in-packet-number value="672845" time="00:59:59.870"/>
             <average-transport-packet-rate value="7388"/>
             <average-payload-rate value="7231"/>
-            <average-packet-spacing value="203.5705"/>
-            <minimum-packet-spacing value="192.0056"/>
-            <packet-number-at-minimum-spacing value="424797" time="00:37:52.762"/>
-            <maximum-packet-spacing value="221.7202"/>
-            <packet-number-at-maximum-spacing value="535226" time="00:47:43.580"/>
-            <minimum-packet-spacing-ends-inclusive value="113.6584"/>
-            <maximum-packet-spacing-ends-inclusive value="221.7202"/>
+            <average-packet-spacing value="203.5708"/>
+            <minimum-packet-spacing value="194.6959"/>
+            <packet-number-at-minimum-spacing value="566045" time="00:50:28.471"/>
+            <maximum-packet-spacing value="219.9578"/>
+            <packet-number-at-maximum-spacing value="535229" time="00:47:43.596"/>
+            <minimum-packet-spacing-ends-inclusive value="110.8932"/>
+            <maximum-packet-spacing-ends-inclusive value="219.9578"/>
         </packet-statistics>
         <transport-header-information>
             <number-of-packets-transport_error_indicator-is-1 value="0"/>
             <number-of-packets-transport_priority-is-1 value="0"/>
-            <number-of-packets-transport_scrambling_control-is-00 value="17684"/>
+            <number-of-packets-transport_scrambling_control-is-00
+                    value="17684"/>
             <number-of-duplicate-packets-seen value="0"/>
             <number-of-continuity-counter-errors-seen value="0"/>
         </transport-header-information>
@@ -105,22 +109,23 @@
         </program-map-table-information>
         <packet-statistics>
             <number-of-packets value="17684"/>
-            <first-seen-in-packet-number value="23" time="00:00:00.118"/>
-            <last-seen-in-packet-number value="672842" time="00:59:59.854"/>
+            <first-seen-in-packet-number value="25" time="00:00:00.132"/>
+            <last-seen-in-packet-number value="672846" time="00:59:59.874"/>
             <average-transport-packet-rate value="7388"/>
             <average-payload-rate value="7231"/>
-            <average-packet-spacing value="203.5705"/>
-            <minimum-packet-spacing value="195.1312"/>
-            <packet-number-at-minimum-spacing value="5385" time="00:00:28.803"/>
-            <maximum-packet-spacing value="221.2295"/>
-            <packet-number-at-maximum-spacing value="535227" time="00:47:43.583"/>
-            <minimum-packet-spacing-ends-inclusive value="117.6083"/>
-            <maximum-packet-spacing-ends-inclusive value="221.2295"/>
+            <average-packet-spacing value="203.5707"/>
+            <minimum-packet-spacing value="194.8485"/>
+            <packet-number-at-minimum-spacing value="80182" time="00:07:08.986"/>
+            <maximum-packet-spacing value="219.9578"/>
+            <packet-number-at-maximum-spacing value="535230" time="00:47:43.600"/>
+            <minimum-packet-spacing-ends-inclusive value="107.4398"/>
+            <maximum-packet-spacing-ends-inclusive value="219.9578"/>
         </packet-statistics>
         <transport-header-information>
             <number-of-packets-transport_error_indicator-is-1 value="0"/>
             <number-of-packets-transport_priority-is-1 value="0"/>
-            <number-of-packets-transport_scrambling_control-is-00 value="17684"/>
+            <number-of-packets-transport_scrambling_control-is-00
+                    value="17684"/>
             <number-of-duplicate-packets-seen value="0"/>
             <number-of-continuity-counter-errors-seen value="0"/>
         </transport-header-information>
@@ -130,7 +135,8 @@
             <splice_countdown-fields-seen value="No"/>
         </adaptation-field-information>
         <errors>
-            <error pid="0x0020" code="1-50w" msg="Prog 2 PMT elapsed with no packets seen for PCR_PID 0x0021."/>
+            <error pid="0x0020" code="1-50w" msg="Prog 2 PMT elapsed with no
+  packets seen for PCR_PID 0x0021."/>
         </errors>
     </pid-properties>
 
@@ -139,6 +145,7 @@
         <content value="PCR"/>
         <total-errors value="0"/>
         <total-warnings value="0"/>
+
         <program-map-information>
             <pmt-pid value="0x0020 (32)"/>
             <program_number value="2"/>
@@ -150,8 +157,8 @@
         </pcr-statistics>
         <packet-statistics>
             <number-of-packets value="0"/>
-            <minimum-packet-spacing-ends-inclusive value="3599987.8411"/>
-            <maximum-packet-spacing-ends-inclusive value="3599987.8411"/>
+            <minimum-packet-spacing-ends-inclusive value="3599981.2636"/>
+            <maximum-packet-spacing-ends-inclusive value="3599981.2636"/>
         </packet-statistics>
     </pid-properties>
 
@@ -175,21 +182,22 @@
         <packet-statistics>
             <number-of-packets value="637497"/>
             <first-seen-in-packet-number value="1" time="00:00:00.000"/>
-            <last-seen-in-packet-number value="672865" time="00:59:59.982"/>
-            <average-transport-packet-rate value="266333"/>
+            <last-seen-in-packet-number value="672865" time="00:59:59.977"/>
+            <average-transport-packet-rate value="266334"/>
             <average-payload-rate value="256000"/>
             <average-packet-spacing value="5.6471"/>
-            <minimum-packet-spacing value="3.2499"/>
-            <packet-number-at-minimum-spacing value="362897" time="00:32:21.586"/>
-            <maximum-packet-spacing value="12.6804"/>
-            <packet-number-at-maximum-spacing value="625585" time="00:55:47.019"/>
-            <minimum-packet-spacing-ends-inclusive value="3.2499"/>
-            <maximum-packet-spacing-ends-inclusive value="12.6804"/>
+            <minimum-packet-spacing value="3.2386"/>
+            <packet-number-at-minimum-spacing value="268030" time="00:23:54.015"/>
+            <maximum-packet-spacing value="12.6211"/>
+            <packet-number-at-maximum-spacing value="213618" time="00:19:02.897"/>
+            <minimum-packet-spacing-ends-inclusive value="3.2386"/>
+            <maximum-packet-spacing-ends-inclusive value="12.6211"/>
         </packet-statistics>
         <transport-header-information>
             <number-of-packets-transport_error_indicator-is-1 value="0"/>
             <number-of-packets-transport_priority-is-1 value="0"/>
-            <number-of-packets-transport_scrambling_control-is-00 value="637497"/>
+            <number-of-packets-transport_scrambling_control-is-00
+                    value="637497"/>
             <number-of-duplicate-packets-seen value="0"/>
             <number-of-continuity-counter-errors-seen value="0"/>
         </transport-header-information>
@@ -200,7 +208,7 @@
         </adaptation-field-information>
         <pes-information>
             <number-of-pes-headers-seen value="37500"/>
-            <pes-stream_id value="0xCA (202, MPEG Audio)"/>
+            <pes-stream_id value="0xD4 (212, MPEG Audio)"/>
             <number-of-packets-pes_scrambling_control-is-00 value="37500"/>
             <pes-copyright-set value="Yes"/>
             <number-of-packets-pes_priority-is-1 value="0"/>
@@ -209,22 +217,26 @@
         </pes-information>
         <audio-elementary-stream-information>
             <audio-type value="MPEG Layer 2"/>
-            <number-of-audio-access-units-seen value="149992"/>
+            <number-of-audio-access-units-seen value="149993"/>
             <average-number-of-audio-frames-per-pes-packet value="4"/>
             <layer value="2"/>
             <sample-rate value="48000"/>
             <bit-rate value="256000"/>
-            <number-and-location-of-channels value="Stereo channels: L, R: 2/0"/>
+            <number-and-location-of-channels value="Stereo channels: L, R:
+  2/0"/>
             <nominal-frame-size value="768"/>
             <main-audio-buffer-size value="3584"/>
         </audio-elementary-stream-information>
         <errors>
-            <error pid="0x0024" code="3-57w" msg="A PCR field was found in a non-PCR PID."/>
+            <error pid="0x0024" code="3-57w" msg="A PCR field was found in a
+  non-PCR PID."/>
         </errors>
     </pid-properties>
 
     <errors>
-        <error pid="0x0020" code="1-50w" msg="Prog 2 PMT elapsed with no packets seen for PCR_PID 0x0021."/>
-        <error pid="0x0024" code="3-57w" msg="A PCR field was found in a non-PCR PID."/>
+        <error pid="0x0020" code="1-50w" msg="Prog 2 PMT elapsed with no
+  packets seen for PCR_PID 0x0021."/>
+        <error pid="0x0024" code="3-57w" msg="A PCR field was found in a
+  non-PCR PID."/>
     </errors>
 </tsa-report>

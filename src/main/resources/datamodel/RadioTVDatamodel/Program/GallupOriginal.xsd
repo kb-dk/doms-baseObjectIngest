@@ -5,4 +5,5 @@
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
     <xsd:element name="gallup_original" type="xsd:string"/>
+    <!--TODO expand this schema-->
 </xsd:schema>
