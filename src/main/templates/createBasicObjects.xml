@@ -1,3 +1,9 @@
+<!--TODO fix into same structure as radioTV-->
+<!--add doms content model content model-->
+<!--Fix labels for everything, add this to modifyObject-->
+
+
+
 <def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
@@ -135,9 +141,9 @@
     </def:addDatastream>
 
 
-    <def:addObject pid="doms:ContentModel_File" label="Content Model for File Objects"
+    <def:addObject pid="doms:ContentModel_File" label="File"
                    contentModel="string" logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:modifyObject pid="doms:ContentModel_File" state="I"
+    <def:modifyObject pid="doms:ContentModel_File" state="I" label="File"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:addDatastream pid="doms:ContentModel_File" dsID="DS-COMPOSITE-MODEL"
                        dsLabel=""
@@ -240,6 +246,9 @@
                     xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
                 <dsTypeModel ID="LICENSE">
                     <form MIME="text/xml"/>
+                    <extension name="GUI">
+                        <presentAs type="readonly"/>
+                    </extension>
                     <extension name="SCHEMA">
                         <reference type="datastream" value="LICENSE_SCHEMA"/>
                     </extension>
@@ -621,16 +630,7 @@
                        checksumType="DISABLED"
                        logMessage="Updating objects as part of a doms install/upgrade">
         <def:xmlData>
-            <v:views xmlns:v="http://ecm.sourceforge.net/types/view/0/2/#">
-                <v:viewangle name="GUI">
-                    <v:relations/>
-                    <v:inverseRelations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
-                        <doms:isPartOfCollection/>
-                    </v:inverseRelations>
-                </v:viewangle>
-            </v:views>
-
-
+            <v:views xmlns:v="http://ecm.sourceforge.net/types/view/0/2/#"/>
         </def:xmlData>
     </def:addDatastream>
     <def:addDatastream pid="doms:ContentModel_Collection" dsID="ONTOLOGY"

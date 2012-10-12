@@ -1,3 +1,6 @@
+<!--Fix a run order. 1. Create. 2. Delete (optional). 3. Modify-->
+        <!--Versioned upgrades? Fun idea, will think about, deltas -->
+
 <def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 

@@ -748,8 +748,6 @@
                       logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyObject pid="doms:ContentModel_VHSFile" state="A"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:modifyObject pid="doms:ContentModel_License" state="A"
-                      logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyObject pid="doms:RadioTV_Collection" state="A"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyObject pid="doms:RadioTV_InhouseLicense" state="A"

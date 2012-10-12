@@ -16,11 +16,6 @@
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;dvbsub,mp2,mpeg2video&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,dvbsub,mp1,mp2,mpeg2video&quot;"></form>
     </dsTypeModel>
-    <dsTypeModel ID="DC">
-        <extension name="GUI">
-            <presentAs type="readonly"/>
-        </extension>
-    </dsTypeModel>
     <dsTypeModel ID="FFPROBE" optional="true">
         <extension name="GUI">
             <presentAs type="readonly"/>
