@@ -19,7 +19,6 @@ done
 for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/setContent.xml); do
     batchProcess $file
 done
-echo "Expect the ContentModel_File to report an error"
 
 for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/publish.xml); do
     batchProcess $file
