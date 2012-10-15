@@ -13,7 +13,7 @@
         </fileSet>
         <fileSet>
             <outputDirectory>scripts</outputDirectory>
-            <directory>src/main/templates</directory>
+            <directory>src/main/resources/datamodel</directory>
             <filtered>true</filtered>
         </fileSet>
 

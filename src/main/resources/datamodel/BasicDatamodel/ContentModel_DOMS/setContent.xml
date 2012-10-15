@@ -1,0 +1,128 @@
+
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+    <def:modifyObject pid="doms:ContentModel_DOMS" state="I"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+
+
+    <def:modifyDatastream pid="doms:ContentModel_DOMS" dsID="DS-COMPOSITE-MODEL"
+                          dsMIME="text/xml"
+                          formatURI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0"
+                          dsControlGroupType="X"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <dsCompositeModel
+                    xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+                <dsTypeModel ID="RELS-EXT">
+                    <form FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" MIME="application/rdf+xml"/>
+                </dsTypeModel>
+            </dsCompositeModel>
+        </def:xmlData>
+    </def:modifyDatastream>
+
+    <def:modifyDatastream pid="doms:ContentModel_DOMS" dsID="RELS-EXT"
+                          dsMIME="application/rdf+xml"
+                          formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                          dsControlGroupType="X"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
+                <rdf:Description rdf:about="info:fedora/doms:ContentModel_DOMS">
+                    <hasModel rdf:resource="info:fedora/fedora-system:ContentModel-3.0"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <doms:isPartOfCollection rdf:resource="info:fedora/doms:DOMS_Base_Collection"/>
+                    <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+                </rdf:Description>
+            </rdf:RDF>
+        </def:xmlData>
+    </def:modifyDatastream>
+
+    <def:modifyDatastream pid="doms:ContentModel_DOMS" dsID="VIEW"
+                          dsMIME="application/rdf+xml"
+                          dsControlGroupType="X"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <v:views xmlns:v="http://ecm.sourceforge.net/types/view/0/2/#">
+            </v:views>
+        </def:xmlData>
+    </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:ContentModel_DOMS" dsID="ONTOLOGY"
+                          dsControlGroupType="X"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+
+            <rdf:RDF
+                    xmlns:owl="http://www.w3.org/2002/07/owl#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+                <owl:Class rdf:about="info:fedora/doms:ContentModel_DOMS#class">
+
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty
+                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfCollection"/>
+                            <owl:minCardinality
+                                    rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1
+                            </owl:minCardinality>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty
+                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfCollection"/>
+                            <owl:allValuesFrom
+                                    rdf:resource="info:fedora/doms:ContentModel_Collection#class"/>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty
+                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasLicense"/>
+                            <owl:cardinality
+                                    rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1
+                            </owl:cardinality>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty
+                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasLicense"/>
+                            <owl:allValuesFrom
+                                    rdf:resource="info:fedora/doms:ContentModel_License#class"/>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+
+                    <rdfs:subClassOf>
+                        <owl:Restriction>
+                            <owl:onProperty
+                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#isTemplateFor"/>
+                            <owl:allValuesFrom
+                                    rdf:resource="info:fedora/fedora-system:ContentModel-3.0#class"/>
+                        </owl:Restriction>
+                    </rdfs:subClassOf>
+
+                </owl:Class>
+
+                <owl:ObjectProperty
+                        rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfCollection"/>
+
+                <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasLicense"/>
+
+                <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#isTemplateFor"/>
+
+            </rdf:RDF>
+
+        </def:xmlData>
+    </def:modifyDatastream>
+
+    <def:modifyObject pid="doms:ContentModel_DOMS" state="A" label="Object"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+</def:batchModify>

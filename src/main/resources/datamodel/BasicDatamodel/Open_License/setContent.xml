@@ -1,0 +1,72 @@
+
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+    <def:modifyObject pid="doms:Open_License" state="I"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+
+
+    <def:modifyDatastream pid="doms:Open_License" dsID="RELS-EXT"
+                       dsMIME="application/rdf+xml"
+                       formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                        dsControlGroupType="X" dsState="A"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
+                <rdf:Description rdf:about="info:fedora/doms:Open_License">
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_License"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <doms:isPartOfCollection rdf:resource="info:fedora/doms:DOMS_Base_Collection"/>
+                    <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+                </rdf:Description>
+            </rdf:RDF>
+        </def:xmlData>
+    </def:modifyDatastream>
+
+
+    <def:modifyDatastream pid="doms:Open_License" dsID="LICENSE"
+                       dsMIME="text/xml"
+                       dsControlGroupType="X"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <Policy xmlns="urn:oasis:names:tc:xacml:1.0:policy"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    PolicyId="Open_License"
+                    RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
+
+                <Description>This is the default policy, if no other is specified. It allows
+                    for all actions on a object by everybody.
+                </Description>
+                <Target>
+                    <!-- *********************************************************************************************************************************************************-->
+                    <!--  This policy is applicable to any Subject. -->
+                    <!-- *********************************************************************************************************************************************************-->
+                    <Subjects>
+                        <AnySubject/>
+                    </Subjects>
+                    <!-- *********************************************************************************************************************************************************-->
+                    <!--  This policy is applicable to any resource -->
+                    <!-- *********************************************************************************************************************************************************-->
+                    <Resources>
+                        <AnyResource/>
+                    </Resources>
+                    <!-- *********************************************************************************************************************************************************-->
+                    <!--  This policy is applicable to any action. -->
+                    <!-- *********************************************************************************************************************************************************-->
+                    <Actions>
+                        <AnyAction/>
+                    </Actions>
+                </Target>
+                <Rule RuleId="1" Effect="Permit"/>
+            </Policy>
+        </def:xmlData>
+    </def:modifyDatastream>
+
+
+    <def:modifyObject pid="doms:Open_License" state="A"  label="Open License"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+
+</def:batchModify>

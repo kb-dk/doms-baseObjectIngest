@@ -1,0 +1,33 @@
+
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+
+    <def:modifyObject pid="doms:DOMS_Base_Collection" state="I"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+    <def:modifyDatastream pid="doms:DOMS_Base_Collection" dsID="RELS-EXT"
+                          dsMIME="application/rdf+xml"
+                          formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                          dsControlGroupType="X"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
+                <rdf:Description rdf:about="info:fedora/doms:DOMS_Base_Collection">
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_Collection"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <doms:isPartOfCollection rdf:resource="info:fedora/doms:Root_Collection"/>
+                    <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+                </rdf:Description>
+            </rdf:RDF>
+
+        </def:xmlData>
+    </def:modifyDatastream>
+
+
+    <def:modifyObject pid="doms:DOMS_Base_Collection" state="A" label="Doms Base Collection"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+
+</def:batchModify>

@@ -8,7 +8,7 @@
 
         file="/home/yousee/scratch/100fm_yousee.2219842800-2040-05-05-17.00.00
   _2219846400-2040-05-05-18.00.00_ftp.ts" xmlns="crosscheck" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="crosscheck Crosscheck.xsd">
+        xsi:schemaLocation="crosscheck CROSSCHECK_SCHEMA.xsd">
     <configuration>
         <analysis-mode value="Auto (MPEG)"/>
         tsa-config 2
