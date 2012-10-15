@@ -27,7 +27,4 @@
     </def:modifyDatastream>
 
 
-    <def:modifyObject pid="doms:Root_Collection" state="A"  label="Root Collection"
-                      logMessage="Updating objects as part of a doms install/upgrade"/>
-
 </def:batchModify>

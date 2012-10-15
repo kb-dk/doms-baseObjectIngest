@@ -2,14 +2,18 @@
 <def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
+
+    <def:addObject pid="doms:Open_License" label="Doms Open License"
+                   contentModel="string" logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyObject pid="doms:Open_License" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
-
-
-    <def:modifyDatastream pid="doms:Open_License" dsID="RELS-EXT"
+    <def:addDatastream pid="doms:Open_License" dsID="RELS-EXT"
+                       dsLabel="Relationships"
                        dsMIME="application/rdf+xml"
                        formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
-                        dsControlGroupType="X" dsState="A"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="DISABLED"
                        logMessage="Updating objects as part of a doms install/upgrade">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -24,12 +28,13 @@
                 </rdf:Description>
             </rdf:RDF>
         </def:xmlData>
-    </def:modifyDatastream>
-
-
-    <def:modifyDatastream pid="doms:Open_License" dsID="LICENSE"
+    </def:addDatastream>
+    <def:addDatastream pid="doms:Open_License" dsID="LICENSE"
+                       dsLabel="LICENSE datastream"
                        dsMIME="text/xml"
-                       dsControlGroupType="X"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="DISABLED"
                        logMessage="Updating objects as part of a doms install/upgrade">
         <def:xmlData>
             <Policy xmlns="urn:oasis:names:tc:xacml:1.0:policy"
@@ -63,7 +68,6 @@
                 <Rule RuleId="1" Effect="Permit"/>
             </Policy>
         </def:xmlData>
-    </def:modifyDatastream>
-
+    </def:addDatastream>
 
 </def:batchModify>
