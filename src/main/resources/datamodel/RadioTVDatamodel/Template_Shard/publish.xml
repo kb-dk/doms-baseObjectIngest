@@ -1,0 +1,7 @@
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+    <!--<def:modifyObject pid="doms:Template_Shard" state="A"  label="Template Shard"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+-->
+</def:batchModify>

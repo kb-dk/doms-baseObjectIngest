@@ -124,8 +124,5 @@
         </def:xmlData>
     </def:modifyDatastream>
 
-    <def:modifyObject pid="doms:RadioTV_InhouseLicense" state="A"
-                      logMessage="Updating The radio/tv license"/>
-
 
 </def:batchModify>
