@@ -8,6 +8,8 @@
         <form FORMAT_URI="info:pronom/fmt/199"/>
 
 
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2&quot;"></form>
+
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2,mpeg2video&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,dvbsub,h264&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,dvbsub,h264,mp1&quot;"></form>
