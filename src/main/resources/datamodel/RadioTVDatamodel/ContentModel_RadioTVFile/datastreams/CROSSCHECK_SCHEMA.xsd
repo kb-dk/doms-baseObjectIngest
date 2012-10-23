@@ -1,4 +1,4 @@
-    <!--A perhaps outofdate crosscheck schema. This is just to catch schema validity errors early in the workflow-->
+<!--A perhaps outofdate crosscheck schema. This is just to catch schema validity errors early in the workflow-->
 
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="tsa-report" type="tsa-reportType">
@@ -7,7 +7,7 @@
         </xs:annotation>
     </xs:element>
 
-<!--The attribute based elements-->
+    <!--The attribute based elements-->
     <xs:complexType name="valueType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
@@ -17,12 +17,12 @@
         </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="descriptorType">
-      <xs:simpleContent>
-        <xs:extension base="xs:string">
-          <xs:attribute type="xs:string" name="tag" use="optional"/>
-          <xs:attribute type="xs:string" name="name" use="optional"/>
-        </xs:extension>
-      </xs:simpleContent>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="tag" use="optional"/>
+                <xs:attribute type="xs:string" name="name" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
     <xs:complexType name="pid-infoType">
         <xs:simpleContent>
@@ -53,13 +53,13 @@
 
 
     <!--The sequence based elements-->
-    <xs:complexType name="errorsType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="errorsType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="errorType" name="error" maxOccurs="unbounded" minOccurs="0"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="video_stream_descriptorType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="video_stream_descriptorType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="tag" minOccurs="0"/>
             <xs:element type="valueType" name="length" minOccurs="0"/>
             <xs:element type="valueType" name="multiple_frame_rate_flag" minOccurs="0"/>
@@ -71,50 +71,57 @@
             <xs:element type="valueType" name="chroma_format" minOccurs="0"/>
             <xs:element type="valueType" name="frame_rate_extension_flag" minOccurs="0"/>
             <xs:element type="valueType" name="reserved" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
     <xs:complexType name="configurationType" mixed="true">
-        <xs:choice maxOccurs="unbounded"> 
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="analysis-mode" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="adaptation-field-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="adaptation-field-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="number-of-packets-discontinuity_indicator-is-1" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-packets-random_access_indicator-is-1" minOccurs="0"/>
             <xs:element type="valueType" name="splice_countdown-fields-seen" minOccurs="0"/>
             <xs:element type="valueType" name="noemptyaf" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="patType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="patType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="programType" name="program"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
         <xs:attribute type="xs:string" name="version"/>
         <xs:attribute type="xs:string" name="pid"/>
     </xs:complexType>
-    <xs:complexType name="program-association-table-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="program-association-table-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="table_id" minOccurs="0"/>
             <xs:element type="valueType" name="version_number" minOccurs="0"/>
             <xs:element type="valueType" name="transport_stream_id" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="pmtType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="pmtType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="streamType" name="stream" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element type="descriptorType" name="descriptor" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
         <xs:attribute type="xs:string" name="version"/>
         <xs:attribute type="xs:string" name="pcr-pid"/>
     </xs:complexType>
-    <xs:complexType name="multiplex-summaryType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="multiplex-summaryType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="patType" name="pat"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="video-elementary-stream-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="video-elementary-stream-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="avc-video-profile" minOccurs="0"/>
             <xs:element type="valueType" name="avc-video-level" minOccurs="0"/>
             <xs:element type="valueType" name="mpeg-2-video-profile" minOccurs="0"/>
@@ -159,26 +166,29 @@
             <xs:element type="valueType" name="initial-timecode" minOccurs="0"/>
             <xs:element type="valueType" name="timecode-discontinuity" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element type="valueType" name="final-timecode" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="private-descriptorType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="private-descriptorType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="tag" minOccurs="0"/>
             <xs:element type="valueType" name="length" minOccurs="0"/>
             <xs:element type="valueType" name="data" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="std_descriptorType">
+    <xs:complexType name="std_descriptorType" mixed="true">
         <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="tag" minOccurs="0"/>
             <xs:element type="valueType" name="length" minOccurs="0"/>
             <xs:element type="valueType" name="reserved" minOccurs="0"/>
             <xs:element type="valueType" name="leak_valid_flag" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
 
-    <xs:complexType name="pes-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="pes-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="number-of-pes-headers-seen" minOccurs="0"/>
             <xs:element type="valueType" name="pes-stream_id" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-packets-pes_scrambling_control-is-00" minOccurs="0"/>
@@ -192,9 +202,10 @@
             <xs:element type="valueType" name="maximum-es-buffer-level" minOccurs="0"/>
             <xs:element type="valueType" name="packet-number-at-maximum-es-buffer-level" minOccurs="0"/>
             <xs:element type="valueType" name="pesalign" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="program-informationType">
+    <xs:complexType name="program-informationType" mixed="true">
         <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="pmt-pid-for-program_number" minOccurs="0"/>
             <xs:element type="valueType" name="listed-in-pat-version_number" minOccurs="0"/>
@@ -208,44 +219,49 @@
             <xs:element type="private-descriptorType" name="private-descriptor" minOccurs="0"/>
             <xs:element type="std_descriptorType" name="std_descriptor" minOccurs="0"/>
             <xs:element type="registration_descriptorType" name="registration_descriptor" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="transport-header-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="transport-header-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="number-of-packets-transport_error_indicator-is-1" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-packets-transport_priority-is-1" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-packets-transport_scrambling_control-is-00" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-duplicate-packets-seen" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-continuity-counter-errors-seen" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="program-map-table-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="program-map-table-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="table_id" minOccurs="0"/>
             <xs:element type="valueType" name="program_number" minOccurs="0"/>
             <xs:element type="valueType" name="version_number" minOccurs="0"/>
             <xs:element type="valueType" name="pcr-pid" minOccurs="0"/>
             <xs:element type="valueType" name="section_length" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="iso_639_language_descriptorType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="iso_639_language_descriptorType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="tag" minOccurs="0"/>
             <xs:element type="valueType" name="length" minOccurs="0"/>
             <xs:element type="valueType" name="iso_639_language_code" minOccurs="0"/>
             <xs:element type="valueType" name="audio_type" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
 
-    <xs:complexType name="streamType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="streamType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="descriptorType" name="descriptor" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
         <xs:attribute type="xs:string" name="pid" use="optional"/>
         <xs:attribute type="xs:string" name="type" use="optional"/>
     </xs:complexType>
-    <xs:complexType name="pid-propertiesType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="pid-propertiesType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="pid" minOccurs="0"/>
             <xs:element type="valueType" name="content" minOccurs="0"/>
             <xs:element type="valueType" name="total-errors" minOccurs="0"/>
@@ -263,16 +279,18 @@
             <xs:element type="video-elementary-stream-informationType" name="video-elementary-stream-information" minOccurs="0"/>
             <xs:element type="audio-elementary-stream-informationType" name="audio-elementary-stream-information" minOccurs="0"/>
             <xs:element type="errorsType" name="errors" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="tsa-reportType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="tsa-reportType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="configurationType" name="configuration" minOccurs="0"/>
             <xs:element type="stream-informationType" name="stream-information" minOccurs="0"/>
             <xs:element type="multiplex-summaryType" name="multiplex-summary" minOccurs="0"/>
             <xs:element type="pid-summaryType" name="pid-summary" minOccurs="0"/>
             <xs:element type="pid-propertiesType" name="pid-properties" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element type="errorsType" name="errors" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
         <xs:attribute type="xs:string" name="version"/>
         <xs:attribute type="xs:string" name="license-serno"/>
@@ -280,13 +298,14 @@
         <xs:attribute type="xs:string" name="date"/>
         <xs:attribute type="xs:string" name="file"/>
     </xs:complexType>
-    <xs:complexType name="pid-summaryType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="pid-summaryType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="pid-infoType" name="pid-info" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="stream-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="stream-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="average-transport-rate" minOccurs="0"/>
             <xs:element type="valueType" name="minimum-transport-rate" minOccurs="0"/>
             <xs:element type="valueType" name="maximum-transport-rate" minOccurs="0"/>
@@ -296,17 +315,19 @@
             <xs:element type="valueType" name="packets-analyzed" minOccurs="0"/>
             <xs:element type="valueType" name="total-errors" minOccurs="0"/>
             <xs:element type="valueType" name="total-warnings" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="programType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="programType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="pmtType" name="pmt" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
         <xs:attribute type="xs:string" name="program_number" />
         <xs:attribute type="xs:string" name="pid"/>
     </xs:complexType>
-    <xs:complexType name="packet-statisticsType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="packet-statisticsType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="number-of-packets" minOccurs="0"/>
             <xs:element type="valueType" name="first-seen-in-packet-number" minOccurs="0"/>
             <xs:element type="valueType" name="last-seen-in-packet-number" minOccurs="0"/>
@@ -319,10 +340,11 @@
             <xs:element type="valueType" name="packet-number-at-maximum-spacing" minOccurs="0"/>
             <xs:element type="valueType" name="minimum-packet-spacing-ends-inclusive" minOccurs="0"/>
             <xs:element type="valueType" name="maximum-packet-spacing-ends-inclusive" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="audio-elementary-stream-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="audio-elementary-stream-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="audio-type" minOccurs="0"/>
             <xs:element type="valueType" name="number-of-audio-access-units-seen" minOccurs="0"/>
             <xs:element type="valueType" name="average-number-of-audio-frames-per-pes-packet" minOccurs="0"/>
@@ -335,10 +357,11 @@
             <xs:element type="valueType" name="nominal-frame-size" minOccurs="0"/>
             <xs:element type="valueType" name="dialogue-normalization" minOccurs="0" />
             <xs:element type="valueType" name="main-audio-buffer-size" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="pcr-statisticsType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="pcr-statisticsType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="number-of-pcrs-seen" minOccurs="0"/>
             <xs:element type="valueType" name="average-pcr-interval" minOccurs="0"/>
             <xs:element type="valueType" name="minimum-pcr-interval" minOccurs="0"/>
@@ -346,23 +369,26 @@
             <xs:element type="valueType" name="maximum-pcr-interval" minOccurs="0"/>
             <xs:element type="valueType" name="packet-number-at-maximum-pcr-interval" minOccurs="0"/>
             <xs:element type="valueType" name="pcr-jitter-magnitude" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="program-map-informationType">
-        <xs:choice maxOccurs="unbounded"> 
+    <xs:complexType name="program-map-informationType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
             <xs:element type="valueType" name="pmt-pid" minOccurs="0"/>
             <xs:element type="valueType" name="program_number" minOccurs="0"/>
             <xs:element type="valueType" name="version_number" minOccurs="0"/>
             <xs:element type="valueType" name="pcr_pid" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:choice>
     </xs:complexType>
-    <xs:complexType name="registration_descriptorType">
-      <xs:choice maxOccurs="unbounded"> 
-        <xs:element type="valueType" name="tag"  minOccurs="0"/>
-        <xs:element type="valueType" name="length"  minOccurs="0"/>
-        <xs:element type="valueType" name="format_identifier"  minOccurs="0"/>
-        <xs:element type="valueType" name="additional_identification_info" minOccurs="0"/>
-      </xs:choice>
+    <xs:complexType name="registration_descriptorType" mixed="true">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element type="valueType" name="tag"  minOccurs="0"/>
+            <xs:element type="valueType" name="length"  minOccurs="0"/>
+            <xs:element type="valueType" name="format_identifier"  minOccurs="0"/>
+            <xs:element type="valueType" name="additional_identification_info" minOccurs="0"/>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
+        </xs:choice>
     </xs:complexType>
 
 
