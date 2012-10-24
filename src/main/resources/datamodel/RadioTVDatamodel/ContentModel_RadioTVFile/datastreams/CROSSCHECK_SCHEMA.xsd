@@ -52,29 +52,21 @@
 
     <!--The sequence based elements-->
     <xs:complexType name="errorsType" mixed="true">
-        <xs:choice maxOccurs="unbounded">
+        <xs:sequence>
             <xs:element type="errorType" name="error" maxOccurs="unbounded" minOccurs="0"/>
-        </xs:choice>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="configurationType" mixed="true">
-        <xs:choice maxOccurs="unbounded">
+        <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
-        </xs:choice>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="patType" mixed="true">
         <xs:sequence>
-            <xs:element type="programType" name="program"  minOccurs="0"/>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:sequence>
         <xs:attribute type="xs:string" name="version"/>
         <xs:attribute type="xs:string" name="pid"/>
-    </xs:complexType>
-    <xs:complexType name="pmtType" mixed="true">
-        <xs:choice maxOccurs="unbounded">
-            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
-        </xs:choice>
-        <xs:attribute type="xs:string" name="version"/>
-        <xs:attribute type="xs:string" name="pcr-pid"/>
     </xs:complexType>
     <xs:complexType name="multiplex-summaryType" mixed="true">
         <xs:sequence>
@@ -83,9 +75,9 @@
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="pid-propertiesType" mixed="true">
-        <xs:choice maxOccurs="unbounded">
+        <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
-        </xs:choice>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="tsa-reportType" mixed="true">
         <xs:choice maxOccurs="unbounded">
@@ -103,31 +95,14 @@
         <xs:attribute type="xs:string" name="file"/>
     </xs:complexType>
     <xs:complexType name="pid-summaryType" mixed="true">
-        <xs:choice maxOccurs="unbounded">
+        <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
-        </xs:choice>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="stream-informationType" mixed="true">
         <xs:sequence>
-            <xs:element type="valueType" name="average-transport-rate" minOccurs="0"/>
-            <xs:element type="valueType" name="minimum-transport-rate" minOccurs="0"/>
-            <xs:element type="valueType" name="maximum-transport-rate" minOccurs="0"/>
-            <xs:element type="valueType" name="duration" minOccurs="0"/>
-            <xs:element type="valueType" name="file-size" minOccurs="0"/>
-            <xs:element type="valueType" name="transport-packet-interval" minOccurs="0"/>
-            <xs:element type="valueType" name="packets-analyzed" minOccurs="0"/>
-            <xs:element type="valueType" name="total-errors" minOccurs="0"/>
-            <xs:element type="valueType" name="total-warnings" minOccurs="0"/>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="programType" mixed="true">
-        <xs:sequence>
-            <xs:element type="pmtType" name="pmt" minOccurs="0"/>
-            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
-        </xs:sequence>
-        <xs:attribute type="xs:string" name="program_number" />
-        <xs:attribute type="xs:string" name="pid"/>
     </xs:complexType>
 
 </xs:schema>
