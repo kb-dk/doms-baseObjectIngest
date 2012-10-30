@@ -11,6 +11,8 @@
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp2&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;ac3,h264&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;ac3,h264,mp2&quot;"></form>
+        <!--Regional channels-->
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,h264&quot;"></form>
 
         <!--Radio-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2&quot;"></form>
