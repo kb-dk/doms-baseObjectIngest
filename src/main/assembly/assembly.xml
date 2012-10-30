@@ -10,13 +10,26 @@
             <outputDirectory>bin</outputDirectory>
             <directory>src/main/scripts</directory>
             <filtered>true</filtered>
+            <fileMode>0755</fileMode>
+            <directoryMode>0755</directoryMode>
         </fileSet>
         <fileSet>
             <outputDirectory>scripts</outputDirectory>
             <directory>src/main/resources/datamodel</directory>
             <filtered>true</filtered>
+            <fileMode>0644</fileMode>
+            <directoryMode>0755</directoryMode>
         </fileSet>
-
     </fileSets>
+    <files>
+        <file>
+            <source>src/main/CHANGELOG</source>
+            <outputDirectory></outputDirectory>
+            <filtered>true</filtered>
+            <fileMode>0644</fileMode>
+
+        </file>
+    </files>
+
 </assembly>
 

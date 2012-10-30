@@ -11,19 +11,20 @@ mkdir $BASEDIR/logs  >/dev/null 2>&1
 
 function batchProcess(){
   local file=$1
-  output=$($FEDORA_DIR/client/bin/fedora-modify.sh \
-                      $SERVER $USER $PASS \
-                      $file \
-                      $BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log \
+  output=$("$FEDORA_DIR/client/bin/fedora-modify.sh" \
+                      "$SERVER" "$USER" "$PASS" \
+                      "$file" \
+                      "$BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log" \
                       http false 2>&1)
   echo "$output" | grep "0 modify directives failed." > /dev/null
   returnvalue=$?
   if [ $returnvalue -eq 0 ]; then
 	rm $BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log
-	return $returnvalue
-  else
-	echo "Failed for $file"
 	return 0
+  else
+    #echo "$output"
+	echo "Failed for $file"
+	return $returnvalue
   fi
 
 }
