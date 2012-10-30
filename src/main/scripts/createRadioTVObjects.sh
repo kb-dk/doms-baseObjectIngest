@@ -14,6 +14,10 @@ echo "UPDATING base Radio TV objects"
 
 for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/create.xml); do
     batchProcess $file
+    if [ $? -ne 0 ]; then
+        echo "If the object is already there, this will report failures. Just ignore them"
+        echo "If the object is not already there, these errors are important."
+    fi
 done
 
 for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/setContent.xml); do
@@ -25,7 +29,7 @@ for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/publish.xml); do
 done
 
 
-echo "There should be no errors in this result. If there are, something has failed."
+echo "There should be no undeclared errors in this result. If there are, something has failed."
 echo ""
 echo ""
 

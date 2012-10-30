@@ -12,6 +12,10 @@ echo "UPDATING base doms objects"
 
 for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/create.xml); do
     batchProcess $file
+    if [ $? -ne 0 ]; then
+        echo "If the object is already there, this will report failures. Just ignore them"
+        echo "If the object is not already there, these errors are important."
+    fi
 done
 
 for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/setContent.xml); do
@@ -26,8 +30,9 @@ done
 
 
 
-echo "There should be no errors in this result. If there are, something has failed."
+echo "There should be no undeclared errors in this result. If there are, something has failed."
 echo ""
 echo ""
+
 
 
