@@ -1,0 +1,41 @@
+Version 0.11.5
+Minor changes to objects.
+Fixed a few bugs in the scripts
+a9998ec	Moments ago	Asger Askov Blekinge	Fixed the scripts to actually work
+0f0ebd5	Today 9:47 AM	Asger Askov Blekinge	regional channels need this format uri
+4bf07ae	Today 9:02 AM	Asger Askov Blekinge	Update output strings to be more sane
+745ffd1	Today 8:54 AM	Asger Askov Blekinge	Script hints from tgc
+95d90d6	Today 8:49 AM	Asger Askov Blekinge	remove unnessesary patType element
+
+Version 0.11.4
+Pushed to stage. Major refactoring in how the objects are created
+ef2998e	10/26/12 11:04 AM	Asger Askov Blekinge	Remove old comment
+09850ff	10/25/12 4:09 PM	Asger Askov Blekinge	Ordered the format uris
+096ba84	10/25/12 4:01 PM	Asger Askov Blekinge	Yet another format uri
+7ef60c8	10/24/12 1:36 PM	Asger Askov Blekinge	Last bloody crosscheck schema
+4a66edb	10/24/12 10:00 AM	Asger Askov Blekinge	Remember this format
+557b7b6	10/24/12 9:30 AM	Asger Askov Blekinge	Yet another Crosscheck schema
+e414ee0	10/24/12 9:28 AM	Asger Askov Blekinge	Yet another Crosscheck schema
+ea95037	10/23/12 4:23 PM	Asger Askov Blekinge	Hopefully more general safe crosscheck schema
+614ccc3	10/19/12 1:14 PM	Asger Askov Blekinge	Merge remote-tracking branch 'origin/master'
+3385995	10/19/12 1:14 PM	Asger Askov Blekinge	Yet another addition to the crosscheck schema
+e6537fb	10/19/12 1:13 PM	Asger Askov Blekinge	support for h264 files
+150087b	10/18/12 7:57 AM	Kåre Fiedler Christiansen	Update tvmeter schema to new version
+7ea9ceb	10/17/12 4:41 PM	Asger Askov Blekinge	Better crosscheck schema
+fbaa71b	10/17/12 4:41 PM	Asger Askov Blekinge	yousee radio format uri
+a094ea9	10/16/12 3:48 PM	Asger Askov Blekinge	CROSSCHECK_SCHEMA should be ok now
+d26369b	10/15/12 3:34 PM	Asger Askov Blekinge	Place the warning in the correct file
+7687f2b	10/15/12 3:29 PM	Asger Askov Blekinge	Finally the datamodel creater should be complete
+6dee1e4	10/15/12 3:17 PM	Asger Askov Blekinge	Basic datamodel works
+93b9b52	10/15/12 2:17 PM	Asger Askov Blekinge	Update stuff in place now
+0b212d7	10/12/12 1:13 PM	Asger Askov Blekinge	Followup from review
+fb9bc04	10/12/12 10:23 AM	Asger Askov Blekinge	Followup from review
+
+Version 0.11.3
+Initial release, ready for review. Never pushed to stage.
+cf5b6a3	10/5/12 10:24 AM	Asger Askov Blekinge	Undo bad version number
+2bd7672	10/5/12 10:23 AM	Asger Askov Blekinge	Use the correct scm url
+64fc16c	10/5/12 10:19 AM	Asger Askov Blekinge	Move to sbforgeadded idea file
+27fcfee	10/5/12 8:50 AM	Asger Askov Blekinge	moved stuff around
+12f4e4d	10/4/12 3:53 PM	Asger Askov Blekinge	Merged baseObjectsIngester from doms-installer into this project
+f91c3b9	10/4/12 2:40 PM	Asger Askov Blekinge	Initial commit
