@@ -61,16 +61,8 @@
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="patType" mixed="true">
-        <xs:sequence>
-            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
-        </xs:sequence>
-        <xs:attribute type="xs:string" name="version"/>
-        <xs:attribute type="xs:string" name="pid"/>
-    </xs:complexType>
     <xs:complexType name="multiplex-summaryType" mixed="true">
         <xs:sequence>
-            <xs:element type="patType" name="pat"/>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:sequence>
     </xs:complexType>
