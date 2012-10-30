@@ -16,8 +16,8 @@ function batchProcess(){
                       $file \
                       $BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log \
                       http false 2>&1)
-  echo $output | grep "0 modify directives failed." > /dev/null
-  if [ "$?" == 0 ]; then
+  echo "$output" | grep "0 modify directives failed." > /dev/null
+  if [ $? -eq 0 ]; then
 	rm $BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log  
   else
 	echo "Failed for $file"
