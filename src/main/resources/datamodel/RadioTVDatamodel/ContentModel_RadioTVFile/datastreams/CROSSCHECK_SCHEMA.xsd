@@ -70,6 +70,7 @@
         <xs:sequence>
             <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##targetNamespace"/>
         </xs:sequence>
+        <xs:attribute type="xs:string" name="instance" use="optional"/>
     </xs:complexType>
     <xs:complexType name="tsa-reportType" mixed="true">
         <xs:choice maxOccurs="unbounded">
