@@ -64,7 +64,7 @@
                                 <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-bag">
                                     <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-normalize-space">
                                         <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"
-                                                >true</AttributeValue>
+                                                >yes</AttributeValue>
                                     </Apply>
                                 </Apply>
                             </Apply>
