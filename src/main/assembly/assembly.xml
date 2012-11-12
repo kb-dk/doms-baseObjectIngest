@@ -16,6 +16,9 @@
         <fileSet>
             <outputDirectory>scripts</outputDirectory>
             <directory>src/main/resources/datamodel</directory>
+            <excludes>
+                <exclude>**/datastreams/*</exclude>
+            </excludes>
             <filtered>true</filtered>
             <fileMode>0644</fileMode>
             <directoryMode>0755</directoryMode>
