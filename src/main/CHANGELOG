@@ -1,3 +1,7 @@
+Version 0.11.6
+cd07416 2012-11-06 15:19:54 +0100       Kåre Fiedler Christiansen       New Mediestream license object
+28e210f 2012-11-02 10:33:48 +0100       Asger Askov Blekinge    should fix the invalid crosscheck problem
+
 Version 0.11.5
 Minor changes to objects.
 Fixed a few bugs in the scripts
