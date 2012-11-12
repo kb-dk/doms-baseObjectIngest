@@ -25,6 +25,27 @@
     <properties>
 
 
+        <!--Reklame film-->
+        <reklameFilm.folder>${project.basedir}/src/main/resources/datamodel/ReklameFilmDataModel</reklameFilm.folder>
+
+        <ReklameFilm.object.folder>${reklameFilm.folder}/ContentModel_ReklameFilm/datastreams</ReklameFilm.object.folder>
+        <ReklameFilm_DSCOMP_file>${ReklameFilm.object.folder}/DS-COMPOSITE-MODEL.xml</ReklameFilm_DSCOMP_file>
+        <ReklameFilm_METHODS_file>${ReklameFilm.object.folder}/METHODS.xml</ReklameFilm_METHODS_file>
+        <ReklameFilm_ONTOLOGY_file>${ReklameFilm.object.folder}/ONTOLOGY.xml</ReklameFilm_ONTOLOGY_file>
+        <ReklameFilm_RELS-EXT_file>${ReklameFilm.object.folder}/RELS-EXT.xml</ReklameFilm_RELS-EXT_file>
+        <ReklameFilm_VIEW_file>${ReklameFilm.object.folder}/VIEW.xml</ReklameFilm_VIEW_file>
+        <ReklameFilm_PBCORE_file>${ReklameFilm.object.folder}/PBCORE_SCHEMA.xsd</ReklameFilm_PBCORE_file>
+
+        <ReklameFile.object.folder>${reklameFilm.folder}/ContentModel_ReklameFile/datastreams</ReklameFile.object.folder>
+        <ReklameFile_DSCOMP_file>${ReklameFile.object.folder}/DS-COMPOSITE-MODEL.xml</ReklameFile_DSCOMP_file>
+        <ReklameFile_ONTOLOGY_file>${ReklameFile.object.folder}/ONTOLOGY.xml</ReklameFile_ONTOLOGY_file>
+        <ReklameFile_RELS-EXT_file>${ReklameFile.object.folder}/RELS-EXT.xml</ReklameFile_RELS-EXT_file>
+        <ReklameFile_VIEW_file>${ReklameFile.object.folder}/VIEW.xml</ReklameFile_VIEW_file>
+        <ReklameFile_FFProbe_file>${ReklameFile.object.folder}/FFPROBE_SCHEMA.xsd</ReklameFile_FFProbe_file>
+        <ReklameFile_FFProbe_error_log_file>${ReklameFile.object.folder}/FFPROBE_ERROR_LOG_SCHEMA.xsd</ReklameFile_FFProbe_error_log_file>
+
+
+        <!--Radio TV -->
         <schema.folder>${project.basedir}/src/main/resources/datamodel/RadioTVDatamodel</schema.folder>
 
         <program.object.folder>${schema.folder}/ContentModel_Program/datastreams</program.object.folder>

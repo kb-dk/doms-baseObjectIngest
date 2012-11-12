@@ -1,0 +1,44 @@
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+    <def:modifyObject pid="doms:Template_ReklameFilm" state="I"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+
+    <def:modifyObject pid="doms:Template_ReklameFilm" state="I"  label="Reklame Film fil"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+    <def:modifyDatastream pid="doms:Template_ReklameFilm" dsID="RELS-EXT"
+                          dsLabel="Relationships"
+                          dsMIME="application/rdf+xml"
+                          formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="DISABLED"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
+                     xmlns:ecm="http://ecm.sourceforge.net/relations/0/2/#"
+                    >
+                <rdf:Description rdf:about="info:fedora/doms:Template_ReklameFilm">
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_ReklameFilm"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <doms:isPartOfCollection rdf:resource="info:fedora/doms:Collection_ReklameFilm"/>
+                    <doms:hasLicense rdf:resource="info:fedora/doms:License_ReklameFilm"/>
+                    <ecm:isTemplateFor rdf:resource="info:fedora/doms:Collection_ReklameFilm"/>
+                </rdf:Description>
+            </rdf:RDF>
+        </def:xmlData>
+    </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:Template_ReklameFilm" dsID="PBCORE"
+                          dsLabel="PBCore datastream"
+                          dsMIME="text/xml"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <PBCoreDescriptionDocument xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html"/>
+        </def:xmlData>
+    </def:modifyDatastream>
+</def:batchModify>
