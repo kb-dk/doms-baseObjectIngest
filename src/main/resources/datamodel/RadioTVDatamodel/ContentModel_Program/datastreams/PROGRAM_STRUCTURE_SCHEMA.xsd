@@ -4,7 +4,7 @@
 
     <xs:complexType name="programStructure">
         <xs:sequence>
-            <xs:element name="holes">
+            <xs:element name="holes" minOccurs="0">
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element name="hole" type="hole" minOccurs="0" maxOccurs="unbounded"/>
@@ -13,7 +13,7 @@
             </xs:element>
             <xs:element name="missingEnd" type="missingEnd" minOccurs="0"/>
             <xs:element name="missingStart" type="missingStart" minOccurs="0"/>
-            <xs:element name="overlaps">
+            <xs:element name="overlaps" minOccurs="0">
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element name="overlap" type="overlap" minOccurs="0"
