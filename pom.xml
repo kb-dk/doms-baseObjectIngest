@@ -26,7 +26,7 @@
 
 
         <!--Reklame film-->
-        <ReklameFilm.folder>${project.basedir}/src/main/resources/datamodel/ReklameFilmDataModel</ReklameFilm.folder>
+        <ReklameFilm.folder>${project.basedir}/src/main/resources/datamodel/ReklameFilmDatamodel</ReklameFilm.folder>
 
         <ReklameFilm.object.folder>${ReklameFilm.folder}/ContentModel_ReklameFilm/datastreams</ReklameFilm.object.folder>
         <ReklameFilm_DSCOMP_file>${ReklameFilm.object.folder}/DS-COMPOSITE-MODEL.xml</ReklameFilm_DSCOMP_file>
