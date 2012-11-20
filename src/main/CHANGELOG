@@ -1,3 +1,7 @@
+Version 0.11.6.1
+02c77eb 2012-11-07 11:22:55 +0100       Kåre Fiedler Christiansen       Update mediestream license
+edac769 2012-11-19 14:33:34 +0100       Kåre Fiedler Christiansen       PROGRAM_BROADCAST datastream now has a namespace.
+
 Version 0.11.6
 cd07416 2012-11-06 15:19:54 +0100       Kåre Fiedler Christiansen       New Mediestream license object
 28e210f 2012-11-02 10:33:48 +0100       Asger Askov Blekinge    should fix the invalid crosscheck problem
