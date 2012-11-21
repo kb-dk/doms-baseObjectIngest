@@ -3,7 +3,7 @@
     <def:modifyObject pid="doms:Template_Reklamefilm" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
 
-    <def:modifyObject pid="doms:Template_Reklamefilm" state="I"  label="Reklamefilm fil"
+    <def:modifyObject pid="doms:Template_Reklamefilm" state="I"  label="Reklamefilm"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyDatastream pid="doms:Template_Reklamefilm" dsID="RELS-EXT"
                           dsLabel="Relationships"
