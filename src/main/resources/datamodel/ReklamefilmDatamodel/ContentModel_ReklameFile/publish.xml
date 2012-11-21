@@ -2,7 +2,7 @@
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
 
-    <def:modifyObject pid="doms:ContentModel_ReklameFile" state="A" label="File"
+    <def:modifyObject pid="doms:ContentModel_ReklameFile" state="A" label="Reklamefilm File"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
 
 </def:batchModify>
