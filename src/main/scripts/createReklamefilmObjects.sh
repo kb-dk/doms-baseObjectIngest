@@ -12,7 +12,7 @@ source $SCRIPT_DIR/common.sh
 #
 echo "UPDATING base Reklame Film objects"
 
-for file in $(ls $BASEDIR/scripts/ReklameFilmDatamodel/*/create.xml); do
+for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/create.xml); do
     batchProcess $file
     if [ $? -ne 0 ]; then
         echo "If the object is already there, this will report failures. Just ignore them"
@@ -20,11 +20,11 @@ for file in $(ls $BASEDIR/scripts/ReklameFilmDatamodel/*/create.xml); do
     fi
 done
 
-for file in $(ls $BASEDIR/scripts/ReklameFilmDatamodel/*/setContent.xml); do
+for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/setContent.xml); do
     batchProcess $file
 done
 
-for file in $(ls $BASEDIR/scripts/ReklameFilmDatamodel/*/publish.xml); do
+for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/publish.xml); do
     batchProcess $file
 done
 

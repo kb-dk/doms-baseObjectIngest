@@ -3,10 +3,10 @@
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
 
-    <def:modifyObject pid="doms:License_ReklameFilm" state="I"
-                      logMessage="Updating The Reklame film license"/>
+    <def:modifyObject pid="doms:License_Reklamefilm" state="I"
+                      logMessage="Updating The Reklamefilm license"/>
 
-    <def:modifyDatastream pid="doms:License_ReklameFilm" dsID="RELS-EXT"
+    <def:modifyDatastream pid="doms:License_Reklamefilm" dsID="RELS-EXT"
                           dsLabel="Relationships"
                           dsMIME="application/rdf+xml"
                           formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
@@ -17,26 +17,26 @@
            <def:xmlData>
                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                         xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
-                   <rdf:Description rdf:about="info:fedora/doms:License_ReklameFilm">
+                   <rdf:Description rdf:about="info:fedora/doms:License_Reklamefilm">
                        <hasModel rdf:resource="info:fedora/doms:ContentModel_License"
                                  xmlns="info:fedora/fedora-system:def/model#"/>
                        <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
                                  xmlns="info:fedora/fedora-system:def/model#"/>
-                       <doms:isPartOfCollection rdf:resource="info:fedora/doms:Collection_ReklameFilm"/>
+                       <doms:isPartOfCollection rdf:resource="info:fedora/doms:Collection_Reklamefilm"/>
                        <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
                    </rdf:Description>
                </rdf:RDF>
            </def:xmlData>
        </def:modifyDatastream>
 
-    <def:modifyDatastream pid="doms:License_ReklameFilm" dsID="LICENSE"
+    <def:modifyDatastream pid="doms:License_Reklamefilm" dsID="LICENSE"
                           dsControlGroupType="X"
-                          logMessage="Updating The reklame film license">
+                          logMessage="Updating The reklamefilm license">
         <def:xmlData>
             <Policy xmlns="urn:oasis:names:tc:xacml:1.0:policy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    PolicyId="License_ReklameFilm"
+                    PolicyId="License_Reklamefilm"
                     RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
-                <Description>The is the license for the reklame film collection. Complete access is granted, if and only if,
+                <Description>The is the license for the reklamefilm collection. Complete access is granted, if and only if,
                     the user has the inhouseor administrator or readonlyadministrator fedoraRole.
                 </Description>
                 <Target>

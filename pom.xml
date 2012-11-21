@@ -26,17 +26,17 @@
 
 
         <!--Reklame film-->
-        <ReklameFilm.folder>${project.basedir}/src/main/resources/datamodel/ReklameFilmDatamodel</ReklameFilm.folder>
+        <Reklamefilm.folder>${project.basedir}/src/main/resources/datamodel/ReklamefilmDatamodel</Reklamefilm.folder>
 
-        <ReklameFilm.object.folder>${ReklameFilm.folder}/ContentModel_ReklameFilm/datastreams</ReklameFilm.object.folder>
-        <ReklameFilm_DSCOMP_file>${ReklameFilm.object.folder}/DS-COMPOSITE-MODEL.xml</ReklameFilm_DSCOMP_file>
-        <ReklameFilm_METHODS_file>${ReklameFilm.object.folder}/METHODS.xml</ReklameFilm_METHODS_file>
-        <ReklameFilm_ONTOLOGY_file>${ReklameFilm.object.folder}/ONTOLOGY.xml</ReklameFilm_ONTOLOGY_file>
-        <ReklameFilm_RELS-EXT_file>${ReklameFilm.object.folder}/RELS-EXT.xml</ReklameFilm_RELS-EXT_file>
-        <ReklameFilm_VIEW_file>${ReklameFilm.object.folder}/VIEW.xml</ReklameFilm_VIEW_file>
-        <ReklameFilm_PBCORE_file>${ReklameFilm.object.folder}/PBCORE_SCHEMA.xsd</ReklameFilm_PBCORE_file>
+        <Reklamefilm.object.folder>${Reklamefilm.folder}/ContentModel_Reklamefilm/datastreams</Reklamefilm.object.folder>
+        <Reklamefilm_DSCOMP_file>${Reklamefilm.object.folder}/DS-COMPOSITE-MODEL.xml</Reklamefilm_DSCOMP_file>
+        <Reklamefilm_METHODS_file>${Reklamefilm.object.folder}/METHODS.xml</Reklamefilm_METHODS_file>
+        <Reklamefilm_ONTOLOGY_file>${Reklamefilm.object.folder}/ONTOLOGY.xml</Reklamefilm_ONTOLOGY_file>
+        <Reklamefilm_RELS-EXT_file>${Reklamefilm.object.folder}/RELS-EXT.xml</Reklamefilm_RELS-EXT_file>
+        <Reklamefilm_VIEW_file>${Reklamefilm.object.folder}/VIEW.xml</Reklamefilm_VIEW_file>
+        <Reklamefilm_PBCORE_file>${Reklamefilm.object.folder}/PBCORE_SCHEMA.xsd</Reklamefilm_PBCORE_file>
 
-        <ReklameFile.object.folder>${ReklameFilm.folder}/ContentModel_ReklameFile/datastreams</ReklameFile.object.folder>
+        <ReklameFile.object.folder>${Reklamefilm.folder}/ContentModel_ReklameFile/datastreams</ReklameFile.object.folder>
         <ReklameFile_DSCOMP_file>${ReklameFile.object.folder}/DS-COMPOSITE-MODEL.xml</ReklameFile_DSCOMP_file>
         <ReklameFile_ONTOLOGY_file>${ReklameFile.object.folder}/ONTOLOGY.xml</ReklameFile_ONTOLOGY_file>
         <ReklameFile_RELS-EXT_file>${ReklameFile.object.folder}/RELS-EXT.xml</ReklameFile_RELS-EXT_file>

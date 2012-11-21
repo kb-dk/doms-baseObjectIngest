@@ -10,11 +10,11 @@ source $SCRIPT_DIR/common.sh
 #
 echo "UPDATING base doms objects"
 
-for file in $(ls $BASEDIR/scripts/ReklameFilmDatamodel/*/setContent.xml); do
+for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/setContent.xml); do
     batchProcess $file
 done
 
-for file in $(ls $BASEDIR/scripts/ReklameFilmDatamodel/*/publish.xml); do
+for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/publish.xml); do
     batchProcess $file
 done
 

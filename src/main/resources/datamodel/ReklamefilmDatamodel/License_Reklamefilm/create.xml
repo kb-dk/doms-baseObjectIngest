@@ -4,12 +4,12 @@
 
 
 
-    <!--License_ReklameFilm-->
-    <def:addObject pid="doms:License_ReklameFilm" label="Reklamefilm License"
+    <!--License_Reklamefilm-->
+    <def:addObject pid="doms:License_Reklamefilm" label="Reklamefilm License"
                    contentModel="string" logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:modifyObject pid="doms:License_ReklameFilm" state="I"
+    <def:modifyObject pid="doms:License_Reklamefilm" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:addDatastream pid="doms:License_ReklameFilm" dsID="RELS-EXT"
+    <def:addDatastream pid="doms:License_Reklamefilm" dsID="RELS-EXT"
                        dsLabel="Relationships"
                        dsMIME="application/rdf+xml"
                        formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
@@ -20,11 +20,11 @@
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
-                <rdf:Description rdf:about="info:fedora/doms:License_ReklameFilm"/>
+                <rdf:Description rdf:about="info:fedora/doms:License_Reklamefilm"/>
             </rdf:RDF>
         </def:xmlData>
     </def:addDatastream>
-    <def:addDatastream pid="doms:License_ReklameFilm" dsID="LICENSE"
+    <def:addDatastream pid="doms:License_Reklamefilm" dsID="LICENSE"
                        dsLabel="LICENSE datastream"
                        dsMIME="text/xml"
                        versionable="true"
