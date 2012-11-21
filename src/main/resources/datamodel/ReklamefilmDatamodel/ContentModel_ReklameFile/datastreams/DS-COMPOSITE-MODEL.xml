@@ -20,4 +20,12 @@
             <reference type="datastream" value="FFPROBE_ERROR_LOG_SCHEMA"/>
         </extension>
     </dsTypeModel>
+    <dsTypeModel ID="REKLAME_METADATA" optional="true">
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="REKLAME_METADATA_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
 </dsCompositeModel>

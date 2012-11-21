@@ -43,6 +43,7 @@
         <ReklameFile_VIEW_file>${ReklameFile.object.folder}/VIEW.xml</ReklameFile_VIEW_file>
         <ReklameFile_FFProbe_file>${ReklameFile.object.folder}/FFPROBE_SCHEMA.xsd</ReklameFile_FFProbe_file>
         <ReklameFile_FFProbe_error_log_file>${ReklameFile.object.folder}/FFPROBE_ERROR_LOG_SCHEMA.xsd</ReklameFile_FFProbe_error_log_file>
+        <ReklameFile_reklame_metadata_file>${ReklameFile.object.folder}/REKLAME_METADATA_SCHEMA.xsd</ReklameFile_reklame_metadata_file>
 
 
         <!--Radio TV -->
