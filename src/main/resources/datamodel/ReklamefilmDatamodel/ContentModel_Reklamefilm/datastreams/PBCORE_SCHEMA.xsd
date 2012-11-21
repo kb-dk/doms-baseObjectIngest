@@ -151,8 +151,8 @@
                                         content reviews. The description may also consist of outlines, lists,
                                         bullet points, rundowns, edit decision lists, indexes, or tables of
                                         content."</xsd:documentation>
+                                    <xsd:appinfo source="http://doms.statsbiblioteket.dk/gui">textarea</xsd:appinfo>
                                 </xsd:annotation>
-                                <xsd:appinfo source="http://doms.statsbiblioteket.dk/gui">textarea</xsd:appinfo>
                             </xsd:element>
                             <xsd:element maxOccurs="1" minOccurs="0" name="descriptionType"
                                          type="pbcore.source.version.string">
