@@ -36,8 +36,12 @@
             <Policy xmlns="urn:oasis:names:tc:xacml:1.0:policy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     PolicyId="License_Reklamefilm"
                     RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
-                <Description>The is the license for the reklamefilm collection. Complete access is granted, if and only if,
-                    the user has the inhouseor administrator or readonlyadministrator fedoraRole.
+                <Description>The is the license for the radio/TV collection. Complete access is granted, if and only if,
+                    the user has
+                    the eduPersonScopedAffiliation=inhouse@ip.roles.statsbiblioteket.dk attribute,
+                    the MediestreamFullAccess=true attribute,
+                    the sbAdGroups=domsadmin_devel attribute,
+                    or the fedoraRole=administrator|readonlyadministrator attribute.
                 </Description>
                 <Target>
                     <Subjects>
@@ -54,30 +58,21 @@
                     <Condition FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
                         <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:or">
                             <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-at-least-one-member-of">
-                                <SubjectAttributeDesignator AttributeId="eduPersonScopedAffiliation"
+                                <SubjectAttributeDesignator AttributeId="MediestreamFullAccess"
                                                             DataType="http://www.w3.org/2001/XMLSchema#string"
                                                             MustBePresent="false"/>
                                 <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-bag">
                                     <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-normalize-space">
                                         <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"
-                                                >student@hum.au.dk
-                                        </AttributeValue>
+                                                >yes</AttributeValue>
                                     </Apply>
-                                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-normalize-space">
-                                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"
-                                                >employee@hum.au.dk
-                                        </AttributeValue>
-                                    </Apply>
-                                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-normalize-space">
-                                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"
-                                                >staff@hum.au.dk
-                                        </AttributeValue>
-                                    </Apply>
-                                    <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-normalize-space">
-                                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"
-                                                >faculty@hum.au.dk
-                                        </AttributeValue>
-                                    </Apply>
+                                </Apply>
+                            </Apply>
+                            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-at-least-one-member-of">
+                                <SubjectAttributeDesignator AttributeId="eduPersonScopedAffiliation"
+                                                            DataType="http://www.w3.org/2001/XMLSchema#string"
+                                                            MustBePresent="false"/>
+                                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-bag">
                                     <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-normalize-space">
                                         <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"
                                                 >inhouse@ip.roles.statsbiblioteket.dk
