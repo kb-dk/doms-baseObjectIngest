@@ -42,7 +42,7 @@
     </def:addDatastream>
     <def:addDatastream pid="doms:Template_Shard" dsID="POLICY"
                        dsLabel="Policy"
-                       dsMIME="application/rdf+xml"
+                       dsMIME="text/xml"
                        versionable="true"
                        altIDs="" dsControlGroupType="E" dsState="A"
                        checksumType="DISABLED"
