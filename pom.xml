@@ -25,7 +25,7 @@
     <properties>
 
 
-        <!--Reklame film-->
+        <!--Reklamefilm-->
         <Reklamefilm.folder>${project.basedir}/src/main/resources/datamodel/ReklamefilmDatamodel</Reklamefilm.folder>
 
         <Reklamefilm.object.folder>${Reklamefilm.folder}/ContentModel_Reklamefilm/datastreams</Reklamefilm.object.folder>

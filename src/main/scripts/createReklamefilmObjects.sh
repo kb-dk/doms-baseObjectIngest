@@ -10,7 +10,7 @@ source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "UPDATING base Reklame Film objects"
+echo "UPDATING base Reklamefilm objects"
 
 for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/create.xml); do
     batchProcess $file
