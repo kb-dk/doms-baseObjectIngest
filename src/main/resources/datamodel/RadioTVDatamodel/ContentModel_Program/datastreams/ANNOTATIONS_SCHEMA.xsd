@@ -1,11 +1,13 @@
-<xs:schema xmlns:tns="http://doms.statsbiblioteket.dk/types/annotations/0/1/#" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://doms.statsbiblioteket.dk/types/annotations/0/1/#" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:schema xmlns:tns="http://doms.statsbiblioteket.dk/types/annotations/0/1/#" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  version="1.0" targetNamespace="http://doms.statsbiblioteket.dk/types/annotations/0/1/#" 
+  attributeFormDefault="unqualified" elementFormDefault="qualified">
   <xs:element name="annotations" type="tns:annotations"/>
   
   <xs:complexType name="annotations">
     <xs:sequence>
-      <xs:element name="DVD-id" type="xs:string" maxOccurs="unbounded"/>
-      <xs:element name="sourceMaterialStatus" type="xs:string"/>
-      <xs:element name="comments" type="xs:string"/>
+      <xs:element name="DVD-id" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="sourceMaterialStatus" type="xs:string" minOccurs="0" />
+      <xs:element name="comments" type="xs:string" minOccurs="0" />
     </xs:sequence>
   </xs:complexType>
 

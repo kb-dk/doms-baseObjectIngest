@@ -136,8 +136,8 @@
             <placeholder/>
         </def:xmlData>
     </def:addDatastream>
-    <def:addDatastream pid="doms:ContentModel_Program" dsID="ANNOTATIONS"
-                       dsLabel="Annotations datastream"
+    <def:addDatastream pid="doms:ContentModel_Program" dsID="ANNOTATIONS_SCHEMA"
+                       dsLabel="Annotations datastream schema"
                        dsMIME="application/xml"
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
