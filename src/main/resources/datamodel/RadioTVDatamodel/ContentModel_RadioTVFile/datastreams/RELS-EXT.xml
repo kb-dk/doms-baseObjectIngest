@@ -8,6 +8,7 @@
         <ecm:extendsModel rdf:resource="info:fedora/doms:ContentModel_File"/>
         <doms:isPartOfCollection rdf:resource="info:fedora/doms:RadioTV_Collection"/>
         <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+        <ecm:isEntryForViewAngle>GUI</ecm:isEntryForViewAngle>
         <doms:isControlledByLowLevelBitstorage>false</doms:isControlledByLowLevelBitstorage>
     </rdf:Description>
 </rdf:RDF>
