@@ -1,7 +1,7 @@
 <ns:methods xmlns:ns="http://ecm.sourceforge.net/types/methods/0/2/#">
   <ns:method>
     <ns:name>VHS import</ns:name>
-    <ns:command>/home/fedora/ingester-workflow/invoke.sh -inputvalue domsUser %%domsUser%% -inputvalue domsPass %%domsPassword%% %%quality%% %%file%% %%channelID%% %%timeStart%% %%timeEnd%% %%vhs-label%% %%recorder%%</ns:command>
+    <ns:command>$METHOD_SCRIPTS/invoke.sh -inputvalue domsUser %%domsUser%% -inputvalue domsPass %%domsPassword%% %%quality%% %%file%% %%channelID%% %%timeStart%% %%timeEnd%% %%vhs-label%% %%recorder%%</ns:command>
     <ns:type>static</ns:type>
     <ns:parameters>
       <ns:parameter>
