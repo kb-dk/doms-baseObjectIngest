@@ -6,7 +6,7 @@
     <ns:parameters>
       <ns:parameter>
         <ns:name>File</ns:name>
-        <ns:parameterprefix>-inputvalue file </ns:parameterprefix>
+        <ns:parameterprefix>-inputvalue mpgfile </ns:parameterprefix>
         <ns:required>true</ns:required>
         <ns:repeatable>false</ns:repeatable>
         <ns:type>ServerFile</ns:type>
