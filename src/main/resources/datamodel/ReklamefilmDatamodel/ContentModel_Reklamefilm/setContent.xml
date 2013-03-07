@@ -65,7 +65,7 @@
     </def:modifyDatastream>
     <def:modifyDatastream pid="doms:ContentModel_Reklamefilm" dsID="METHODS"
                           dsLabel="Methods datastream"
-                          dsMIME="application/xml"
+                          dsMIME="text/xml"
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"

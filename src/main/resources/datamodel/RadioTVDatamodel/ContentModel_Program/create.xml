@@ -127,7 +127,7 @@
     </def:addDatastream>
     <def:addDatastream pid="doms:ContentModel_Program" dsID="METHODS"
                        dsLabel="Methods datastream"
-                       dsMIME="application/xml"
+                       dsMIME="text/xml"
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="MD5"
@@ -138,7 +138,7 @@
     </def:addDatastream>
     <def:addDatastream pid="doms:ContentModel_Program" dsID="ANNOTATIONS_SCHEMA"
                        dsLabel="Annotations datastream schema"
-                       dsMIME="application/xml"
+                       dsMIME="text/xml"
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="MD5"
