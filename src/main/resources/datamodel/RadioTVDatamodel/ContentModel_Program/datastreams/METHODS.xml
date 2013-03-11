@@ -1,7 +1,7 @@
 <ns:methods xmlns:ns="http://ecm.sourceforge.net/types/methods/0/2/#">
     <ns:method>
         <ns:name>VHS clip import</ns:name>
-        <ns:command>$METHOD_SCRIPTS/vhsclip.sh -inputvalue domsPid %%domsPid%% -inputvalue domsUser %%domsUser%% -inputvalue domsPassword %%domsPassword%% %%File%%</ns:command>
+        <ns:command>$METHOD_SCRIPTS/vhsclip.sh -inputvalue programPid %%domsPid%% -inputvalue domsUser %%domsUser%% -inputvalue domsPass %%domsPassword%% %%File%%</ns:command>
         <ns:type>dynamic</ns:type>
         <ns:parameters>
             <ns:parameter>
