@@ -77,6 +77,7 @@
         <ProgramBroadcast_file>${program.object.folder}/PROGRAM_BROADCAST_SCHEMA.xsd</ProgramBroadcast_file>
         <ProgramStructure_file>${program.object.folder}/PROGRAM_STRUCTURE_SCHEMA.xsd</ProgramStructure_file>
         <RitzauOriginal_file>${program.object.folder}/RITZAU_ORIGINAL_SCHEMA.xsd</RitzauOriginal_file>
+        <Annotations_file>${program.object.folder}/ANNOTATIONS_SCHEMA.xsd</Annotations_file>
 
         <Shard_DSCOMP_file>${shard.object.folder}/DS-COMPOSITE-MODEL.xml</Shard_DSCOMP_file>
         <!--<Shard_METHODS_file>${shard.object.folder}/METHODS.xml</Shard_METHODS_file>-->
