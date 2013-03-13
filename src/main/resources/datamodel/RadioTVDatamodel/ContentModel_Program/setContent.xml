@@ -131,4 +131,18 @@
             ${Annotations_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
+
+    <def:modifyDatastream pid="doms:ContentModel_Program" dsID="LINK_PATTERN"
+                           dsLabel="Link patterns"
+
+                          dsMIME="text/xml"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            ${Program_LINKPATTERN_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
+
 </def:batchModify>

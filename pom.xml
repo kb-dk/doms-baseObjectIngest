@@ -72,6 +72,7 @@
         <Program_ONTOLOGY_file>${program.object.folder}/ONTOLOGY.xml</Program_ONTOLOGY_file>
         <Program_RELS-EXT_file>${program.object.folder}/RELS-EXT.xml</Program_RELS-EXT_file>
         <Program_VIEW_file>${program.object.folder}/VIEW.xml</Program_VIEW_file>
+        <Program_LINKPATTERN_file>${program.object.folder}/LINK_PATTERN.xml</Program_LINKPATTERN_file>
         <GallupOriginal_file>${program.object.folder}/GALLUP_ORIGINAL_SCHEMA.xsd</GallupOriginal_file>
         <PBCore_file>${program.object.folder}/PBCORE_SCHEMA.xsd</PBCore_file>
         <ProgramBroadcast_file>${program.object.folder}/PROGRAM_BROADCAST_SCHEMA.xsd</ProgramBroadcast_file>

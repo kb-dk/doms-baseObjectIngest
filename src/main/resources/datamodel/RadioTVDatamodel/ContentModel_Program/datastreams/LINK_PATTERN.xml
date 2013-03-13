@@ -1,0 +1,8 @@
+<lp:linkPatterns xmlns:lp="http://doms.statsbiblioteket.dk/types/linkpattern/0/1/#">
+    <lp:linkPattern>
+        <lp:name>Get DVD file</lp:name>
+        <lp:description>Get the DVD file from BTA</lp:description>
+        <lp:value>http://statsbiblioteket.dk/BTA/{objectPid}/dvd</lp:value>
+    </lp:linkPattern>
+</lp:linkPatterns>
+
