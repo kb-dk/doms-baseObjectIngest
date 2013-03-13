@@ -15,6 +15,15 @@
 
         </rdfs:subClassOf>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasExactFile"/>
+                <owl:allValuesFrom
+                        rdf:resource="info:fedora/doms:ContentModel_RadioTVFile#class"/>
+            </owl:Restriction>
+
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
 
             <owl:Restriction>
                 <owl:onProperty
