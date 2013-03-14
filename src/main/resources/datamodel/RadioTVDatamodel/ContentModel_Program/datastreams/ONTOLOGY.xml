@@ -35,5 +35,6 @@
     </owl:Class>
 
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasFile"/>
+    <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasExactFile"/>
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasShard"/>
 </rdf:RDF>
