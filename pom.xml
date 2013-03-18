@@ -93,6 +93,7 @@
         <VHSFile_ONTOLOGY_file>${vhsFile.object.folder}/ONTOLOGY.xml</VHSFile_ONTOLOGY_file>
         <VHSFile_RELS-EXT_file>${vhsFile.object.folder}/RELS-EXT.xml</VHSFile_RELS-EXT_file>
         <VHSFile_VIEW_file>${vhsFile.object.folder}/VIEW.xml</VHSFile_VIEW_file>
+        <VHSFILE_LINKPATTERN_file>${vhsFile.object.folder}/LINK_PATTERN.xml</VHSFILE_LINKPATTERN_file>
         <VHSMetadata_file>${vhsFile.object.folder}/VHS_METADATA_SCHEMA.xsd</VHSMetadata_file>
 
 
