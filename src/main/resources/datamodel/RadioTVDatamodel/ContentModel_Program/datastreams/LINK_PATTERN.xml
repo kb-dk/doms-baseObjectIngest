@@ -2,7 +2,7 @@
     <lp:linkPattern>
         <lp:name>Get DVD file</lp:name>
         <lp:description>Get the DVD file from BTA</lp:description>
-        <lp:value>http://iapetus.statsbiblioteket.dk:9641/bta-ws/bta/bta/btaDVDTranscode?programpid={domsPid}&amp;channel={channel}&amp;filename_prefix={objectId}&amp;additional_start_offset=-5&amp;additional_end_offset=5&amp;title={title}</lp:value>
+        <lp:value>http://iapetus.statsbiblioteket.dk:9641/bta-ws/bta/bta/btaDVDTranscode?programpid={domsPid}&amp;channel={channel}&amp;filename_prefix={channel}_{title}&amp;additional_start_offset=-5&amp;additional_end_offset=5&amp;title={title}</lp:value>
         <lp:replacements>
             <lp:replacement>
                 <lp:key>title</lp:key>
