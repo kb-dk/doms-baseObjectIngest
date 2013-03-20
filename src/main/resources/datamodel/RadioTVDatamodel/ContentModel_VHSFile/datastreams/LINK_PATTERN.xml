@@ -2,7 +2,7 @@
     <lp:linkPattern>
         <lp:name>Open in Bart</lp:name>
         <lp:description>Get the file in Bart</lp:description>
-        <lp:value>http://rigel:8370/bart2/recorder/quality.jsp?filename={filename}</lp:value>
+        <lp:value>{contextParam.digitv.bartlocation}/recorder/quality.jsp?filename={filename}</lp:value>
         <lp:replacements>
             <lp:replacement>
                 <lp:key>filename</lp:key>
