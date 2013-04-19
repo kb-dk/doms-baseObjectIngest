@@ -1,0 +1,20 @@
+<xs:schema xmlns:tns="http://doms.statsbiblioteket.dk/types/access/0/1/#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  version="1.0" targetNamespace="http://doms.statsbiblioteket.dk/types/access/0/1/#"
+  attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="access" type="tns:access"/>
+
+  <xs:complexType name="access">
+    <xs:sequence>
+      <xs:element name="individuelt_forbud" type="tns:yesNoType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="klausuleret" type="tns:yesNoType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="kommentarer" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="yesNoType">
+      <xs:restriction base="xs:string">
+          <xs:enumeration value="Nej"/>
+          <xs:enumeration value="Ja"/>
+      </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

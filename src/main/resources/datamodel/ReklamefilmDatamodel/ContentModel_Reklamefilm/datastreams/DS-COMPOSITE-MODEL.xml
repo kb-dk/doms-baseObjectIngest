@@ -9,5 +9,14 @@
             <reference type="datastream" value="PBCORE_SCHEMA"/>
         </extension>
     </dsTypeModel>
+    <dsTypeModel ID="ACCESS" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="GUI">
+            <presentAs type="editable"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="ACCESS_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
 </dsCompositeModel>
 
