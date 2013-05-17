@@ -1,3 +1,37 @@
+Version 0.11.9
+Add access datastream for "Klasuleret" and "Individuelt forbud"
+c1d28be 2013-04-19 14:03:15 +0200       Kåre Fiedler Christiansen       Add access datastream for "Klasuleret" and "Individuelt forbud"
+
+Version 0.11.8
+Add annotations datastream.
+Remove shards from GUI view.
+Added methods to start workflow. 
+Added links to BTA and Bart. 
+Use context parameters in content models.
+35ae7d7 2013-03-22 19:40:55 +0100       Kåre Fiedler Christiansen       [maven-release-plugin] prepare release base-objects-ingester-0.11.8
+7f6e440 2013-03-20 15:01:03 +0100       Asger Askov Blekinge    Link patterns use context params
+f3880e0 2013-03-20 10:40:24 +0100       Asger Askov Blekinge    Merged the format uris from 0.11.6.2 into this
+435378f 2013-03-18 14:41:52 +0100       Asger Askov Blekinge    better filenames
+67f07da 2013-03-18 14:41:30 +0100       Asger Askov Blekinge    Bart links for vhs files
+3b323b6 2013-03-18 12:32:55 +0100       Asger Askov Blekinge    BTA link implemented to iapetus
+88bd537 2013-03-15 13:55:27 +0100       Asger Askov Blekinge    Link pattern now with xpath
+8e6a7d8 2013-03-14 08:40:47 +0100       Asger Askov Blekinge    Now with correct ontology
+a4ed21f 2013-03-14 08:39:29 +0100       Asger Askov Blekinge    Merge branch 'master' of github.com:statsbiblioteket/doms-baseObjectIngest
+22c21a3 2013-03-13 16:08:21 +0100       Asger Askov Blekinge    Link patterns implemented first version
+e32aafb 2013-03-13 15:02:45 +0100       Kåre Fiedler Christiansen       Add hasExactFile relation
+1d992da 2013-03-13 14:13:25 +0100       Asger Askov Blekinge    Merge remote-tracking branch 'origin/master'
+97b22d1 2013-03-11 15:44:52 +0100       Kåre Fiedler Christiansen       Update parameter to match workflow expectation
+584916f 2013-03-08 13:12:32 +0100       Kåre Fiedler Christiansen       Update parameter to match workflow expectation
+1033719 2013-03-07 11:54:58 +0100       Kåre Fiedler Christiansen       Update parameter to match workflow expectation
+d420412 2013-03-07 10:36:24 +0100       Kåre Fiedler Christiansen       Replace application/xml with text/xml as it gives trouble with Fedora
+188e1bb 2013-03-07 09:59:07 +0100       Kåre Fiedler Christiansen       Remove unused parameters. Make used parameters human readable Use saner directory for VHS file ingests
+93073fb 2013-03-05 13:35:25 +0100       Kåre Fiedler Christiansen       Start workflow from script path relative to given environment variable
+7fad25b 2013-03-05 12:58:29 +0100       Kåre Fiedler Christiansen       Updated command line and parameters for vhs ingest workflow
+e5334f4 2013-02-26 13:25:03 +0100       Kåre Fiedler Christiansen       Do not show shards in GUI
+8892ae1 2013-02-22 12:22:33 +0100       Asger Askov Blekinge    ContentModel_RadioTVFile is entry object for view GUI
+6d14b16 2013-02-13 10:49:23 +0100       ktc     Follow up on review CR-DOMS-33
+ff9b385 2013-02-13 09:54:15 +0100       ktc     Add annotations datastream for content model program
+
 Version 0.11.7
 Added datamodel for Reklamefilm.
 License objects for Mediestream.
