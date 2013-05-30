@@ -1,3 +1,6 @@
+Version 0.11.10
+Update access datastream to also support "Defekt"
+
 Version 0.11.9
 Add access datastream for "Klasuleret" and "Individuelt forbud"
 c1d28be 2013-04-19 14:03:15 +0200       Kåre Fiedler Christiansen       Add access datastream for "Klasuleret" and "Individuelt forbud"
