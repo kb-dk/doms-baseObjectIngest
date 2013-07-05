@@ -34,13 +34,13 @@
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
-                     xmlns:ecm="http://ecm.sourceforge.net/relations/0/2/#"
+
                      xmlns:fedora="info:fedora/fedora-system:def/model#">
                 <rdf:Description rdf:about="info:fedora/doms:ContentModel_License">
                     <fedora:hasModel rdf:resource="info:fedora/fedora-system:ContentModel-3.0"/>
                     <fedora:hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
-                    <ecm:isEntryForViewAngle>GUI</ecm:isEntryForViewAngle>
-                    <ecm:extendsModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
+                    <doms:isEntryForViewAngle>GUI</doms:isEntryForViewAngle>
+                    <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
                     <doms:isPartOfCollection rdf:resource="info:fedora/doms:DOMS_Base_Collection"/>
                     <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
                 </rdf:Description>
@@ -53,8 +53,7 @@
                           dsControlGroupType="X"
                           logMessage="Updating objects as part of a doms install/upgrade">
         <def:xmlData>
-            <v:views xmlns:v="http://ecm.sourceforge.net/types/view/0/2/#">
-            </v:views>
+            <v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#"/>
         </def:xmlData>
     </def:modifyDatastream>
     <def:modifyDatastream pid="doms:ContentModel_License" dsID="ONTOLOGY"

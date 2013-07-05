@@ -10,7 +10,7 @@
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
-                     xmlns:ecm="http://ecm.sourceforge.net/relations/0/2/#"
+
                     >
                 <rdf:Description rdf:about="info:fedora/doms:Template_VHSFile">
                     <hasModel rdf:resource="info:fedora/doms:ContentModel_VHSFile"
@@ -21,7 +21,7 @@
                               xmlns="info:fedora/fedora-system:def/model#"/>
                     <doms:isPartOfCollection rdf:resource="info:fedora/doms:RadioTV_Collection"/>
                     <doms:hasLicense rdf:resource="info:fedora/doms:RadioTV_adminOnlyLicense"/>
-                    <ecm:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_VHSFile"/>
+                    <doms:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_VHSFile"/>
                 </rdf:Description>
             </rdf:RDF>
 
