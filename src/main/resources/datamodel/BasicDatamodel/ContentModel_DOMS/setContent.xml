@@ -104,7 +104,7 @@
                     <rdfs:subClassOf>
                         <owl:Restriction>
                             <owl:onProperty
-                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#isTemplateFor"/>
+                                    rdf:resource="http://ecm.sourceforge.net/relations/0/2/#isTemplateFor"/>
                             <owl:allValuesFrom
                                     rdf:resource="info:fedora/fedora-system:ContentModel-3.0#class"/>
                         </owl:Restriction>
@@ -117,7 +117,7 @@
 
                 <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasLicense"/>
 
-                <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#isTemplateFor"/>
+                <owl:ObjectProperty rdf:about="http://ecm.sourceforge.net/relations/0/2/#isTemplateFor"/>
 
             </rdf:RDF>
 
