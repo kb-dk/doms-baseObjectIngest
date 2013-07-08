@@ -9,6 +9,7 @@
 
 
         <!--h264-->
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp2&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp2,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;ac3,h264&quot;"></form>
@@ -22,6 +23,7 @@
 
         <!--Radio-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2&quot;"></form>
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp3&quot;"></form>
 
         <!--mpeg2-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2,mpeg2video&quot;"></form>
