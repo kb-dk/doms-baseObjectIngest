@@ -110,11 +110,11 @@
 
         <!--Run-->
         <Run.object.folder>${Newspaper.folder}/ContentModel_Run/datastreams</Run.object.folder>
-        <Run_DSCOMP_file>${Batch.object.folder}/DS-COMPOSITE-MODEL.xml</Run_DSCOMP_file>
-        <Run_ONTOLOGY_file>${Batch.object.folder}/ONTOLOGY.xml</Run_ONTOLOGY_file>
-        <Run_RELS-EXT_file>${Batch.object.folder}/RELS-EXT.xml</Run_RELS-EXT_file>
-        <Run_VIEW_file>${Batch.object.folder}/VIEW.xml</Run_VIEW_file>
-        <Run_EVENTS_SCHEMA_file>${Batch.object.folder}/EVENTS_SCHEMA.xml</Run_EVENTS_SCHEMA_file>
+        <Run_DSCOMP_file>${Run.object.folder}/DS-COMPOSITE-MODEL.xml</Run_DSCOMP_file>
+        <Run_ONTOLOGY_file>${Run.object.folder}/ONTOLOGY.xml</Run_ONTOLOGY_file>
+        <Run_RELS-EXT_file>${Run.object.folder}/RELS-EXT.xml</Run_RELS-EXT_file>
+        <Run_VIEW_file>${Run.object.folder}/VIEW.xml</Run_VIEW_file>
+        <Run_EVENTS_SCHEMA_file>${Run.object.folder}/EVENTS_SCHEMA.xsd</Run_EVENTS_SCHEMA_file>
 
 
     </properties>
