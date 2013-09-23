@@ -10,7 +10,7 @@
                        dsLabel=""
                        dsMIME="text/xml"
                        formatURI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0"
-                       versionable="true"
+                       versionable="false"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="MD5"
                        logMessage="Updating objects as part of a doms install/upgrade">
