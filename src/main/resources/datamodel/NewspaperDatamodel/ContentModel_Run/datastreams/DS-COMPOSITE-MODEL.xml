@@ -1,0 +1,12 @@
+<dsCompositeModel
+        xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+
+    <dsTypeModel ID="EVENTS">
+        <form MIME="text/xml"/>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="EVENTS_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
+
+</dsCompositeModel>
+
