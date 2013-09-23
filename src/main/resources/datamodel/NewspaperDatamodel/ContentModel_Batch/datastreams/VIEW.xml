@@ -1,0 +1,9 @@
+<v:views xmlns:v="http://ecm.sourceforge.net/types/view/0/2/#">
+    <v:viewangle name="SBOI">
+        <v:relations xmlns:doms="info:fedora/fedora-system:def/relations-external#">
+            <doms:hasPart/>
+        </v:relations>
+        <v:inverseRelations/>
+    </v:viewangle>
+</v:views>
+

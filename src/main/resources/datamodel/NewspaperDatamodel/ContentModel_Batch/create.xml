@@ -1,0 +1,175 @@
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+    <!--ContentModel_Batch-->
+    <def:addObject pid="doms:ContentModel_Batch" label="Newspaper Batch"
+                   contentModel="string" logMessage="Updating objects as part of a doms install/upgrade"/>
+    <def:modifyObject pid="doms:ContentModel_Batch" state="I"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="DS-COMPOSITE-MODEL"
+                       dsLabel=""
+                       dsMIME="text/xml"
+                       formatURI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="RELS-EXT"
+                       dsLabel="Relationships"
+                       dsMIME="application/rdf+xml"
+                       formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
+                     xmlns:ecm="http://ecm.sourceforge.net/relations/0/2/#">
+                <rdf:Description rdf:about="info:fedora/doms:ContentModel_Batch">
+                    <hasModel rdf:resource="info:fedora/fedora-system:ContentModel-3.0"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <ecm:extendsModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
+                    <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
+                    <ecm:isEntryForViewAngle>SBOI</ecm:isEntryForViewAngle>
+                    <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+                </rdf:Description>
+            </rdf:RDF>
+        </def:xmlData>
+
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="VIEW"
+                       dsLabel="VIEW datastream"
+                       dsMIME="application/rdf+xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="ONTOLOGY"
+                       dsLabel="Local ontology"
+                       dsMIME="application/rdf+xml"
+                       formatURI="info:fedora/fedora-system:FedoraOntology-1.0"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="PBCORE_SCHEMA"
+                       dsLabel="PBCore schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="RITZAU_ORIGINAL_SCHEMA"
+                       dsLabel="Ritzau original schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="GALLUP_ORIGINAL_SCHEMA"
+                       dsLabel="Gallup original schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="PROGRAM_STRUCTURE_SCHEMA"
+                       dsLabel="Program structure schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="PROGRAM_BROADCAST_SCHEMA"
+                       dsLabel="Program broadcast schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="METHODS"
+                       dsLabel="Methods datastream"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="ANNOTATIONS_SCHEMA"
+                       dsLabel="Annotations datastream schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="ACCESS_SCHEMA"
+                       dsLabel="Access datastream schema"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+
+    <def:addDatastream pid="doms:ContentModel_Batch" dsID="LINK_PATTERN"
+                       dsLabel="Link patterns"
+                       dsMIME="text/xml"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
+    </def:addDatastream>
+
+
+</def:batchModify>
