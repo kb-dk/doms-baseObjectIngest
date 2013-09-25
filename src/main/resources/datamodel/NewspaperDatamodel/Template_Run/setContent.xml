@@ -9,7 +9,7 @@
                           dsLabel="Relationships"
                           dsMIME="application/rdf+xml"
                           formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
-                          versionable="true"
+                          versionable="false"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="DISABLED"
                           logMessage="Updating objects as part of a doms install/upgrade">
