@@ -98,6 +98,25 @@
         <VHSMetadata_file>${vhsFile.object.folder}/VHS_METADATA_SCHEMA.xsd</VHSMetadata_file>
 
 
+        <!--Newspaper-->
+        <Newspaper.folder>${project.basedir}/src/main/resources/datamodel/NewspaperDatamodel</Newspaper.folder>
+
+        <!--Batch-->
+        <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
+        <Batch_DSCOMP_file>${Batch.object.folder}/DS-COMPOSITE-MODEL.xml</Batch_DSCOMP_file>
+        <Batch_ONTOLOGY_file>${Batch.object.folder}/ONTOLOGY.xml</Batch_ONTOLOGY_file>
+        <Batch_RELS-EXT_file>${Batch.object.folder}/RELS-EXT.xml</Batch_RELS-EXT_file>
+        <Batch_VIEW_file>${Batch.object.folder}/VIEW.xml</Batch_VIEW_file>
+
+        <!--Run-->
+        <Run.object.folder>${Newspaper.folder}/ContentModel_Run/datastreams</Run.object.folder>
+        <Run_DSCOMP_file>${Run.object.folder}/DS-COMPOSITE-MODEL.xml</Run_DSCOMP_file>
+        <Run_ONTOLOGY_file>${Run.object.folder}/ONTOLOGY.xml</Run_ONTOLOGY_file>
+        <Run_RELS-EXT_file>${Run.object.folder}/RELS-EXT.xml</Run_RELS-EXT_file>
+        <Run_VIEW_file>${Run.object.folder}/VIEW.xml</Run_VIEW_file>
+        <Run_EVENTS_SCHEMA_file>${Run.object.folder}/EVENTS_SCHEMA.xsd</Run_EVENTS_SCHEMA_file>
+
+
     </properties>
     <build>
         <plugins>
