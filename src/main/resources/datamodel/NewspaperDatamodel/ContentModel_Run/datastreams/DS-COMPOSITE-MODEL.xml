@@ -3,6 +3,9 @@
 
     <dsTypeModel ID="EVENTS">
         <form MIME="text/xml"/>
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
         <extension name="SCHEMA">
             <reference type="datastream" value="EVENTS_SCHEMA"/>
         </extension>
