@@ -121,6 +121,16 @@
         <Jpeg2000File_RELS-EXT_file>${Jpeg2000File.object.folder}/RELS-EXT.xml</Jpeg2000File_RELS-EXT_file>
         <Jpeg2000File_VIEW_file>${Jpeg2000File.object.folder}/VIEW.xml</Jpeg2000File_VIEW_file>
 
+        <!-- Page -->
+        <Page.object.folder>${Newspaper.folder}/ContentModel_Page/datastreams</Page.object.folder>
+        <Page_DSCOMP_file>${Page.object.folder}/DS-COMPOSITE-MODEL.xml</Page_DSCOMP_file>
+        <Page_ONTOLOGY_file>${Page.object.folder}/ONTOLOGY.xml</Page_ONTOLOGY_file>
+        <Page_RELS-EXT_file>${Page.object.folder}/RELS-EXT.xml</Page_RELS-EXT_file>
+        <Page_VIEW_file>${Page.object.folder}/VIEW.xml</Page_VIEW_file>
+        <MIX_file>${Page.object.folder}/MIX_SCHEMA.xml</MIX_file>
+        <MODS_file>${Page.object.folder}/MODS_SCHEMA.xml</MODS_file>
+        <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xml</ALTO_file>
+
     </properties>
     <build>
         <plugins>
