@@ -7,7 +7,7 @@
         <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
                   xmlns="info:fedora/fedora-system:def/model#"/>
         <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
-        <doms:isPartOfCollection rdf:resource="info:fedora/doms:ContentModel_Page"/>
+        <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
         <doms:isEntryForViewAngle>SummaVisible</doms:isEntryForViewAngle>
         <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
     </rdf:Description>
