@@ -98,6 +98,7 @@
         <!--Newspaper-->
         <Newspaper.folder>${project.basedir}/src/main/resources/datamodel/NewspaperDatamodel</Newspaper.folder>
         <MIX_file>${Newspaper.folder}/ThirdPartySchemas/MIX_SCHEMA.xsd</MIX_file>
+        <MODS_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_file>
 
         <!--Batch-->
         <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
@@ -128,7 +129,6 @@
         <Page_ONTOLOGY_file>${Page.object.folder}/ONTOLOGY.xml</Page_ONTOLOGY_file>
         <Page_RELS-EXT_file>${Page.object.folder}/RELS-EXT.xml</Page_RELS-EXT_file>
         <Page_VIEW_file>${Page.object.folder}/VIEW.xml</Page_VIEW_file>
-        <MODS_file>${Page.object.folder}/MODS_SCHEMA.xsd</MODS_file>
         <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
 
         <!-- Brik -->
@@ -137,6 +137,13 @@
         <Brik_ONTOLOGY_file>${Brik.object.folder}/ONTOLOGY.xml</Brik_ONTOLOGY_file>
         <Brik_RELS-EXT_file>${Brik.object.folder}/RELS-EXT.xml</Brik_RELS-EXT_file>
         <Brik_VIEW_file>${Brik.object.folder}/VIEW.xml</Brik_VIEW_file>
+
+        <!-- Edition -->
+        <Edition.object.folder>${Newspaper.folder}/ContentModel_Edition/datastreams</Edition.object.folder>
+        <Edition_DSCOMP_file>${Edition.object.folder}/DS-COMPOSITE-MODEL.xml</Edition_DSCOMP_file>
+        <Edition_ONTOLOGY_file>${Edition.object.folder}/ONTOLOGY.xml</Edition_ONTOLOGY_file>
+        <Edition_RELS-EXT_file>${Edition.object.folder}/RELS-EXT.xml</Edition_RELS-EXT_file>
+        <Edition_VIEW_file>${Edition.object.folder}/VIEW.xml</Edition_VIEW_file>
 
 
     </properties>
