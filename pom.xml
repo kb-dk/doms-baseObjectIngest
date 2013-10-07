@@ -131,6 +131,14 @@
         <MODS_file>${Page.object.folder}/MODS_SCHEMA.xsd</MODS_file>
         <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
 
+        <!-- Brik -->
+        <Brik.object.folder>${Newspaper.folder}/ContentModel_Brik/datastreams</Brik.object.folder>
+        <Brik_DSCOMP_file>${Brik.object.folder}/DS-COMPOSITE-MODEL.xml</Brik_DSCOMP_file>
+        <Brik_ONTOLOGY_file>${Brik.object.folder}/ONTOLOGY.xml</Brik_ONTOLOGY_file>
+        <Brik_RELS-EXT_file>${Brik.object.folder}/RELS-EXT.xml</Brik_RELS-EXT_file>
+        <Brik_VIEW_file>${Brik.object.folder}/VIEW.xml</Brik_VIEW_file>
+
+
     </properties>
     <build>
         <plugins>
