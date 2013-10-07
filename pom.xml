@@ -127,9 +127,9 @@
         <Page_ONTOLOGY_file>${Page.object.folder}/ONTOLOGY.xml</Page_ONTOLOGY_file>
         <Page_RELS-EXT_file>${Page.object.folder}/RELS-EXT.xml</Page_RELS-EXT_file>
         <Page_VIEW_file>${Page.object.folder}/VIEW.xml</Page_VIEW_file>
-        <MIX_file>${Page.object.folder}/MIX_SCHEMA.xml</MIX_file>
-        <MODS_file>${Page.object.folder}/MODS_SCHEMA.xml</MODS_file>
-        <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xml</ALTO_file>
+        <MIX_file>${Page.object.folder}/MIX_SCHEMA.xsd</MIX_file>
+        <MODS_file>${Page.object.folder}/MODS_SCHEMA.xsd</MODS_file>
+        <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
 
     </properties>
     <build>
