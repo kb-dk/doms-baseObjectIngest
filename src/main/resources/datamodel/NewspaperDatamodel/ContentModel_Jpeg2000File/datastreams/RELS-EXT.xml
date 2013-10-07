@@ -8,7 +8,6 @@
         <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_File"/>
         <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
         <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
-        <doms:isEntryForViewAngle>GUI</doms:isEntryForViewAngle>
         <doms:isControlledByLowLevelBitstorage>false</doms:isControlledByLowLevelBitstorage>
     </rdf:Description>
 </rdf:RDF>

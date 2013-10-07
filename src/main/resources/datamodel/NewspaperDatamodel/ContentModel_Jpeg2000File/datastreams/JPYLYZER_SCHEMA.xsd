@@ -1,3 +1,9 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element type="xs:anySimpleType" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
 </xsd:schema>

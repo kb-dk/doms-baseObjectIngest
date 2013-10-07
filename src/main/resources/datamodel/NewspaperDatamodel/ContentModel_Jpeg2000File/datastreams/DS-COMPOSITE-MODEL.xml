@@ -1,7 +1,7 @@
 <dsCompositeModel xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
 
     <dsTypeModel ID="CONTENTS">
-        <form FORMAT_URI="info:mime/image/jp2"></form>
+        <form MIME="image/jp2"></form>
     </dsTypeModel>
 
     <dsTypeModel ID="JPYLYZER" optional="true">
