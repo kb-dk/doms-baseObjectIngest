@@ -23,11 +23,8 @@
     </scm>
 
     <properties>
-
-
         <!--Reklamefilm-->
         <Reklamefilm.folder>${project.basedir}/src/main/resources/datamodel/ReklamefilmDatamodel</Reklamefilm.folder>
-
         <Reklamefilm.object.folder>${Reklamefilm.folder}/ContentModel_Reklamefilm/datastreams</Reklamefilm.object.folder>
         <Reklamefilm_DSCOMP_file>${Reklamefilm.object.folder}/DS-COMPOSITE-MODEL.xml</Reklamefilm_DSCOMP_file>
         <Reklamefilm_METHODS_file>${Reklamefilm.object.folder}/METHODS.xml</Reklamefilm_METHODS_file>
@@ -116,6 +113,13 @@
         <Run_VIEW_file>${Run.object.folder}/VIEW.xml</Run_VIEW_file>
         <Run_EVENTS_SCHEMA_file>${Run.object.folder}/EVENTS_SCHEMA.xsd</Run_EVENTS_SCHEMA_file>
 
+        <!-- JPEG2000 File -->
+        <Jpeg2000File.object.folder>${Newspaper.folder}/ContentModel_Jpeg2000File/datastreams</Jpeg2000File.object.folder>
+        <JPYLYZER_file>${Jpeg2000File.object.folder}/JPYLYZER_SCHEMA.xsd</JPYLYZER_file>
+        <Jpeg2000File_DSCOMP_file>${Jpeg2000File.object.folder}/DS-COMPOSITE-MODEL.xml</Jpeg2000File_DSCOMP_file>
+        <Jpeg2000File_ONTOLOGY_file>${Jpeg2000File.object.folder}/ONTOLOGY.xml</Jpeg2000File_ONTOLOGY_file>
+        <Jpeg2000File_RELS-EXT_file>${Jpeg2000File.object.folder}/RELS-EXT.xml</Jpeg2000File_RELS-EXT_file>
+        <Jpeg2000File_VIEW_file>${Jpeg2000File.object.folder}/VIEW.xml</Jpeg2000File_VIEW_file>
 
     </properties>
     <build>
