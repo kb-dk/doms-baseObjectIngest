@@ -1,4 +1,13 @@
 <dsCompositeModel
         xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+    <dsTypeModel ID="MICROFILM">
+        <form MIME="text/xml"/>
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="MICROFILM_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
 </dsCompositeModel>
 

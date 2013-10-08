@@ -66,7 +66,18 @@
         <def:xmlData>
             <placeholder/>
         </def:xmlData>
+    </def:addDatastream>
 
+    <def:addDatastream pid="doms:ContentModel_Film" dsID="MICROFILM_SCHEMA"
+                       dsLabel="MICROFILM schema"
+                       dsMIME="text/xml"
+                       versionable="false"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="MD5"
+                       logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <placeholder/>
+        </def:xmlData>
     </def:addDatastream>
 
 </def:batchModify>

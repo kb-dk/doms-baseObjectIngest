@@ -52,5 +52,16 @@
             ${Film_ONTOLOGY_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:ContentModel_Film" dsID="MICROFILM_SCHEMA"
+                          dsLabel="MIX schema"
+                          dsMIME="text/xml"
+                          versionable="false"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            ${Film_MICROFILM_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
 
 </def:batchModify>

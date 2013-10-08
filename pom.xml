@@ -165,6 +165,7 @@
         <Film_ONTOLOGY_file>${Film.object.folder}/ONTOLOGY.xml</Film_ONTOLOGY_file>
         <Film_RELS-EXT_file>${Film.object.folder}/RELS-EXT.xml</Film_RELS-EXT_file>
         <Film_VIEW_file>${Film.object.folder}/VIEW.xml</Film_VIEW_file>
+        <Film_MICROFILM_file>${Film.object.folder}/MICROFILM.xsd</Film_MICROFILM_file>
 
         <!-- Workshift -->
         <Workshift.object.folder>${Newspaper.folder}/ContentModel_Workshift/datastreams</Workshift.object.folder>
