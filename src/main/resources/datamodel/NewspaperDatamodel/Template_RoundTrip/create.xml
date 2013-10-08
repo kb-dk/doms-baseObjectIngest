@@ -4,11 +4,11 @@
 
 
 
-    <def:addObject pid="doms:Template_Run" label="Radio/TV Program"
+    <def:addObject pid="doms:Template_RoundTrip" label="Radio/TV Program"
                    contentModel="string" logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:modifyObject pid="doms:Template_Run" state="I"
+    <def:modifyObject pid="doms:Template_RoundTrip" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:addDatastream pid="doms:Template_Run" dsID="RELS-EXT"
+    <def:addDatastream pid="doms:Template_RoundTrip" dsID="RELS-EXT"
                        dsLabel="Relationships"
                        dsMIME="application/rdf+xml"
                        formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
@@ -21,12 +21,12 @@
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
 
                     >
-                <rdf:Description rdf:about="info:fedora/doms:Template_Run"/>
+                <rdf:Description rdf:about="info:fedora/doms:Template_RoundTrip"/>
             </rdf:RDF>
         </def:xmlData>
     </def:addDatastream>
 
-    <def:addDatastream pid="doms:Template_Run" dsID="EVENTS"
+    <def:addDatastream pid="doms:Template_RoundTrip" dsID="EVENTS"
                        dsMIME="text/xml"
                        versionable="false"
                        altIDs="" dsControlGroupType="X" dsState="A"

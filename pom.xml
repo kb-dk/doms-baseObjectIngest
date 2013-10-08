@@ -107,13 +107,13 @@
         <Batch_RELS-EXT_file>${Batch.object.folder}/RELS-EXT.xml</Batch_RELS-EXT_file>
         <Batch_VIEW_file>${Batch.object.folder}/VIEW.xml</Batch_VIEW_file>
 
-        <!--Run-->
-        <Run.object.folder>${Newspaper.folder}/ContentModel_Run/datastreams</Run.object.folder>
-        <Run_DSCOMP_file>${Run.object.folder}/DS-COMPOSITE-MODEL.xml</Run_DSCOMP_file>
-        <Run_ONTOLOGY_file>${Run.object.folder}/ONTOLOGY.xml</Run_ONTOLOGY_file>
-        <Run_RELS-EXT_file>${Run.object.folder}/RELS-EXT.xml</Run_RELS-EXT_file>
-        <Run_VIEW_file>${Run.object.folder}/VIEW.xml</Run_VIEW_file>
-        <Run_EVENTS_SCHEMA_file>${Run.object.folder}/EVENTS_SCHEMA.xsd</Run_EVENTS_SCHEMA_file>
+        <!--RoundTrip-->
+        <RoundTrip.object.folder>${Newspaper.folder}/ContentModel_RoundTrip/datastreams</RoundTrip.object.folder>
+        <RoundTrip_DSCOMP_file>${RoundTrip.object.folder}/DS-COMPOSITE-MODEL.xml</RoundTrip_DSCOMP_file>
+        <RoundTrip_ONTOLOGY_file>${RoundTrip.object.folder}/ONTOLOGY.xml</RoundTrip_ONTOLOGY_file>
+        <RoundTrip_RELS-EXT_file>${RoundTrip.object.folder}/RELS-EXT.xml</RoundTrip_RELS-EXT_file>
+        <RoundTrip_VIEW_file>${RoundTrip.object.folder}/VIEW.xml</RoundTrip_VIEW_file>
+        <RoundTrip_EVENTS_SCHEMA_file>${RoundTrip.object.folder}/EVENTS_SCHEMA.xsd</RoundTrip_EVENTS_SCHEMA_file>
 
         <!-- JPEG2000 File -->
         <Jpeg2000File.object.folder>${Newspaper.folder}/ContentModel_Jpeg2000File/datastreams</Jpeg2000File.object.folder>

@@ -1,11 +1,11 @@
 <def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
-    <def:modifyObject pid="doms:Template_Run" state="I"
+    <def:modifyObject pid="doms:Template_RoundTrip" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
 
-    <def:modifyObject pid="doms:Template_Run" state="I"  label="Newspaper batch"
+    <def:modifyObject pid="doms:Template_RoundTrip" state="I"  label="Newspaper batch"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
-    <def:modifyDatastream pid="doms:Template_Run" dsID="RELS-EXT"
+    <def:modifyDatastream pid="doms:Template_RoundTrip" dsID="RELS-EXT"
                           dsLabel="Relationships"
                           dsMIME="application/rdf+xml"
                           formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
@@ -18,13 +18,13 @@
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
 
                     >
-                <rdf:Description rdf:about="info:fedora/doms:Template_Run">
-                    <hasModel rdf:resource="info:fedora/doms:ContentModel_Run"
+                <rdf:Description rdf:about="info:fedora/doms:Template_RoundTrip">
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_RoundTrip"
                               xmlns="info:fedora/fedora-system:def/model#"/>
                     <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
                               xmlns="info:fedora/fedora-system:def/model#"/>
                     <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
-                    <doms:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_Run"/>
+                    <doms:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_RoundTrip"/>
                 </rdf:Description>
             </rdf:RDF>
         </def:xmlData>
