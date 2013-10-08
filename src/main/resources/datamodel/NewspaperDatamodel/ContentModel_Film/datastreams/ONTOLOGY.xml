@@ -1,0 +1,40 @@
+<rdf:RDF
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Class rdf:about="info:fedora/doms:ContentModel_Film#class">
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasIsoTarget"/>
+                <owl:allValuesFrom
+                        rdf:resource="info:fedora/doms:ContentModel_IsoTarget#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEdition"/>
+                <owl:allValuesFrom
+                        rdf:resource="info:fedora/doms:ContentModel_Edition#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasUnmatched"/>
+                <owl:allValuesFrom
+                        rdf:resource="info:fedora/doms:ContentModel_Unmatched#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+    </owl:Class>
+
+    <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasIsoTarget"/>
+    <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEdition"/>
+    <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasUnmatched"/>
+</rdf:RDF>
