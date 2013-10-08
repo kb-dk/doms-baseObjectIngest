@@ -166,6 +166,14 @@
         <Film_RELS-EXT_file>${Film.object.folder}/RELS-EXT.xml</Film_RELS-EXT_file>
         <Film_VIEW_file>${Film.object.folder}/VIEW.xml</Film_VIEW_file>
 
+        <!-- Workshift -->
+        <Workshift.object.folder>${Newspaper.folder}/ContentModel_Workshift/datastreams</Workshift.object.folder>
+        <Workshift_DSCOMP_file>${Workshift.object.folder}/DS-COMPOSITE-MODEL.xml</Workshift_DSCOMP_file>
+        <Workshift_ONTOLOGY_file>${Workshift.object.folder}/ONTOLOGY.xml</Workshift_ONTOLOGY_file>
+        <Workshift_RELS-EXT_file>${Workshift.object.folder}/RELS-EXT.xml</Workshift_RELS-EXT_file>
+        <Workshift_VIEW_file>${Workshift.object.folder}/VIEW.xml</Workshift_VIEW_file>
+
+
     </properties>
     <build>
         <plugins>
