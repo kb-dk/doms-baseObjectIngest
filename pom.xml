@@ -152,6 +152,13 @@
         <IsoTarget_RELS-EXT_file>${IsoTarget.object.folder}/RELS-EXT.xml</IsoTarget_RELS-EXT_file>
         <IsoTarget_VIEW_file>${IsoTarget.object.folder}/VIEW.xml</IsoTarget_VIEW_file>
 
+        <!-- Unmatched -->
+        <Unmatched.object.folder>${Newspaper.folder}/ContentModel_Unmatched/datastreams</Unmatched.object.folder>
+        <Unmatched_DSCOMP_file>${Unmatched.object.folder}/DS-COMPOSITE-MODEL.xml</Unmatched_DSCOMP_file>
+        <Unmatched_ONTOLOGY_file>${Unmatched.object.folder}/ONTOLOGY.xml</Unmatched_ONTOLOGY_file>
+        <Unmatched_RELS-EXT_file>${Unmatched.object.folder}/RELS-EXT.xml</Unmatched_RELS-EXT_file>
+        <Unmatched_VIEW_file>${Unmatched.object.folder}/VIEW.xml</Unmatched_VIEW_file>
+
     </properties>
     <build>
         <plugins>
