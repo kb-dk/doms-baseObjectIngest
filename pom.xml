@@ -145,6 +145,12 @@
         <Edition_RELS-EXT_file>${Edition.object.folder}/RELS-EXT.xml</Edition_RELS-EXT_file>
         <Edition_VIEW_file>${Edition.object.folder}/VIEW.xml</Edition_VIEW_file>
 
+        <!-- ISO-target -->
+        <IsoTarget.object.folder>${Newspaper.folder}/ContentModel_IsoTarget/datastreams</IsoTarget.object.folder>
+        <IsoTarget_DSCOMP_file>${IsoTarget.object.folder}/DS-COMPOSITE-MODEL.xml</IsoTarget_DSCOMP_file>
+        <IsoTarget_ONTOLOGY_file>${IsoTarget.object.folder}/ONTOLOGY.xml</IsoTarget_ONTOLOGY_file>
+        <IsoTarget_RELS-EXT_file>${IsoTarget.object.folder}/RELS-EXT.xml</IsoTarget_RELS-EXT_file>
+        <IsoTarget_VIEW_file>${IsoTarget.object.folder}/VIEW.xml</IsoTarget_VIEW_file>
 
     </properties>
     <build>
