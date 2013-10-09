@@ -11,6 +11,13 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasWorkshift"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Workshift#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasWorkshift"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -21,9 +28,17 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasFilm"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Film#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasFilm"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+
 
     </owl:Class>
 

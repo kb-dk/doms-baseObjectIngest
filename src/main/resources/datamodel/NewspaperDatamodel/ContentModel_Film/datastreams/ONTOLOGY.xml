@@ -11,6 +11,13 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasIsoTarget"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_IsoTarget#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasIsoTarget"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -21,9 +28,17 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEdition"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Edition#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEdition"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+
 
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -31,9 +46,17 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasUnmatched"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Unmatched#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasUnmatched"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+
 
     </owl:Class>
 
