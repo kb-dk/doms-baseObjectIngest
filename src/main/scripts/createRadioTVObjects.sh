@@ -10,7 +10,7 @@ source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "UPDATING base Radio TV objects"
+echo "Creating base Radio TV objects"
 
 for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/create.xml); do
     batchProcess $file

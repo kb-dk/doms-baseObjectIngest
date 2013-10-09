@@ -8,7 +8,7 @@ source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "UPDATING base doms objects"
+echo "Creating base doms objects"
 
 for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/create.xml); do
     batchProcess $file
