@@ -11,6 +11,7 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasIsoTarget"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_IsoTarget#class"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
 
@@ -20,6 +21,7 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEdition"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Edition#class"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
 
@@ -29,6 +31,7 @@
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasUnmatched"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Unmatched#class"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
 
