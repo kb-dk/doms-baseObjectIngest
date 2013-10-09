@@ -6,7 +6,6 @@
             <doms:hasUnmatched/>
         </v:relations>
 
-        </v:relations>
         <v:inverseRelations/>
     </v:viewangle>
     <v:viewangle name="GUI">
