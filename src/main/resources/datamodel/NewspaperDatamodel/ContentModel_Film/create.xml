@@ -68,8 +68,8 @@
         </def:xmlData>
     </def:addDatastream>
 
-    <def:addDatastream pid="doms:ContentModel_Film" dsID="MICROFILM_SCHEMA"
-                       dsLabel="MICROFILM schema"
+    <def:addDatastream pid="doms:ContentModel_Film" dsID="FILM_SCHEMA"
+                       dsLabel="FILM schema"
                        dsMIME="text/xml"
                        versionable="false"
                        altIDs="" dsControlGroupType="X" dsState="A"
