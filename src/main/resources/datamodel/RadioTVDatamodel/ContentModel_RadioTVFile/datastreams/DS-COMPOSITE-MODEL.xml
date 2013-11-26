@@ -23,10 +23,12 @@
 
         <!--Radio-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2&quot;"></form>
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp3&quot;"></form>
 
         <!--mpeg2-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;mp2,mpeg2video&quot;"></form>
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;ac3,mp2,mpeg2video&quot;"></form>
 
         <!-- Old mux formats-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,dvbsub,h264&quot;"></form>
