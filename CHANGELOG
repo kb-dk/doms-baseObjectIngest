@@ -1,5 +1,7 @@
 1.1
 Allow for format uri's 'info:mime/video/MP2T;codecs="mp2,mp3"' and 'info:mime/video/MP2T;codecs="ac3,mp2,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Allow for format uri's 'info:mime/video/MP2T;codecs="h264,mp1,mp2"' and 'info:mime/video/MP2T;codecs="h264,mp1,mp2,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+
 
 1.0
 Newspaper data model added
