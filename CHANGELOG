@@ -1,3 +1,8 @@
+1.2
+Do not delete logs from successful ingests
+Call the newspaper objects by their real type, not "Radio/TV Program"
+
+
 1.1.1
 Template_RoundTrip should not make an empty EVENTS datastream, as this prevents the datastream from growing large (ie. be managed)
 
@@ -14,3 +19,122 @@ Other:
 	Update name of prograqm template to not mistakenly say "File"
 
 2013/8/7 Release of version 0.11.11
+
+
+Version 0.11.10
+Update access datastream to also support "Defekt"
+b315276 2013-05-30 15:44:26 +0200       Kåre Fiedler Christiansen       Update access datastream to also support "Defekt"
+
+Version 0.11.9
+Add access datastream for "Klasuleret" and "Individuelt forbud"
+c1d28be 2013-04-19 14:03:15 +0200       Kåre Fiedler Christiansen       Add access datastream for "Klasuleret" and "Individuelt forbud"
+
+Version 0.11.8
+Add annotations datastream.
+Remove shards from GUI view.
+Added methods to start workflow.
+Added links to BTA and Bart.
+Use context parameters in content models.
+35ae7d7 2013-03-22 19:40:55 +0100       Kåre Fiedler Christiansen       [maven-release-plugin] prepare release base-objects-ingester-0.11.8
+7f6e440 2013-03-20 15:01:03 +0100       Asger Askov Blekinge    Link patterns use context params
+f3880e0 2013-03-20 10:40:24 +0100       Asger Askov Blekinge    Merged the format uris from 0.11.6.2 into this
+435378f 2013-03-18 14:41:52 +0100       Asger Askov Blekinge    better filenames
+67f07da 2013-03-18 14:41:30 +0100       Asger Askov Blekinge    Bart links for vhs files
+3b323b6 2013-03-18 12:32:55 +0100       Asger Askov Blekinge    BTA link implemented to iapetus
+88bd537 2013-03-15 13:55:27 +0100       Asger Askov Blekinge    Link pattern now with xpath
+8e6a7d8 2013-03-14 08:40:47 +0100       Asger Askov Blekinge    Now with correct ontology
+a4ed21f 2013-03-14 08:39:29 +0100       Asger Askov Blekinge    Merge branch 'master' of github.com:statsbiblioteket/doms-baseObjectIngest
+22c21a3 2013-03-13 16:08:21 +0100       Asger Askov Blekinge    Link patterns implemented first version
+e32aafb 2013-03-13 15:02:45 +0100       Kåre Fiedler Christiansen       Add hasExactFile relation
+1d992da 2013-03-13 14:13:25 +0100       Asger Askov Blekinge    Merge remote-tracking branch 'origin/master'
+97b22d1 2013-03-11 15:44:52 +0100       Kåre Fiedler Christiansen       Update parameter to match workflow expectation
+584916f 2013-03-08 13:12:32 +0100       Kåre Fiedler Christiansen       Update parameter to match workflow expectation
+1033719 2013-03-07 11:54:58 +0100       Kåre Fiedler Christiansen       Update parameter to match workflow expectation
+d420412 2013-03-07 10:36:24 +0100       Kåre Fiedler Christiansen       Replace application/xml with text/xml as it gives trouble with Fedora
+188e1bb 2013-03-07 09:59:07 +0100       Kåre Fiedler Christiansen       Remove unused parameters. Make used parameters human readable Use saner directory for VHS file ingests
+93073fb 2013-03-05 13:35:25 +0100       Kåre Fiedler Christiansen       Start workflow from script path relative to given environment variable
+7fad25b 2013-03-05 12:58:29 +0100       Kåre Fiedler Christiansen       Updated command line and parameters for vhs ingest workflow
+e5334f4 2013-02-26 13:25:03 +0100       Kåre Fiedler Christiansen       Do not show shards in GUI
+8892ae1 2013-02-22 12:22:33 +0100       Asger Askov Blekinge    ContentModel_RadioTVFile is entry object for view GUI
+6d14b16 2013-02-13 10:49:23 +0100       ktc     Follow up on review CR-DOMS-33
+ff9b385 2013-02-13 09:54:15 +0100       ktc     Add annotations datastream for content model program
+
+Version 0.11.7
+Added datamodel for Reklamefilm.
+License objects for Mediestream.
+Add namespace to PROGRAM_BROADCAST.
+Fix POLICY in templates to not require or use mimetype application/rdf+xml.
+Minor cosmetic updates.
+f633d3f 2012-11-21 15:48:16 +0100       Kåre Fiedler Christiansen       Fix mime type for policy datastreams
+9e087ab 2012-11-21 15:46:20 +0100       Kåre Fiedler Christiansen       Override default wrong Fedora DS-COMPOSITE-MODEL for POLICY
+37bb6d0 2012-11-21 15:45:38 +0100       Kåre Fiedler Christiansen       Fix template label
+65d7ea0 2012-11-21 15:45:15 +0100       Kåre Fiedler Christiansen       Fix invalid pbcore schema
+856d4e2 2012-11-21 15:44:20 +0100       Kåre Fiedler Christiansen       Ignore IDEA files
+b456c78 2012-11-21 14:58:12 +0100       Kåre Fiedler Christiansen       Forgotten space fixes
+29024d2 2012-11-21 14:07:27 +0100       Kåre Fiedler Christiansen       I will not push stuff without testing it compiles. I will n
+ab75109 2012-11-21 10:43:28 +0100       Kåre Fiedler Christiansen       Don't give policy mimetype of RDF
+476bde6 2012-11-21 10:41:00 +0100       Kåre Fiedler Christiansen       Descriptions as textareas in GUI
+467834c 2012-11-21 10:40:43 +0100       Kåre Fiedler Christiansen       Exactly one file per metadata blob
+71a0a1e 2012-11-21 10:40:26 +0100       Kåre Fiedler Christiansen       Better label for content model
+0e2c28d 2012-11-21 10:35:58 +0100       Kåre Fiedler Christiansen       Add reklame file metadata stream
+6645686 2012-11-21 10:27:04 +0100       Kåre Fiedler Christiansen       Update reklamefilm license
+1a7fd29 2012-11-21 10:24:12 +0100       Kåre Fiedler Christiansen       "Reklamefilm" i in one word. Fix camel casing and spaces in
+7561dce 2012-11-20 09:34:09 +0100       Adam Tulinius   Revert "Fixed the required hole problem"
+4f43e5d 2012-11-19 14:37:30 +0100       Asger Askov Blekinge    Merge remote-tracking branch 'origin/master'
+a861e01 2012-11-19 14:37:04 +0100       Asger Askov Blekinge    Fixed the misspelled datamodel
+57cf0dd 2012-11-19 14:33:34 +0100       Kåre Fiedler Christiansen       PROGRAM_BROADCAST datastream now has a namespace.
+516a199 2012-11-13 12:59:04 +0100       Asger Askov Blekinge    Fixed the required hole problem
+d690053 2012-11-12 14:48:33 +0100       Asger Askov Blekinge    Moved stuff due to misnamed dir
+eaf0401 2012-11-12 14:17:27 +0100       Asger Askov Blekinge    Is template for the correct thing
+e1aad31 2012-11-12 14:16:18 +0100       Asger Askov Blekinge    Annoying typo
+48a6429 2012-11-12 14:15:28 +0100       Asger Askov Blekinge    Merge remote-tracking branch 'origin/master'
+8a86c8e 2012-11-12 14:15:13 +0100       Asger Askov Blekinge    Do not include the unneeded datastreams folders in the bundle
+890e583 2012-11-12 14:14:42 +0100       Asger Askov Blekinge    Added the reklamefilm datamodel, along with scripts and whatsnot
+d757dcf 2012-11-07 11:22:55 +0100       Kåre Fiedler Christiansen       Update mediestream license
+8d14e5d 2012-11-07 11:22:41 +0100       Kåre Fiedler Christiansen       Update changelog
+
+Version 0.11.6
+cd07416 2012-11-06 15:19:54 +0100       Kåre Fiedler Christiansen       New Mediestream license object
+28e210f 2012-11-02 10:33:48 +0100       Asger Askov Blekinge    should fix the invalid crosscheck problem
+
+Version 0.11.5
+Minor changes to objects.
+Fixed a few bugs in the scripts
+a9998ec	Moments ago	Asger Askov Blekinge	Fixed the scripts to actually work
+0f0ebd5	Today 9:47 AM	Asger Askov Blekinge	regional channels need this format uri
+4bf07ae	Today 9:02 AM	Asger Askov Blekinge	Update output strings to be more sane
+745ffd1	Today 8:54 AM	Asger Askov Blekinge	Script hints from tgc
+95d90d6	Today 8:49 AM	Asger Askov Blekinge	remove unnessesary patType element
+
+Version 0.11.4
+Pushed to stage. Major refactoring in how the objects are created
+ef2998e	10/26/12 11:04 AM	Asger Askov Blekinge	Remove old comment
+09850ff	10/25/12 4:09 PM	Asger Askov Blekinge	Ordered the format uris
+096ba84	10/25/12 4:01 PM	Asger Askov Blekinge	Yet another format uri
+7ef60c8	10/24/12 1:36 PM	Asger Askov Blekinge	Last bloody crosscheck schema
+4a66edb	10/24/12 10:00 AM	Asger Askov Blekinge	Remember this format
+557b7b6	10/24/12 9:30 AM	Asger Askov Blekinge	Yet another Crosscheck schema
+e414ee0	10/24/12 9:28 AM	Asger Askov Blekinge	Yet another Crosscheck schema
+ea95037	10/23/12 4:23 PM	Asger Askov Blekinge	Hopefully more general safe crosscheck schema
+614ccc3	10/19/12 1:14 PM	Asger Askov Blekinge	Merge remote-tracking branch 'origin/master'
+3385995	10/19/12 1:14 PM	Asger Askov Blekinge	Yet another addition to the crosscheck schema
+e6537fb	10/19/12 1:13 PM	Asger Askov Blekinge	support for h264 files
+150087b	10/18/12 7:57 AM	Kåre Fiedler Christiansen	Update tvmeter schema to new version
+7ea9ceb	10/17/12 4:41 PM	Asger Askov Blekinge	Better crosscheck schema
+fbaa71b	10/17/12 4:41 PM	Asger Askov Blekinge	yousee radio format uri
+a094ea9	10/16/12 3:48 PM	Asger Askov Blekinge	CROSSCHECK_SCHEMA should be ok now
+d26369b	10/15/12 3:34 PM	Asger Askov Blekinge	Place the warning in the correct file
+7687f2b	10/15/12 3:29 PM	Asger Askov Blekinge	Finally the datamodel creater should be complete
+6dee1e4	10/15/12 3:17 PM	Asger Askov Blekinge	Basic datamodel works
+93b9b52	10/15/12 2:17 PM	Asger Askov Blekinge	Update stuff in place now
+0b212d7	10/12/12 1:13 PM	Asger Askov Blekinge	Followup from review
+fb9bc04	10/12/12 10:23 AM	Asger Askov Blekinge	Followup from review
+
+Version 0.11.3
+Initial release, ready for review. Never pushed to stage.
+cf5b6a3	10/5/12 10:24 AM	Asger Askov Blekinge	Undo bad version number
+2bd7672	10/5/12 10:23 AM	Asger Askov Blekinge	Use the correct scm url
+64fc16c	10/5/12 10:19 AM	Asger Askov Blekinge	Move to sbforgeadded idea file
+27fcfee	10/5/12 8:50 AM	Asger Askov Blekinge	moved stuff around
+12f4e4d	10/4/12 3:53 PM	Asger Askov Blekinge	Merged baseObjectsIngester from doms-installer into this project
+f91c3b9	10/4/12 2:40 PM	Asger Askov Blekinge	Initial commit
