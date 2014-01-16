@@ -4,7 +4,7 @@
 
 
 
-    <def:addObject pid="doms:Template_Batch" label="Radio/TV Program"
+    <def:addObject pid="doms:Template_Batch" label="Newspaper Batch"
                    contentModel="string" logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyObject pid="doms:Template_Batch" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
