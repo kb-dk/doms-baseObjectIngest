@@ -1,3 +1,6 @@
+0.11.11.3
+Allow for format uri 'info:mime/video/MP2T;codecs="h264,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+
 0.11.11.2
 Allow for format uri's 'info:mime/video/MP2T;codecs="h264,mp1,mp2"' and 'info:mime/video/MP2T;codecs="h264,mp1,mp2,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 
