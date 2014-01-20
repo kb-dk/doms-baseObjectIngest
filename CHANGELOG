@@ -1,3 +1,6 @@
+0.11.11.4
+Fix packageing of CHANGELOG
+
 0.11.11.3
 Allow for format uri 'info:mime/video/MP2T;codecs="h264,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 
