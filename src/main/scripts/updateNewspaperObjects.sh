@@ -12,16 +12,8 @@ echo "UPDATING Newspaper doms objects"
 
 DIR="$BASEDIR/scripts/NewspaperDatamodel/"
 
-for file in $(ls $DIR/*/setContent.xml); do
-    batchProcess $file
-done
-
-
-for file in $(ls $DIR/*/publish.xml); do
-    batchProcess $file
-done
-
-
+setContent
+publish
 
 echo "There should be no undeclared errors in this result. If there are, something has failed."
 echo ""

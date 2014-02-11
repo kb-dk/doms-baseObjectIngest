@@ -10,15 +10,10 @@ source $SCRIPT_DIR/common.sh
 #
 echo "UPDATING base doms objects"
 
-for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/setContent.xml); do
-    batchProcess $file
-done
+DIR="$BASEDIR/scripts/ReklamefilmDatamodel"
 
-for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/publish.xml); do
-    batchProcess $file
-done
-
-
+setContent
+publish
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""
