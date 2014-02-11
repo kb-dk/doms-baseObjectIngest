@@ -8,7 +8,7 @@ source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "UPDATING base doms objects"
+echo "UPDATING Radio TV doms objects"
 
 DIR="$BASEDIR/scripts/RadioTVDatamodel"
 
