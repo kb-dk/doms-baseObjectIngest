@@ -9,5 +9,6 @@
         <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
         <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
         <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+        <doms:isEntryForViewAngle>SBOI</doms:isEntryForViewAngle>
     </rdf:Description>
 </rdf:RDF>
