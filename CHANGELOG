@@ -1,4 +1,6 @@
 1.3
+Make RoundTrip objects entry view for SBOI rather than Batch, to fix SBOI indexing.
+Make ingest status messages reflect whats being updated.    
 Allow for format uri 'info:mime/video/MP2T;codecs="aac_latm,mp2,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 Allow for format uri 'info:mime/video/MP2T;codecs="h264,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 
