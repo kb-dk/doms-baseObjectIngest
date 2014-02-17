@@ -28,34 +28,3 @@ function batchProcess(){
   fi
 
 }
-
-function waitBackground(){
-    local FAIL=0
-    for job in $(jobs -p); do
-        wait $job || let "FAIL+=1"
-    done
-    #echo $FAIL
-}
-
-function create(){
-    echo "If the objects are already there, this will report failures. Just ignore them"
-    echo "If the objects are not already there, these errors are important."
-    for file in $(ls $DIR/*/create.xml); do
-        batchProcess $file &
-    done
-    waitBackground
-}
-
-function setContent(){
-    for file in $(ls $DIR/*/setContent.xml); do
-        batchProcess $file &
-    done
-    waitBackground
-}
-
-function publish(){
-    for file in $(ls $DIR/*/publish.xml); do
-        batchProcess $file &
-    done
-    waitBackground
-}

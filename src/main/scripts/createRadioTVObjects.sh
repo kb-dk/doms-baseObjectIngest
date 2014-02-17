@@ -12,8 +12,25 @@ source $SCRIPT_DIR/common.sh
 #
 echo "Creating base Radio TV objects"
 
-DIR="$BASEDIR/scripts/RadioTVDatamodel"
+for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/create.xml); do
+    batchProcess $file
+    if [ $? -ne 0 ]; then
+        echo "If the object is already there, this will report failures. Just ignore them"
+        echo "If the object is not already there, these errors are important."
+    fi
+done
 
-create
+for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/setContent.xml); do
+    batchProcess $file
+done
 
-source $SCRIPT_DIR/updateRadioTVObjects.sh
+for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/publish.xml); do
+    batchProcess $file
+done
+
+
+echo "There should be no undeclared errors in this result. If there are, something has failed."
+echo ""
+echo ""
+
+

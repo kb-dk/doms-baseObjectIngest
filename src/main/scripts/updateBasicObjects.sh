@@ -11,12 +11,16 @@ source $SCRIPT_DIR/common.sh
 #
 echo "UPDATING base doms objects"
 
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/setContent.xml); do
+    batchProcess $file
+done
 echo "Expect the ContentModel_File to report an error"
 
-DIR="$BASEDIR/scripts/BasicDatamodel/"
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/publish.xml); do
+    batchProcess $file
+done
 
-setContent
-publish
+
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""

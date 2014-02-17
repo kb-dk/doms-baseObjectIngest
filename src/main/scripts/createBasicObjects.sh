@@ -10,8 +10,29 @@ source $SCRIPT_DIR/common.sh
 #
 echo "Creating base doms objects"
 
-DIR="$BASEDIR/scripts/BasicDatamodel/"
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/create.xml); do
+    batchProcess $file
+    if [ $? -ne 0 ]; then
+        echo "If the object is already there, this will report failures. Just ignore them"
+        echo "If the object is not already there, these errors are important."
+    fi
+done
 
-create
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/setContent.xml); do
+    batchProcess $file
+done
+echo "Expect the ContentModel_File to report an error"
 
-source $SCRIPT_DIR/updateBasicObjects.sh
+
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/publish.xml); do
+    batchProcess $file
+done
+
+
+
+echo "There should be no undeclared errors in this result. If there are, something has failed."
+echo ""
+echo ""
+
+
+
