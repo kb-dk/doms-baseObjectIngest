@@ -132,6 +132,14 @@
         <Page_VIEW_file>${Page.object.folder}/VIEW.xml</Page_VIEW_file>
         <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
 
+        <!-- EditionPage -->
+        <EditionPage.object.folder>${Newspaper.folder}/ContentModel_EditionPage/datastreams</EditionPage.object.folder>
+        <EditionPage_DSCOMP_file>${EditionPage.object.folder}/DS-COMPOSITE-MODEL.xml</EditionPage_DSCOMP_file>
+        <EditionPage_ONTOLOGY_file>${EditionPage.object.folder}/ONTOLOGY.xml</EditionPage_ONTOLOGY_file>
+        <EditionPage_RELS-EXT_file>${EditionPage.object.folder}/RELS-EXT.xml</EditionPage_RELS-EXT_file>
+        <EditionPage_VIEW_file>${EditionPage.object.folder}/VIEW.xml</EditionPage_VIEW_file>
+        <ALTO_file>${EditionPage.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
+
         <!-- Brik -->
         <Brik.object.folder>${Newspaper.folder}/ContentModel_Brik/datastreams</Brik.object.folder>
         <Brik_DSCOMP_file>${Brik.object.folder}/DS-COMPOSITE-MODEL.xml</Brik_DSCOMP_file>

@@ -1,0 +1,22 @@
+<dsCompositeModel
+        xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+    <dsTypeModel ID="MODS" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="MODS_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
+    <dsTypeModel ID="ALTO" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="ALTO_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
+</dsCompositeModel>
+
