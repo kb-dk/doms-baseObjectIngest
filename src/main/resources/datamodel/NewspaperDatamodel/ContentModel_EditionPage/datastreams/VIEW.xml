@@ -2,7 +2,9 @@
     <v:viewangle name="SummaVisible">
         <v:relations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
         </v:relations>
-        <v:inverseRelations/>
+        <v:inverseRelations>
+            <doms:hasEditionPage/>
+        </v:inverseRelations>
     </v:viewangle>
     <v:viewangle name="GUI">
         <v:relations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
