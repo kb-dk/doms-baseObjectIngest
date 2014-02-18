@@ -130,7 +130,6 @@
         <Page_ONTOLOGY_file>${Page.object.folder}/ONTOLOGY.xml</Page_ONTOLOGY_file>
         <Page_RELS-EXT_file>${Page.object.folder}/RELS-EXT.xml</Page_RELS-EXT_file>
         <Page_VIEW_file>${Page.object.folder}/VIEW.xml</Page_VIEW_file>
-        <ALTO_file>${Page.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
 
         <!-- EditionPage -->
         <EditionPage.object.folder>${Newspaper.folder}/ContentModel_EditionPage/datastreams</EditionPage.object.folder>

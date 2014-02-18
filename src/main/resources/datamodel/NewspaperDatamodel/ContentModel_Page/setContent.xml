@@ -64,27 +64,5 @@
             ${MIX_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
-    <def:modifyDatastream pid="doms:ContentModel_Page" dsID="MODS_SCHEMA"
-                          dsLabel="MODS schema"
-                          dsMIME="text/xml"
-                          versionable="false"
-                          altIDs="" dsControlGroupType="X" dsState="A"
-                          checksumType="MD5"
-                          logMessage="Updating objects as part of a doms install/upgrade">
-        <def:xmlData>
-            ${MODS_file_contents}
-        </def:xmlData>
-    </def:modifyDatastream>
-    <def:modifyDatastream pid="doms:ContentModel_Page" dsID="ALTO_SCHEMA"
-                          dsLabel="ALTO schema"
-                          dsMIME="text/xml"
-                          versionable="false"
-                          altIDs="" dsControlGroupType="X" dsState="A"
-                          checksumType="MD5"
-                          logMessage="Updating objects as part of a doms install/upgrade">
-        <def:xmlData>
-            ${ALTO_file_contents}
-        </def:xmlData>
-    </def:modifyDatastream>
 
 </def:batchModify>
