@@ -17,6 +17,15 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEditionPage"/>
+                <owl:allValuesFrom
+                        rdf:resource="info:fedora/doms:ContentModel_EditionPage#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
                         rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasBrik"/>
                 <owl:allValuesFrom
                         rdf:resource="info:fedora/doms:ContentModel_Brik#class"/>
@@ -26,5 +35,6 @@
     </owl:Class>
 
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasPage"/>
+    <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEditionPage"/>
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasBrik"/>
 </rdf:RDF>
