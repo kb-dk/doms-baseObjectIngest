@@ -66,6 +66,7 @@
         <def:xmlData>
             <placeholder/>
         </def:xmlData>
+    </def:addDatastream>
 
     <def:addDatastream pid="doms:ContentModel_EditionPage" dsID="MODS_SCHEMA"
                        dsLabel="MODS schema"
