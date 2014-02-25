@@ -1,3 +1,6 @@
+0.11.11.6
+Increase padding of DVD video files when following link from datamodel
+
 0.11.11.5
 Allow for format uri 'info:mime/video/MP2T;codecs="aac_latm,mp2,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 
