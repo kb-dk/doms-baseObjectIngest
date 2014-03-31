@@ -1,6 +1,8 @@
 1.4
 Add ContentModel_EditionPage and clean-up ContentModel_Page
 Allow for format uri 'info:mime/video/MP2T;codecs="mp2,mp3,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Added the scape datastreams to the jpeg2k file object
+HasLicense is not required any more
 
 1.3
 Make RoundTrip objects entry view for SBOI rather than Batch, to fix SBOI indexing.
