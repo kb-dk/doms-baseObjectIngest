@@ -11,7 +11,7 @@
 
     <groupId>dk.statsbiblioteket.doms.installer</groupId>
     <artifactId>base-objects-ingester</artifactId>
-    <version>1.4</version>
+    <version>1.5-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
