@@ -40,17 +40,6 @@
             ${Newspaper_VIEW_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
-    <def:modifyDatastream pid="doms:ContentModel_Newspaper" dsID="MODS"
-                          dsLabel="MODS datastream"
-                          dsMIME="application/rdf+xml"
-                          versionable="false"
-                          altIDs="" dsControlGroupType="X" dsState="A"
-                          checksumType="MD5"
-                          logMessage="Updating objects as part of a doms install/upgrade">
-        <def:xmlData>
-            ${Newspaper_MODS_file_contents}
-        </def:xmlData>
-    </def:modifyDatastream>
     <def:modifyDatastream pid="doms:ContentModel_Newspaper" dsID="ONTOLOGY"
                           dsLabel="Local ontology"
                           dsMIME="application/rdf+xml"
