@@ -32,9 +32,18 @@
             </owl:Restriction>
         </rdfs:subClassOf>
 
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfNewspaper"/>
+                <owl:allValuesFrom
+                        rdf:resource="info:fedora/doms:ContentModel_Newspaper#class"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasPage"/>
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEditionPage"/>
     <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasBrik"/>
+    <owl:ObjectProperty rdf:about="http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfNewspaper"/>
 </rdf:RDF>

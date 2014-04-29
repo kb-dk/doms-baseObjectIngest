@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<mods xmlns="http://www.loc.gov/mods/v3">
+	<titleInfo>
+		<title></title>
+	</titleInfo>
+	<titleInfo type="uniform">
+		<title></title>
+	</titleInfo>
+	<originInfo>
+		<place>
+			<placeTerm type="text"></placeTerm>
+		</place>
+		<dateIssued keyDate="yes" encoding="iso8601" point="start"></dateIssued>
+		<dateIssued encoding="iso8601" point="end"></dateIssued>
+		<issuance>serial</issuance>
+	</originInfo>
+	<abstract xml:lang="dan">læs mere om denne avis i dda</abstract>
+	<note displayLabel="kendte mangler"></note>
+	<genre authority="marcgt">newspaper</genre>
+	<typeOfResource>text</typeOfResource>
+	<identifier type="dda"></identifier>
+	<identifier type="ninestars id"></identifier>
+	<identifier type="id"></identifier>
+	<physicalDescription>
+		<digitalOrigin>digitized microfilm</digitalOrigin>
+		<internetMediaType>text</internetMediaType>
+		<internetMediaType>image/jp2</internetMediaType>
+		<form authority="marcform">electronic</form>
+	</physicalDescription>
+	<location>
+		<url usage="primary display" access="object in context"></url>
+	</location>
+	<language>
+		<languageTerm type="code" authority="iso639-2b">dan</languageTerm>
+	</language>
+	<subject usage="primary">
+		<temporal point="start" encoding="iso8601"></temporal>
+		<temporal point="end" encoding="iso8601"></temporal>
+		<hierarchicalGeographic>
+			<country>Danmark</country>
+			<area></area>
+			<city></city>
+		</hierarchicalGeographic>
+		<geographicCode>1</geographicCode>
+	</subject>
+	<accessCondition xml:lang="eng">this ressource has limited ... URL</accessCondition>
+	<accessCondition xml:lang="dan">denne ressource ... URL</accessCondition>
+	<recordInfo> 
+		<languageOfCataloging>
+			<languageTerm type="code" authority="iso639-2b">dan</languageTerm>
+		</languageOfCataloging>
+		<recordCreationDate encoding="iso8601"></recordCreationDate>
+	</recordInfo>
+</mods>

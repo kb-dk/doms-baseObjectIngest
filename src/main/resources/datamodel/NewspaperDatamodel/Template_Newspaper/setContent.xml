@@ -1,0 +1,34 @@
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+    <def:modifyObject pid="doms:Template_Newspaper" state="I"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+
+    <def:modifyObject pid="doms:Template_Newspaper" state="I"  label="Newspaper Title"
+                      logMessage="Updating objects as part of a doms install/upgrade"/>
+    <def:modifyDatastream pid="doms:Template_Newspaper" dsID="RELS-EXT"
+                          dsLabel="Relationships"
+                          dsMIME="application/rdf+xml"
+                          formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                          versionable="false"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="DISABLED"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
+
+                    >
+                <rdf:Description rdf:about="info:fedora/doms:Template_Newspaper">
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_Newspaper"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
+                    <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
+                    <doms:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_Newspaper"/>
+                </rdf:Description>
+            </rdf:RDF>
+        </def:xmlData>
+    </def:modifyDatastream>
+
+
+</def:batchModify>
