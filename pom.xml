@@ -100,6 +100,7 @@
         <Newspaper.folder>${project.basedir}/src/main/resources/datamodel/NewspaperDatamodel</Newspaper.folder>
         <MIX_file>${Newspaper.folder}/ThirdPartySchemas/MIX_SCHEMA.xsd</MIX_file>
         <MODS_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_file>
+        <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_35_file>
 
         <!--Batch-->
         <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
@@ -182,6 +183,16 @@
         <Workshift_RELS-EXT_file>${Workshift.object.folder}/RELS-EXT.xml</Workshift_RELS-EXT_file>
         <Workshift_VIEW_file>${Workshift.object.folder}/VIEW.xml</Workshift_VIEW_file>
 
+        <!-- Newspaper title -->
+        <Newspaper.object.folder>${Newspaper.folder}/ContentModel_Newspaper/datastreams</Newspaper.object.folder>
+        <Newspaper_DSCOMP_file>${Newspaper.object.folder}/DS-COMPOSITE-MODEL.xml</Newspaper_DSCOMP_file>
+        <Newspaper_ONTOLOGY_file>${Newspaper.object.folder}/ONTOLOGY.xml</Newspaper_ONTOLOGY_file>
+        <Newspaper_RELS-EXT_file>${Newspaper.object.folder}/RELS-EXT.xml</Newspaper_RELS-EXT_file>
+        <Newspaper_VIEW_file>${Newspaper.object.folder}/VIEW.xml</Newspaper_VIEW_file>
+
+        <!-- Newspaper title template -->
+        <Newspaper.template.folder>${Newspaper.folder}/Template_Newspaper/datastreams</Newspaper.template.folder>
+        <Newspaper_MODS_file>${Newspaper.template.folder}/MODS.xml</Newspaper_MODS_file>
 
     </properties>
     <build>
