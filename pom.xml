@@ -100,7 +100,7 @@
         <Newspaper.folder>${project.basedir}/src/main/resources/datamodel/NewspaperDatamodel</Newspaper.folder>
         <MIX_file>${Newspaper.folder}/ThirdPartySchemas/MIX_SCHEMA.xsd</MIX_file>
         <MODS_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_file>
-        <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_35_file>
+        <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_35_SCHEMA.xsd</MODS_35_file>
 
         <!--Batch-->
         <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
