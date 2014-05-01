@@ -75,4 +75,16 @@
         </def:xmlData>
     </def:modifyDatastream>
 
+    <def:modifyDatastream pid="doms:ContentModel_EditionPage" dsID="XLINK_SCHEMA"
+                          dsLabel="XLINK schema"
+                          dsMIME="text/xml"
+                          versionable="false"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            ${XLINK_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
+
 </def:batchModify>

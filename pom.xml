@@ -101,6 +101,9 @@
         <MIX_file>${Newspaper.folder}/ThirdPartySchemas/MIX_SCHEMA.xsd</MIX_file>
         <MODS_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_file>
         <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_35_SCHEMA.xsd</MODS_35_file>
+        <ALTO_file>${Newspaper.folder}/ThirdPartySchemas/ALTO_SCHEMA.xsd</ALTO_file>
+        <XLINK_file>${Newspaper.folder}/ThirdPartySchemas/XLINK_SCHEMA.xsd</XLINK_file>
+        <EVENTS_SCHEMA_file>${Newspaper.folder}/ThirdPartySchemas/EVENTS_SCHEMA.xsd</EVENTS_SCHEMA_file>
 
         <!--Batch-->
         <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
@@ -115,7 +118,7 @@
         <RoundTrip_ONTOLOGY_file>${RoundTrip.object.folder}/ONTOLOGY.xml</RoundTrip_ONTOLOGY_file>
         <RoundTrip_RELS-EXT_file>${RoundTrip.object.folder}/RELS-EXT.xml</RoundTrip_RELS-EXT_file>
         <RoundTrip_VIEW_file>${RoundTrip.object.folder}/VIEW.xml</RoundTrip_VIEW_file>
-        <RoundTrip_EVENTS_SCHEMA_file>${RoundTrip.object.folder}/EVENTS_SCHEMA.xsd</RoundTrip_EVENTS_SCHEMA_file>
+
 
         <!-- JPEG2000 File -->
         <Jpeg2000File.object.folder>${Newspaper.folder}/ContentModel_Jpeg2000File/datastreams</Jpeg2000File.object.folder>
@@ -138,7 +141,7 @@
         <EditionPage_ONTOLOGY_file>${EditionPage.object.folder}/ONTOLOGY.xml</EditionPage_ONTOLOGY_file>
         <EditionPage_RELS-EXT_file>${EditionPage.object.folder}/RELS-EXT.xml</EditionPage_RELS-EXT_file>
         <EditionPage_VIEW_file>${EditionPage.object.folder}/VIEW.xml</EditionPage_VIEW_file>
-        <ALTO_file>${EditionPage.object.folder}/ALTO_SCHEMA.xsd</ALTO_file>
+
 
         <!-- Brik -->
         <Brik.object.folder>${Newspaper.folder}/ContentModel_Brik/datastreams</Brik.object.folder>
