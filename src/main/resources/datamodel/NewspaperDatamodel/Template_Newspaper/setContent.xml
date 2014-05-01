@@ -29,9 +29,9 @@
             </rdf:RDF>
         </def:xmlData>
     </def:modifyDatastream>
-    <def:modifyDatastream pid="doms:ContentModel_Newspaper" dsID="MODS"
+    <def:modifyDatastream pid="doms:Template_Newspaper" dsID="MODS"
                           dsLabel="MODS datastream"
-                          dsMIME="application/rdf+xml"
+                          dsMIME="text/xml"
                           versionable="false"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
