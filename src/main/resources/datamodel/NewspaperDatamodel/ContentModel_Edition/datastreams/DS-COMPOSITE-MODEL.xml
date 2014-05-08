@@ -3,7 +3,7 @@
     <dsTypeModel ID="EDITION">
         <form MIME="text/xml"/>
         <extension name="GUI">
-            <presentAs type="readonly"/>
+            <presentAs type="editable"/>
         </extension>
         <extension name="SCHEMA">
             <reference type="datastream" value="EDITION_SCHEMA"/>
