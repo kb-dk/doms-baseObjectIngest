@@ -19,7 +19,7 @@
         </extension>
     </dsTypeModel>
 
-    <dsTypeModel ID="SCAPE_DESCRIPTIVE">
+    <dsTypeModel ID="SCAPE_DESCRIPTIVE" optional="true">
         <form MIME="text/xml"/>
         <extension name="SCAPE">
             <mapsAs name="descriptive"/>
