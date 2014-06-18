@@ -11,7 +11,7 @@
 
     <groupId>dk.statsbiblioteket.doms.installer</groupId>
     <artifactId>base-objects-ingester</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
 
     <packaging>pom</packaging>
 
@@ -20,7 +20,7 @@
         <connection>scm:git:git@github.com:statsbiblioteket/doms-baseObjectIngest.git</connection>
         <url>scm:git:git@github.com:statsbiblioteket/doms-baseObjectIngest.git</url>
         <developerConnection>scm:git:git@github.com:statsbiblioteket/doms-baseObjectIngest.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>base-objects-ingester-1.5</tag>
   </scm>
 
     <properties>
