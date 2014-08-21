@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             targetNamespace="http://www.statsbiblioteket.dk/avisdigitalisering/microfilm/1/0/"
             xmlns="http://www.statsbiblioteket.dk/avisdigitalisering/microfilm/1/0/"
@@ -20,11 +21,13 @@
             <xsd:sequence>
                 <!--Newspaper titles on this reel-->
                 <xsd:element name="titles" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
-                <!--Start date of the issues on this reel. Use this particular ISO 8601 style: YYYY-MM-DD -->
-                <xsd:element name="startDate" type="xsd:date" minOccurs="1" maxOccurs="1"/>
-                <!--End date of the issues on this reel. Use this particular ISO 8601 style: YYYY-MM-DD -->
-                <xsd:element name="endDate" type="xsd:date" minOccurs="1" maxOccurs="1"/>
-                <!-- The barcode from the batch this reel is a part ofid of the film-->
+                <!--Start date of the issues on this reel. Use this particular ISO 8601 style: YYYY-MM-DD,
+                or if the date is only partial YYYY or YYYY-MM -->
+                <xsd:element name="startDate" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                <!--End date of the issues on this reel. Use this particular ISO 8601 style: YYYY-MM-DD,
+                or if the date is only partial YYYY or YYYY-MM -->
+                <xsd:element name="endDate" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                <!-- The barcode from the batch this reel is a part of id of the film-->
                 <xsd:element name="FilmId" type="xsd:string" minOccurs="1" maxOccurs="1"/>
                 <xsd:element name="numberOfPictures" type="xsd:int" minOccurs="1" maxOccurs="1"/>
                 <xsd:element name="position" type="positionType" minOccurs="0" maxOccurs="0"/>
@@ -34,18 +37,15 @@
                 <xsd:element name="captureResolutionOriginal" type="resolutionType" minOccurs="1" maxOccurs="1"/>
                 <!--Resolution relative to original microfilm-->
                 <xsd:element name="captureResolutionFilm" type="resolutionType" minOccurs="1" maxOccurs="1"/>
-                <!--Use this particular ISO 8601 style: YYYY-MM-DD -->
+                <!---Use this particular ISO 8601 style: YYYY-MM-DD,
+                or if the date is only partial YYYY or YYYY-MM -->
                 <xsd:element name="dateMicrofilmCreated" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                <!--true if the microfilm was created from loose leaves-->
-                <xsd:element name="looseLeavesFlag" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
-                <!--True if the microfilm was createed from a bound volume-->
-                <xsd:element name="boundVolumeFlag" type="xsd:boolean" minOccurs="1" maxOccurs="1"/>
                 <!--Resolution of the duplicate negative used for digitization. -->
-                <xsd:element name="resolutionOfDuplicateNegative" type="xsd:float" minOccurs="1" maxOccurs="1"/>
-                <xsd:element name="resolutionCommentDuplicateNegative" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                <xsd:element name="densityReadingDuplicateNegative" type="xsd:float" minOccurs="0" maxOccurs="10"/>
-                <xsd:element name="averageDensityDuplicateNegative" type="xsd:float" minOccurs="1" maxOccurs="1"/>
-                <xsd:element name="dminDuplicateNegative" type="xsd:float" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="resolutionOfNegative" type="xsd:float" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="resolutionCommentNegative" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="densityReadingNegative" type="xsd:float" minOccurs="0" maxOccurs="10"/>
+                <xsd:element name="averageDensityNegative" type="xsd:float" minOccurs="1" maxOccurs="1"/>
+                <xsd:element name="dminNegative" type="xsd:float" minOccurs="1" maxOccurs="1"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -78,4 +78,3 @@
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>
-
