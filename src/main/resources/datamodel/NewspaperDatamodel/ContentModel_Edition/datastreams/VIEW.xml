@@ -1,20 +1,13 @@
 <v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#">
     <v:viewangle name="SummaVisible">
-        <v:relations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
-                     xmlns:fedora="info:fedora/fedora-system:def/relations-external#">
-            <doms:hasFile/>
-            <doms:hasPage/>
-            <doms:hasBrik/>
-            <fedora:hasPart/>
-        </v:relations>
-
+        <v:relations/>
         <v:inverseRelations/>
     </v:viewangle>
     <v:viewangle name="GUI">
         <v:relations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
                      xmlns:fedora="info:fedora/fedora-system:def/relations-external#">
             <doms:hasFile/>
-            <doms:hasPage/>
+            <doms:hasEditionPage/>
             <doms:hasBrik/>
             <fedora:hasPart/>
         </v:relations>
