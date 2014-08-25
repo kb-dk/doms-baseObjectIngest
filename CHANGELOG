@@ -1,3 +1,10 @@
+1.6
+Use the right Jpylyzer for the newspaper data model
+Include a Newspaper Title template object
+Use the newest and correct version of the Film schema
+Update to Summa relations
+
+
 1.5
 Allow for format uri 'info:mime/video/MP2T;codecs="mp2,mp3,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 Increase padding of DVD video files when following link from datamodel
