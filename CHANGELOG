@@ -1,3 +1,6 @@
+1.10
+Fix bug: Remove wrong xml declaration in inlined XML
+
 1.9
 Do not require specific mime type in ContentModel_File, since it cannot be overridden
 
