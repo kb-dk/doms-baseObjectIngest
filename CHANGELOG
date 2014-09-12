@@ -1,3 +1,6 @@
+1.11
+Do not resolve XML Schema in MODS 3.1 files from w3.org - it's slow and potentially error prone.
+
 1.10
 Fix bug: Remove wrong xml declaration in inlined XML
 

@@ -103,6 +103,7 @@
         <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_35_SCHEMA.xsd</MODS_35_file>
         <ALTO_file>${Newspaper.folder}/ThirdPartySchemas/ALTO_SCHEMA.xsd</ALTO_file>
         <XLINK_file>${Newspaper.folder}/ThirdPartySchemas/XLINK_SCHEMA.xsd</XLINK_file>
+        <XML_file>${Newspaper.folder}/ThirdPartySchemas/XML_SCHEMA.xsd</XML_file>
         <EVENTS_SCHEMA_file>${Newspaper.folder}/ThirdPartySchemas/EVENTS_SCHEMA.xsd</EVENTS_SCHEMA_file>
 
         <!--Batch-->
