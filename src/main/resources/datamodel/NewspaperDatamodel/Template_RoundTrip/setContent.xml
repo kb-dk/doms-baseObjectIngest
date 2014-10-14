@@ -21,6 +21,8 @@
                 <rdf:Description rdf:about="info:fedora/doms:Template_RoundTrip">
                     <hasModel rdf:resource="info:fedora/doms:ContentModel_RoundTrip"
                               xmlns="info:fedora/fedora-system:def/model#"/>
+                    <hasModel rdf:resource="info:fedora/doms:ContentModel_Item"
+                              xmlns="info:fedora/fedora-system:def/model#"/>
                     <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
                               xmlns="info:fedora/fedora-system:def/model#"/>
                     <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>

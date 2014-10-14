@@ -1,11 +1,4 @@
 <v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#">
-    <v:viewangle name="SBOI">
-        <v:relations>
-        </v:relations>
-        <v:inverseRelations xmlns:doms="info:fedora/fedora-system:def/relations-external#">
-            <doms:hasPart/>
-        </v:inverseRelations>
-    </v:viewangle>
     <v:viewangle name="SummaVisible">
         <v:relations/>
         <v:inverseRelations/>

@@ -24,6 +24,20 @@
   </scm>
 
     <properties>
+
+        <!--Item-->
+
+        <Basic.folder>${project.basedir}/src/main/resources/datamodel/BasicDatamodel</Basic.folder>
+        <Item.object.folder>${Basic.folder}/ContentModel_Item/datastreams</Item.object.folder>
+        <Item_DSCOMP_file>${Item.object.folder}/DS-COMPOSITE-MODEL.xml</Item_DSCOMP_file>
+        <Item_ONTOLOGY_file>${Item.object.folder}/ONTOLOGY.xml</Item_ONTOLOGY_file>
+        <Item_RELS-EXT_file>${Item.object.folder}/RELS-EXT.xml</Item_RELS-EXT_file>
+        <Item_VIEW_file>${Item.object.folder}/VIEW.xml</Item_VIEW_file>
+
+        <XLINK_file>${Basic.folder}/ThirdPartySchemas/XLINK_SCHEMA.xsd</XLINK_file>
+        <EVENTS_SCHEMA_file>${Basic.folder}/ThirdPartySchemas/EVENTS_SCHEMA.xsd</EVENTS_SCHEMA_file>
+
+
         <!--Reklamefilm-->
         <Reklamefilm.folder>${project.basedir}/src/main/resources/datamodel/ReklamefilmDatamodel</Reklamefilm.folder>
         <Reklamefilm.object.folder>${Reklamefilm.folder}/ContentModel_Reklamefilm/datastreams</Reklamefilm.object.folder>
@@ -102,9 +116,7 @@
         <MODS_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_file>
         <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_35_SCHEMA.xsd</MODS_35_file>
         <ALTO_file>${Newspaper.folder}/ThirdPartySchemas/ALTO_SCHEMA.xsd</ALTO_file>
-        <XLINK_file>${Newspaper.folder}/ThirdPartySchemas/XLINK_SCHEMA.xsd</XLINK_file>
         <XML_file>${Newspaper.folder}/ThirdPartySchemas/XML_SCHEMA.xsd</XML_file>
-        <EVENTS_SCHEMA_file>${Newspaper.folder}/ThirdPartySchemas/EVENTS_SCHEMA.xsd</EVENTS_SCHEMA_file>
 
         <!--Batch-->
         <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
