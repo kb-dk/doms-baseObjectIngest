@@ -23,6 +23,8 @@ done
 for file in $(ls $DIR/*/setContent.xml); do
     batchProcess $file
 done
+echo "Expect the ContentModel_RoundTrip to report errors"
+
 
 
 for file in $(ls $DIR/*/publish.xml); do

@@ -15,6 +15,7 @@
                     xmlns:schema="http://doms.statsbiblioteket.dk/types/dscompositeschema/0/1/#">
                 <dsTypeModel ID="CONTENTS">
                     <!--form MIME="application/octet-stream"/-->
+                    <!--<form MIME="application/octet-stream"/>-->
                 </dsTypeModel>
             </dsCompositeModel>
         </def:xmlData>

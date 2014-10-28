@@ -6,7 +6,7 @@
                   xmlns="info:fedora/fedora-system:def/model#"/>
         <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
                   xmlns="info:fedora/fedora-system:def/model#"/>
-        <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_DOMS"/>
+        <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_Item"/>
         <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
         <doms:isEntryForViewAngle>GUI</doms:isEntryForViewAngle>
         <doms:isEntryForViewAngle>SummaVisible</doms:isEntryForViewAngle>
