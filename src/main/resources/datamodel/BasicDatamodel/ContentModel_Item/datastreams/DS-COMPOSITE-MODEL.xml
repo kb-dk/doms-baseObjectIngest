@@ -1,7 +1,7 @@
 <dsCompositeModel
         xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
 
-    <dsTypeModel ID="EVENTS">
+    <dsTypeModel ID="EVENTS" optional="true">
         <form MIME="text/xml"/>
         <extension name="GUI">
             <presentAs type="readonly"/>
