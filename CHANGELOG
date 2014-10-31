@@ -1,5 +1,6 @@
 0.11.11.9
 Allow for format uri 'info:mime/video/MP2T;codecs="aac,h264"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Update to sbforge-parent 16, for fixing broken maven-git release-plugin integration
 
 0.11.11.8
 Allow for format uri 'info:mime/video/MP2T;codecs="mp2,mp3,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
