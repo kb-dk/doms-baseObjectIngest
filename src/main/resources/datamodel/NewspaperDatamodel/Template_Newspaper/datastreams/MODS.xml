@@ -18,8 +18,8 @@
     <genre authority="marcgt">newspaper</genre>
     <typeOfResource>text</typeOfResource>
     <identifier type="dda">[1-137]</identifier>
-    <identifier type="?entydigt id?">[sdfsd]</identifier>
-    <identifier type="ninestars avis id">[... avis id from ninestars]</identifier>
+    <identifier type="title">[sdfsd]</identifier>
+    <identifier type="title_family">[... avis id from ninestars]</identifier>
     <physicalDescription>
         <digitalOrigin>digitized microfilm</digitalOrigin>
         <internetMediaType>text</internetMediaType>
