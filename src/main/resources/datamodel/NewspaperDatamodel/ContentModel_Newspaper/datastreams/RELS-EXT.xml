@@ -9,7 +9,7 @@
         <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_Item"/>
         <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
         <doms:isEntryForViewAngle>GUI</doms:isEntryForViewAngle>
-        <doms:isEntryForViewAngle>SummaVisible</doms:isEntryForViewAngle>
+        <doms:isEntryForViewAngle>SummaAuthority</doms:isEntryForViewAngle>
         <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
     </rdf:Description>
 </rdf:RDF>
