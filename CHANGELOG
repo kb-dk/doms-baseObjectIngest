@@ -1,3 +1,8 @@
+1.12
+* ContentModel_Item is new parent data model for autonomous component objects
+* Data model for newspaper authority titles
+* Support one more Radio/TV mimetype
+
 1.11
 Do not resolve XML Schema in MODS 3.1 files from w3.org - it's slow and potentially error prone.
 
