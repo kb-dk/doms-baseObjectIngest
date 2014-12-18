@@ -1,3 +1,7 @@
+1.13
+* Bundle all newspaper titles with each page
+* Extra Radio/TV format
+
 1.12
 * ContentModel_Item is new parent data model for autonomous component objects
 * Data model for newspaper authority titles
