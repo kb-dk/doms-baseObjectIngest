@@ -8,7 +8,6 @@
                   xmlns="info:fedora/fedora-system:def/model#"/>
         <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_Item"/>
         <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
-        <doms:isEntryForViewAngle>SummaVisible</doms:isEntryForViewAngle>
         <doms:isEntryForViewAngle>GUI</doms:isEntryForViewAngle>
         <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
     </rdf:Description>
