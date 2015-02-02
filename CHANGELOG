@@ -1,3 +1,6 @@
+1.14
+* Make ContentModel_EditionPage the only content model with SummaVisible entry view angle in the newspaper datamodel
+
 1.13
 * Bundle all newspaper titles with each page
 * Extra Radio/TV format
