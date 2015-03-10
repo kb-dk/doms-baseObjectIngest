@@ -2,7 +2,7 @@
 
 if [ ! "$1" -eq "-q" ]; then
     echo "This script should only ever be run on fresh installs of DOMS."
-    echo "(You can skip this prompt by supplying -q to you command line)"
+    echo "(You can skip this prompt with the option -q)"
     echo -n "Type \"y\" to continue> "
     read cont
     if [ ! "$cont" == "y" ]; then
