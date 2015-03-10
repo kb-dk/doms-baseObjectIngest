@@ -72,14 +72,4 @@
             </rdf:RDF>
         </def:xmlData>
     </def:modifyDatastream>
-
-    <!--remove the CHARACTERISATION_SCHEMA, not used anymore-->
-    <def:modifyDatastream pid="doms:ContentModel_File" dsID="CHARACTERISATION_SCHEMA"
-                          dsLabel="CHARACTERISATION schema"
-                          dsControlGroupType="X" dsState="D"
-                          logMessage="Updating objects as part of a doms install/upgrade">
-        <def:xmlData>
-            <unused />
-        </def:xmlData>
-    </def:modifyDatastream>
 </def:batchModify>

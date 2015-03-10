@@ -52,12 +52,4 @@
             ${RoundTrip_ONTOLOGY_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
-
-    <def:purgeDatastream pid="doms:ContentModel_RoundTrip" dsID="EVENTS_SCHEMA"
-                          logMessage="Updating objects as part of a doms install/upgrade"/>
-
-    <def:purgeDatastream pid="doms:ContentModel_RoundTrip" dsID="XLINK_SCHEMA"
-                          logMessage="Updating objects as part of a doms install/upgrade"/>
-
-
 </def:batchModify>
