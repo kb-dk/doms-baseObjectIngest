@@ -11,16 +11,14 @@ source $SCRIPT_DIR/common.sh
 #
 echo "UPDATING base doms objects"
 
-for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/setContent.xml); do
-    batchProcess $file
-done
-echo "Expect the ContentModel_File to report an error"
+# No new objects since last release. If there are, add the new objects like this:
+# batchProcess $BASEDIR/scripts/BasicDatamodel/ContentModel_Item/create.xml
+# batchProcess $BASEDIR/scripts/BasicDatamodel/ContentModel_Item/setContent.xml
+# batchProcess $BASEDIR/scripts/BasicDatamodel/ContentModel_Item/publish.xml
 
-for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/publish.xml); do
-    batchProcess $file
-done
-
-
+# No changed objects since last release. If there are, add the changed objects like this:
+# batchProcess $BASEDIR/scripts/BasicDatamodel/ContentModel_Item/setContent.xml
+# batchProcess $BASEDIR/scripts/BasicDatamodel/ContentModel_Item/publish.xml
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""

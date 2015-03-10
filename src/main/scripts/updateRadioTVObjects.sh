@@ -10,15 +10,14 @@ source $SCRIPT_DIR/common.sh
 #
 echo "UPDATING Radio TV doms objects"
 
-for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/setContent.xml); do
-    batchProcess $file
-done
+# No new objects since last release. If there are, add the new objects like this:
+# batchProcess $BASEDIR/scripts/RadioTVDatamodel/ContentModel_Program/create.xml
+# batchProcess $BASEDIR/scripts/RadioTVDatamodel/ContentModel_Program/setContent.xml
+# batchProcess $BASEDIR/scripts/RadioTVDatamodel/ContentModel_Program/publish.xml
 
-for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/publish.xml); do
-    batchProcess $file
-done
-
-
+# No changed objects since last release. If there are, add the changed objects like this:
+# batchProcess $BASEDIR/scripts/RadioTVDatamodel/ContentModel_Program/setContent.xml
+# batchProcess $BASEDIR/scripts/RadioTVDatamodel/ContentModel_Program/publish.xml
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""
