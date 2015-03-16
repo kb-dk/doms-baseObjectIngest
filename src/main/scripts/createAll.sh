@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! "$1" -eq "-q" ]; then
+if [ ! "$1" == "-q" ]; then
     echo "This script should only ever be run on fresh installs of DOMS."
     echo "(You can skip this prompt with the option -q)"
     echo -n "Type \"y\" to continue> "
