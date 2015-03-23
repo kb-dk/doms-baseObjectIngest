@@ -12,7 +12,7 @@
                        dsLabel="Relationships"
                        dsMIME="application/rdf+xml"
                        formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
-                       versionable="false"
+                       versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
                        logMessage="Updating objects as part of a doms install/upgrade">
@@ -28,7 +28,7 @@
     <def:addDatastream pid="doms:Template_Newspaper" dsID="MODS"
                        dsLabel="MODS datastream"
                        dsMIME="text/xml"
-                       versionable="false"
+                       versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="MD5"
                        logMessage="Updating objects as part of a doms install/upgrade">
