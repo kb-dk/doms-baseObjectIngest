@@ -8,10 +8,8 @@
     <v:viewangle name="GUI">
         <v:relations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
                      xmlns:fedora="info:fedora/fedora-system:def/relations-external#">
-            <doms:hasFile/>
             <doms:hasEditionPage/>
             <doms:hasBrik/>
-            <fedora:hasPart/>
         </v:relations>
         <v:inverseRelations/>
     </v:viewangle>
