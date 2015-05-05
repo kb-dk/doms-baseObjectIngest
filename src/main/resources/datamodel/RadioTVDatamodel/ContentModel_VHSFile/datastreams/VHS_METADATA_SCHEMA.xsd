@@ -8,14 +8,15 @@
     <xs:element name="vhs_metadata"
                 type="tns:vhs_metadata"/>
 
+
     <xs:complexType name="vhs_metadata">
         <xs:sequence>
             <xs:element name="channelID" type="xs:string"/>
             <xs:element name="filename" type="xs:string"/>
             <xs:element name="checksum" type="xs:string"/>
             <xs:element name="recorder" type="xs:string"/>
-            <xs:element name="annotation" type="xs:string" minOccurs="0"/>
-            <xs:element name="vhs_label" type="xs:string"/>
+            <xs:element minOccurs="0" name="annotation" type="xs:string"/>
+            <xs:element name="vhs_label" type="xs:string"></xs:element>
             <xs:element minOccurs="0" name="start_time" type="xs:dateTime"/>
             <xs:element minOccurs="0" name="stop_time" type="xs:dateTime"/>
             <xs:element name="quality" type="xs:int">
@@ -26,6 +27,30 @@
                 </xs:annotation>
             </xs:element>
             <xs:element minOccurs="0" name="recorded_duration" type="xs:time"/>
+            <xs:group ref="tns:vhs2_metadata" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+
+    <!--
+    Identification metadata for the Video Cassette recorder (or other video source) used for the digitisation.
+    -->
+    <xs:complexType name="vcr_metadata">
+        <xs:sequence>
+            <xs:element name="manufacturer" type="xs:string"/>
+            <xs:element name="model" type="xs:string"/>
+            <xs:element name="serial_number" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--
+    Optional group representing new metadata elements in the new h.264 digitisation workflow based on the Colossus
+    card.
+    -->
+    <xs:group name="vhs2_metadata">
+        <xs:sequence>
+            <xs:element name="vcr_metadata" type="tns:vcr_metadata"/>
+            <xs:element name="json_original" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+
 </xs:schema>
