@@ -98,4 +98,16 @@
             ${XML_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
+
+    <def:modifyDatastream pid="doms:ContentModel_Program" dsID="ACCESS_SCHEMA"
+                          dsLabel="Access datastream schema"
+                          dsMIME="text/xml"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            ${Access_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
 </def:batchModify>
