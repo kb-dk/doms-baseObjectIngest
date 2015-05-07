@@ -104,7 +104,7 @@
         </def:xmlData>
     </def:addDatastream>
 
-    <def:addDatastream pid="doms:ContentModel_Program" dsID="ACCESS_SCHEMA"
+    <def:addDatastream pid="doms:ContentModel_Edition" dsID="ACCESS_SCHEMA"
                        dsLabel="Access datastream schema"
                        dsMIME="text/xml"
                        versionable="true"

@@ -89,7 +89,7 @@
         </def:xmlData>
     </def:modifyDatastream>
 
-    <def:modifyDatastream pid="doms:ContentModel_Program" dsID="ACCESS_SCHEMA"
+    <def:modifyDatastream pid="doms:ContentModel_Edition" dsID="ACCESS_SCHEMA"
                           dsLabel="Access datastream schema"
                           dsMIME="text/xml"
                           versionable="true"
