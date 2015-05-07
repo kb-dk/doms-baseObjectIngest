@@ -5,11 +5,13 @@ These are the scripts for creating all our content models, templates and license
 
 To create all objects in a clean DOMS system, run the script
 
-    createAll.sh
+* `createAll.sh`
 
-To update objects with changes since the previous release of doms-baseObjectIngest, run the script
+To update objects with changes since the previous release of doms-baseObjectIngest, run the scripts
 
-    updateAll.sh
+* `createAll.sh`
+* `update-` _versionnumber_ `.sh` (for all version numbers between what is currently installed and this version)
+* `rebuildupdatetracker.sh` (unless you _KNOW_ the views haven't changed)
 
 How to define new objects
 -------------------------
@@ -30,10 +32,7 @@ In `pom.xml`
 
  * For each datastream, add the property " _objectname_ `_` _datastreamname_ `_file` " and point it at the file in the `datastreams` directory
 
-In the file `update` _collectionname_ `objects.sh`
-
- * Add your new object as described in the file.
- * After next release, remove this, as it is now part of the base installation.
+If the new objects change view definitions (that is: If the object is a content model, and either the VIEW datastream or the relation "isEntryViewAngleFor" in RELS_EXT is changed), update the `src/main/scripts/rebuildupdatetracker.sh` script to reflect the new content models. 
 
 This description leaves out a lot of details. Make sure you look at an existing object definition, and copy its behaviour.
 
@@ -42,20 +41,13 @@ How to update objects
 
  * Update all the files in `src/main/resources/datamodel/` _collectionname_ `/` _objectname_ `/` as described in the section above.
  * Update `pom.xml` with new properties if you have added new datastreams.
- * Update `update` _collectionname_ `objects.sh` as descibed in the file.
- * After release, remove what you have added to `update` _collectionname_ `objects.sh`
 
-Special case: Deleting a datastream:
+If the updated objects change view definitions (that is: If the object is a content model, and either the VIEW datastream or the relation "isEntryViewAngleFor" in RELS_EXT is changed), update the `src/main/scripts/rebuildupdatetracker.sh` script to reflect the new content models. On installation this script must be run. 
 
- * Make a new xml file that purges the datastream.
- * Add a reference to that file from `update` _collectionname_ `objects.sh`.
- * Remove references to the datastream from the `datastreams` directory, the files `create.xml` and `setContent.xml`, and from `pom.xml`
- * After release remove the xml file and the reference in the `update` _collectionname_ `objects.sh`.
+Special case: Deleting a datastream or an object:
 
-Special case: Deleting an object
-
- * Replace the entire contents of `src/main/resources/datamodel/` _collectionname_ `/` _objectname_ `/` with an xml file that removes the object.
- * Remove references to the object from `pom.xml`
- * Add a reference to that file from `update` _collectionname_ `objects.sh`.
- * After release remove the xml file and the reference in the `update` _collectionname_ `objects.sh`.
-
+ * Make a directory `src/main/resources/datamodelupdates/` _versionnumber_ `/` _collectionname_ `/` _objectname_ `/`
+ * Make a new xml file that purges the datastream or object.
+ * In `src/main/scripts` make a shellscript called `update-` _versionnumber_ `.sh` (using `create....sh` as template) that calls that file.
+ * Remove references to the datastream or object from the `src/main/resources/datamodel/` directory, the files `create.xml` and `setContent.xml`, and from `pom.xml`
+ * On the next update, the scripts "`update-` _versionnumber_ `.sh`"  must be run.
