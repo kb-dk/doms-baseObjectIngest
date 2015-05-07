@@ -23,6 +23,13 @@
             <fileMode>0644</fileMode>
             <directoryMode>0755</directoryMode>
         </fileSet>
+        <fileSet>
+            <outputDirectory>scripts/datamodelupdates</outputDirectory>
+            <directory>src/main/resources/datamodelupdates</directory>
+            <filtered>true</filtered>
+            <fileMode>0644</fileMode>
+            <directoryMode>0755</directoryMode>
+        </fileSet>
     </fileSets>
     <files>
         <file>

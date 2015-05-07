@@ -1,7 +1,7 @@
 1.15
-* Make updates be only from previous versions.
 * Remove references to old SHARD datamodel
-* Add a warning if you use createAll.sh
+* New upgrade strategy
+* Add scripts for building updateTracker database from content models
 
 1.14
 * Make ContentModel_EditionPage the only content model with SummaVisible entry view angle in the newspaper datamodel
