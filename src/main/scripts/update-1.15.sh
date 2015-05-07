@@ -10,7 +10,7 @@ source $SCRIPT_DIR/common.sh
 #
 echo "Creating base doms objects"
 
-for file in $(ls $BASEDIR/scripts/datamodelupdates/1.15/*/*.xml); do
+for file in $(ls $BASEDIR/scripts/datamodelupdates/1.15/*/*/*.xml); do
     batchProcess $file
 done
 
