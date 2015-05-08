@@ -3,6 +3,6 @@
 
 
     <def:modifyObject pid="doms:Root_Collection" state="A"  label="Root Collection"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Publishing"/>
 
 </def:batchModify>

@@ -4,7 +4,7 @@
 
     <!--ContentModel_ReklameFile-->
     <def:modifyObject pid="doms:ContentModel_ReklameFile" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
     <def:modifyDatastream pid="doms:ContentModel_ReklameFile" dsID="DS-COMPOSITE-MODEL"
                           dsLabel=""
                           dsMIME="text/xml"
@@ -12,7 +12,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_DSCOMP_file_contents}
         </def:xmlData>
@@ -23,7 +23,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_FFProbe_file_contents}
         </def:xmlData>
@@ -35,7 +35,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_FFProbe_error_log_file_contents}
         </def:xmlData>
@@ -47,7 +47,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_reklame_metadata_file_contents}
         </def:xmlData>
@@ -60,7 +60,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_RELS-EXT_file_contents}
         </def:xmlData>
@@ -71,7 +71,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_VIEW_file_contents}
         </def:xmlData>
@@ -83,7 +83,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ReklameFile_ONTOLOGY_file_contents}
         </def:xmlData>

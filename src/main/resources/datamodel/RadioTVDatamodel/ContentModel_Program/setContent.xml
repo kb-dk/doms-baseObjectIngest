@@ -4,7 +4,7 @@
 
     <!--ContentModel_Program-->
     <def:modifyObject pid="doms:ContentModel_Program" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
     <def:modifyDatastream pid="doms:ContentModel_Program" dsID="DS-COMPOSITE-MODEL"
                           dsLabel=""
                           dsMIME="text/xml"
@@ -12,7 +12,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Program_DSCOMP_file_contents}
         </def:xmlData>
@@ -24,7 +24,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Program_RELS-EXT_file_contents}
         </def:xmlData>
@@ -35,7 +35,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Program_VIEW_file_contents}
         </def:xmlData>
@@ -47,7 +47,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Program_ONTOLOGY_file_contents}
         </def:xmlData>
@@ -58,7 +58,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${PBCore_file_contents}
         </def:xmlData>
@@ -69,7 +69,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${RitzauOriginal_file_contents}
         </def:xmlData>
@@ -80,7 +80,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${GallupOriginal_file_contents}
         </def:xmlData>
@@ -91,7 +91,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ProgramStructure_file_contents}
         </def:xmlData>
@@ -102,7 +102,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${ProgramBroadcast_file_contents}
         </def:xmlData>
@@ -114,7 +114,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Program_METHODS_file_contents}
         </def:xmlData>
@@ -126,7 +126,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Annotations_file_contents}
         </def:xmlData>
@@ -138,7 +138,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Access_file_contents}
         </def:xmlData>
@@ -151,7 +151,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Program_LINKPATTERN_file_contents}
         </def:xmlData>

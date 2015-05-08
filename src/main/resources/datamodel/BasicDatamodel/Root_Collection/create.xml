@@ -4,9 +4,9 @@
 
 
     <def:addObject pid="doms:Root_Collection" label="Root Collection"
-                   contentModel="string" logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                   contentModel="string" logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
     <def:modifyObject pid="doms:Root_Collection" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
     <def:addDatastream pid="doms:Root_Collection" dsID="RELS-EXT"
                        dsLabel="Relationships"
                        dsMIME="application/rdf+xml"
@@ -14,7 +14,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">

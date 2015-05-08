@@ -4,9 +4,9 @@
 
 
     <def:addObject pid="doms:Template_RadioTVFile" label="Radio/TV File"
-                   contentModel="string" logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                   contentModel="string" logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
     <def:modifyObject pid="doms:Template_RadioTVFile" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
     <def:addDatastream pid="doms:Template_RadioTVFile" dsID="RELS-EXT"
                        dsLabel="Relationships"
                        dsMIME="application/rdf+xml"
@@ -14,7 +14,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
@@ -30,7 +30,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="E" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}"
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects"
                        dsLocation="http://local.fedora.server/fedora/objects/doms:RadioTV_InhouseLicense/datastreams/LICENSE/content">
     </def:addDatastream>
 

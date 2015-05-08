@@ -3,9 +3,9 @@
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
     <def:addObject pid="doms:ContentModel_DOMS" label="Root content model for all objects"
-                   contentModel="string" logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                   contentModel="string" logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
     <def:modifyObject pid="doms:ContentModel_DOMS" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
     <def:addDatastream pid="doms:ContentModel_DOMS" dsID="DS-COMPOSITE-MODEL"
                        dsLabel=""
                        dsMIME="text/xml"
@@ -13,7 +13,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
         <def:xmlData>
             <dsCompositeModel
                     xmlns="info:fedora/fedora-system:def/dsCompositeModel#"/>
@@ -26,7 +26,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
@@ -40,7 +40,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
         <def:xmlData>
             <placeholder/>
         </def:xmlData>
@@ -52,7 +52,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="DISABLED"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
         <def:xmlData>
             <placeholder/>
         </def:xmlData>

@@ -1,10 +1,10 @@
 <def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
     <def:modifyObject pid="doms:Template_RoundTrip" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
 
     <def:modifyObject pid="doms:Template_RoundTrip" state="I"  label="Newspaper Roundtrip"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
     <def:modifyDatastream pid="doms:Template_RoundTrip" dsID="RELS-EXT"
                           dsLabel="Relationships"
                           dsMIME="application/rdf+xml"
@@ -12,7 +12,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="DISABLED"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"

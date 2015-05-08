@@ -4,7 +4,7 @@
 
     <!--ContentModel_Newspaper-->
     <def:modifyObject pid="doms:ContentModel_Newspaper" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
     <def:modifyDatastream pid="doms:ContentModel_Newspaper" dsID="DS-COMPOSITE-MODEL"
                           dsLabel=""
                           dsMIME="text/xml"
@@ -12,7 +12,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Newspaper_DSCOMP_file_contents}
         </def:xmlData>
@@ -24,7 +24,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Newspaper_RELS-EXT_file_contents}
         </def:xmlData>
@@ -35,7 +35,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Newspaper_VIEW_file_contents}
         </def:xmlData>
@@ -47,7 +47,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${Newspaper_ONTOLOGY_file_contents}
         </def:xmlData>
@@ -59,7 +59,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${MODS_35_file_contents}
         </def:xmlData>
@@ -71,7 +71,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${XLINK_file_contents}
         </def:xmlData>
@@ -83,7 +83,7 @@
                           versionable="true"
                           altIDs="" dsControlGroupType="X" dsState="A"
                           checksumType="MD5"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             ${XML_file_contents}
         </def:xmlData>

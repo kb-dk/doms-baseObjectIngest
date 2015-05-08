@@ -4,12 +4,12 @@
 
 
     <def:modifyObject pid="doms:DOMS_Base_Collection" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
     <def:modifyDatastream pid="doms:DOMS_Base_Collection" dsID="RELS-EXT"
                           dsMIME="application/rdf+xml"
                           formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
                           dsControlGroupType="X"
-                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">

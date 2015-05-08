@@ -1,7 +1,7 @@
 <def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
     <def:modifyObject pid="doms:ContentModel_Edition" state="I"
-                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
+                      logMessage="base-objects-ingester version ${project.version} - Migration for version 1.15"/>
 
     <def:addDatastream pid="doms:ContentModel_Edition" dsID="ACCESS_SCHEMA"
                        dsLabel="Access datastream schema"
@@ -9,7 +9,7 @@
                        versionable="true"
                        altIDs="" dsControlGroupType="X" dsState="A"
                        checksumType="MD5"
-                       logMessage="Updating objects using base-objects-ingester version ${project.version}">
+                       logMessage="base-objects-ingester version ${project.version} - Migration for version 1.15">
         <def:xmlData>
             <placeholder/>
         </def:xmlData>
