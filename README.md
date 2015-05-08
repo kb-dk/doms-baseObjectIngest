@@ -11,10 +11,20 @@ To update objects with changes since the previous release of doms-baseObjectInge
 
 * `migrate-` _versionnumber_ `.sh` (for all version numbers between what is currently installed and this version)
 * `updateAll.sh`
-* `rebuildupdatetracker.sh` (unless you _KNOW_ the views haven't changed)
+* `rebuildupdatetracker.sh` (unless you _KNOW_ the views haven't changed - make a note in CHANGELOG)
 
-How to define new objects
--------------------------
+<!-- TODO It would be a good idea to store the version number of the last base objects ingester in DOMS, and make logic for using that object to select creation or correct migrations -->
+
+How to update objects
+---------------------
+
+ * Update all the files in `src/main/resources/datamodel/` _collectionname_ `/` _objectname_ `/` as described in the section above.
+ * Update `pom.xml` with new properties if you have added new datastreams.
+
+If the updated objects change view definitions (that is: If the object is a content model, and either the VIEW datastream or the relation "isEntryViewAngleFor" in RELS_EXT is changed), update the `src/main/scripts/rebuildupdatetracker.sh` script to reflect the new content models. On installation this script must be run. 
+
+How to define new objects or datastreams
+----------------------------------------
 
 In the directory `src/main/resources/datamodel/` _collectionname_ `/`
 
@@ -32,24 +42,27 @@ In `pom.xml`
 
  * For each datastream, add the property " _objectname_ `_` _datastreamname_ `_file` " and point it at the file in the `datastreams` directory
 
+Create migration script
+
+ * Make a directory `src/main/resources/migrate/` _versionnumber_ `/` _collectionname_ `/` _objectname_ `/`
+ * Make a new xml file that creates the datastream or object.
+ * In `src/main/scripts` make a shellscript called `migrate-` _versionnumber_ `.sh` (using a previous migration script as template) that calls that file.
+ * On the next update, the scripts "`migrate-` _versionnumber_ `.sh`"  must be run.
+
 If the new objects change view definitions (that is: If the object is a content model, and either the VIEW datastream or the relation "isEntryViewAngleFor" in RELS_EXT is changed), update the `src/main/scripts/rebuildupdatetracker.sh` script to reflect the new content models. 
 
 This description leaves out a lot of details. Make sure you look at an existing object definition, and copy its behaviour.
 
-How to update objects
----------------------
+How to delete objects or datastreams
+------------------------------------
 
- * Update all the files in `src/main/resources/datamodel/` _collectionname_ `/` _objectname_ `/` as described in the section above.
- * Update `pom.xml` with new properties if you have added new datastreams.
+ * Remove references to the datastream or object from the `src/main/resources/datamodel/` directory, the files `create.xml` and `setContent.xml`, and from `pom.xml`
 
-If the updated objects change view definitions (that is: If the object is a content model, and either the VIEW datastream or the relation "isEntryViewAngleFor" in RELS_EXT is changed), update the `src/main/scripts/rebuildupdatetracker.sh` script to reflect the new content models. On installation this script must be run. 
-
-Special case: Deleting a datastream or an object:
+Create migration script
 
  * Make a directory `src/main/resources/migrate/` _versionnumber_ `/` _collectionname_ `/` _objectname_ `/`
  * Make a new xml file that purges the datastream or object.
  * In `src/main/scripts` make a shellscript called `migrate-` _versionnumber_ `.sh` (using `create....sh` as template) that calls that file.
- * Remove references to the datastream or object from the `src/main/resources/datamodel/` directory, the files `create.xml` and `setContent.xml`, and from `pom.xml`
  * On the next update, the scripts "`migrate-` _versionnumber_ `.sh`"  must be run.
  
 If the deleted objects change view definitions (that is: If the object is a content model, or the data stream is from a content model and is either the VIEW datastream or the RELS_EXT is changed), update the `src/main/scripts/rebuildupdatetracker.sh` script to reflect the new content models. On installation this script must be run. 
