@@ -2,13 +2,13 @@
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
     <def:modifyObject pid="doms:ContentModel_File" state="I" label="File"
-                      logMessage="Updating objects as part of a doms install/upgrade"/>
+                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
 
     <def:modifyDatastream pid="doms:ContentModel_File" dsID="DS-COMPOSITE-MODEL"
                           dsMIME="text/xml"
                           formatURI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0"
                           dsControlGroupType="X"
-                          logMessage="Updating objects as part of a doms install/upgrade">
+                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
         <def:xmlData>
             <dsCompositeModel
                     xmlns="info:fedora/fedora-system:def/dsCompositeModel#"
@@ -24,7 +24,7 @@
                           dsMIME="application/rdf+xml"
                           formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
                           dsControlGroupType="X"
-                          logMessage="Updating objects as part of a doms install/upgrade">
+                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
@@ -43,7 +43,7 @@
     <def:modifyDatastream pid="doms:ContentModel_File" dsID="VIEW"
                           dsMIME="application/rdf+xml"
                           dsControlGroupType="X"
-                          logMessage="Updating objects as part of a doms install/upgrade">
+                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
         <def:xmlData>
             <v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#"/>
         </def:xmlData>
@@ -52,7 +52,7 @@
                           dsMIME="application/rdf+xml"
                           formatURI="info:fedora/fedora-system:FedoraOntology-1.0"
                           dsControlGroupType="X"
-                          logMessage="Updating objects as part of a doms install/upgrade">
+                          logMessage="Updating objects using base-objects-ingester version ${project.version}">
         <def:xmlData>
             <rdf:RDF
                     xmlns:owl="http://www.w3.org/2002/07/owl#"

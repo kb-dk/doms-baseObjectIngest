@@ -2,6 +2,6 @@
                  xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
 
     <def:modifyObject pid="doms:RadioTV_Collection" state="A" label="Radio/TV collection"
-                      logMessage="Updating objects as part of a doms install/upgrade"/>
+                      logMessage="Updating objects using base-objects-ingester version ${project.version}"/>
 
 </def:batchModify>
