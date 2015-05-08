@@ -1,7 +1,17 @@
 1.15
+* To update from a previous version
+  * run migrate_1.15.sh
+  * updateAll.sh
+  * apply the database schemas supplied
+  * run rebuildupdatetracker.sh
 * Remove references to old SHARD datamodel
-* New upgrade strategy
+* New upgrade strategy. No errors should be acceptable. Migrationsscripts need to be run before update.
 * Add scripts for building updateTracker database from content models
+* Add "rawxml" is GUI type for MODS
+* Remove SBOI entry content model for batches (the correct is roundtrips)
+* Cleanup of SummaVisible relations for EditionPage
+* Add ACCESS datastream for "klausuleret" and "individuelt forbud"
+* All content model datastreams are vesrioned
 
 1.14
 * Make ContentModel_EditionPage the only content model with SummaVisible entry view angle in the newspaper datamodel
