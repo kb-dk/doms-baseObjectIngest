@@ -8,25 +8,20 @@ source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "Creating Newspaper doms objects"
+echo "UPDATING Radio TV doms objects"
 
-DIR="$BASEDIR/scripts/NewspaperDatamodel/"
-
-for file in $(ls $DIR/*/create.xml); do
+for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/setContent.xml); do
     batchProcess $file
 done
 
-for file in $(ls $DIR/*/setContent.xml); do
+for file in $(ls $BASEDIR/scripts/RadioTVDatamodel/*/publish.xml); do
     batchProcess $file
 done
 
-for file in $(ls $DIR/*/publish.xml); do
-    batchProcess $file
-done
+
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""
 echo ""
-
 
 

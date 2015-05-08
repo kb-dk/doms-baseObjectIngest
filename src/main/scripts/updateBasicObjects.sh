@@ -4,29 +4,26 @@
 SCRIPT_DIR=$(dirname $(readlink -f $BASH_SOURCE[0]))
 BASEDIR=$SCRIPT_DIR/..
 
+
 source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "Creating Newspaper doms objects"
+echo "UPDATING base doms objects"
 
-DIR="$BASEDIR/scripts/NewspaperDatamodel/"
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/setContent.xml); do
+    batchProcess $file
+done
+echo "Expect the ContentModel_File to report an error"
 
-for file in $(ls $DIR/*/create.xml); do
+for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/publish.xml); do
     batchProcess $file
 done
 
-for file in $(ls $DIR/*/setContent.xml); do
-    batchProcess $file
-done
 
-for file in $(ls $DIR/*/publish.xml); do
-    batchProcess $file
-done
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""
 echo ""
-
 
 

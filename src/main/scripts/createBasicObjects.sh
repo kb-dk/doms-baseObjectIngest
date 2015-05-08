@@ -22,7 +22,7 @@ for file in $(ls $BASEDIR/scripts/BasicDatamodel/*/publish.xml); do
     batchProcess $file
 done
 
-echo "There should be no undeclared errors in this result. If there are, something has failed."
+echo "There should be no errors in this result. If there are, something has failed."
 echo ""
 echo ""
 

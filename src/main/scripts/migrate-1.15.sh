@@ -6,11 +6,11 @@ BASEDIR=$SCRIPT_DIR/..
 
 source $SCRIPT_DIR/common.sh
 #
-# Data model updates since 1.15
+# Data model updates in 1.15
 #
 echo "Creating base doms objects"
 
-for file in $(ls $BASEDIR/scripts/datamodelupdates/1.15/*/*/*.xml); do
+for file in $(ls $BASEDIR/scripts/migrate/1.15/*/*/*.xml); do
     batchProcess $file
 done
 
