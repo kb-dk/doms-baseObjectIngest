@@ -45,7 +45,7 @@ In `pom.xml`
 Create migration script
 
  * Make a directory `src/main/resources/migrate/` _versionnumber_ `/` _collectionname_ `/` _objectname_ `/`
- * Make a new xml file that creates the datastream or object.
+ * Make a new xml file that creates the datastream or object. If it's a new datastream, remember to set the object inactive before adding.
  * In `src/main/scripts` make a shellscript called `migrate-` _versionnumber_ `.sh` (using a previous migration script as template) that calls that file.
  * On the next update, the scripts "`migrate-` _versionnumber_ `.sh`"  must be run.
 
@@ -61,7 +61,7 @@ How to delete objects or datastreams
 Create migration script
 
  * Make a directory `src/main/resources/migrate/` _versionnumber_ `/` _collectionname_ `/` _objectname_ `/`
- * Make a new xml file that purges the datastream or object.
+ * Make a new xml file that purges the datastream or object. Remember to set the object inactive first (or deleted, if you delete the object afterwards).
  * In `src/main/scripts` make a shellscript called `migrate-` _versionnumber_ `.sh` (using `create....sh` as template) that calls that file.
  * On the next update, the scripts "`migrate-` _versionnumber_ `.sh`"  must be run.
  
