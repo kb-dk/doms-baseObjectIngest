@@ -8,7 +8,7 @@ source $SCRIPT_DIR/common.sh
 #
 # Data model updates in 1.15
 #
-echo "Creating base doms objects"
+echo "Migrating to version 1.15"
 
 for file in $(ls $BASEDIR/scripts/migrate/1.15/*/*/*.xml); do
     batchProcess $file
