@@ -1,0 +1,12 @@
+<v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#">
+    <v:viewangle name="GUI">
+        <v:relations xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#">
+            <doms:hasIsoTarget/>
+            <doms:hasEdition/>
+            <doms:hasUnmatched/>
+        </v:relations>
+        <v:inverseRelations/>
+    </v:viewangle>
+
+</v:views>
+

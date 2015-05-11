@@ -46,7 +46,7 @@
                           dsControlGroupType="X"
                           logMessage="Updating objects as part of a doms install/upgrade">
         <def:xmlData>
-            <v:views xmlns:v="http://ecm.sourceforge.net/types/view/0/2/#">
+            <v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#">
             </v:views>
         </def:xmlData>
     </def:modifyDatastream>
@@ -79,16 +79,6 @@
                                     rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfCollection"/>
                             <owl:allValuesFrom
                                     rdf:resource="info:fedora/doms:ContentModel_Collection#class"/>
-                        </owl:Restriction>
-                    </rdfs:subClassOf>
-
-                    <rdfs:subClassOf>
-                        <owl:Restriction>
-                            <owl:onProperty
-                                    rdf:resource="http://doms.statsbiblioteket.dk/relations/default/0/1/#hasLicense"/>
-                            <owl:cardinality
-                                    rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1
-                            </owl:cardinality>
                         </owl:Restriction>
                     </rdfs:subClassOf>
 

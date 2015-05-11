@@ -1,0 +1,15 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
+         >
+    <rdf:Description rdf:about="info:fedora/doms:ContentModel_Edition">
+        <hasModel rdf:resource="info:fedora/fedora-system:ContentModel-3.0"
+                  xmlns="info:fedora/fedora-system:def/model#"/>
+        <hasModel rdf:resource="info:fedora/doms:ContentModel_DOMS"
+                  xmlns="info:fedora/fedora-system:def/model#"/>
+        <doms:extendsModel rdf:resource="info:fedora/doms:ContentModel_Item"/>
+        <doms:isPartOfCollection rdf:resource="info:fedora/doms:Newspaper_Collection"/>
+        <doms:isEntryForViewAngle>GUI</doms:isEntryForViewAngle>
+        <doms:hasLicense rdf:resource="info:fedora/doms:Open_License"/>
+    </rdf:Description>
+</rdf:RDF>
+

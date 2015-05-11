@@ -8,17 +8,16 @@ source $SCRIPT_DIR/common.sh
 #
 # Ingest initial objects
 #
-echo "UPDATING base doms objects"
+echo "UPDATING Reklamefilm doms objects"
 
-for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/setContent.xml); do
-    batchProcess $file
-done
+# No new objects since last release. If there are, add the new objects like this:
+# batchProcess $BASEDIR/scripts/ReklamefilmDatamodel/ContentModel_Reklamefilm/create.xml
+# batchProcess $BASEDIR/scripts/ReklamefilmDatamodel/ContentModel_Reklamefilm/setContent.xml
+# batchProcess $BASEDIR/scripts/ReklamefilmDatamodel/ContentModel_Reklamefilm/publish.xml
 
-for file in $(ls $BASEDIR/scripts/ReklamefilmDatamodel/*/publish.xml); do
-    batchProcess $file
-done
-
-
+# No changed objects since last release. If there are, add the changed objects like this:
+# batchProcess $BASEDIR/scripts/ReklamefilmDatamodel/ContentModel_Reklamefilm/setContent.xml
+# batchProcess $BASEDIR/scripts/ReklamefilmDatamodel/ContentModel_Reklamefilm/publish.xml
 
 echo "There should be no errors in this result. If there are, something has failed."
 echo ""

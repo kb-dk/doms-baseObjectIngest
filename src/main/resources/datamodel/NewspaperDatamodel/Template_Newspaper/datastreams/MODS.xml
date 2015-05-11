@@ -1,0 +1,63 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <titleInfo>
+        <title>[Titel]</title>
+    </titleInfo>
+    <titleInfo type="uniform">
+        <title>[Uniform Titel]</title>
+    </titleInfo>
+    <originInfo>
+        <place>
+            <placeTerm type="text">[København]</placeTerm>
+        </place>
+        <dateIssued keyDate="yes" encoding="iso8601" point="start">[1983-01-01]</dateIssued>
+        <dateIssued encoding="iso8601" point="end">[1987-05-02]</dateIssued>
+        <issuance>serial</issuance>
+    </originInfo>
+    <abstract xlink:href="http://dedanskeaviser.dk" lang="dan">læs mere om denne avis i dda</abstract>
+    <note displayLabel="kendte mangler">[kendte mangler]</note>
+    <genre authority="marcgt">newspaper</genre>
+    <typeOfResource>text</typeOfResource>
+    <identifier type="dda">[1-137]</identifier>
+    <identifier type="title">[sdfsd]</identifier>
+    <identifier type="title_family">[... avis id from ninestars]</identifier>
+    <physicalDescription>
+        <digitalOrigin>digitized microfilm</digitalOrigin>
+        <internetMediaType>text</internetMediaType>
+        <internetMediaType>image/jp2</internetMediaType>
+        <form authority="marcform">electronic</form>
+    </physicalDescription>
+    <location>
+        <url usage="primary display" access="object in context">http://statsbibliotekt.dk/placeholder</url>
+    </location>
+    <language>
+        <languageTerm type="code" authority="iso639-2b">dan</languageTerm>
+    </language>
+    <subject usage="primary">
+        <temporal point="start" encoding="iso8601">[1983-01-01]</temporal>
+        <temporal point="end" encoding="iso8601">[1987-05-02]</temporal>
+        <hierarchicalGeographic>
+            <country>[Danmark]</country>
+            <area>[Sjælland]</area>
+            <city>[København]</city>
+        </hierarchicalGeographic>
+        <geographicCode>[1]</geographicCode>
+    </subject>
+    <subject>
+        <temporal point="start" encoding="iso8601">[1983-01-01]</temporal>
+        <temporal point="end" encoding="iso8601">[1985-05-11]</temporal>
+        <hierarchicalGeographic>
+            <country>[Danmark]</country>
+            <area>[Sjælland]</area>
+            <city>[Hillerød]</city>
+        </hierarchicalGeographic>
+        <geographicCode>[8]</geographicCode>
+    </subject>
+    <accessCondition lang="eng">this resource has limited ... URL</accessCondition>
+    <accessCondition lang="dan">denne ressource ... URL</accessCondition>
+    <recordInfo>
+        <languageOfCataloging>
+            <languageTerm type="code" authority="iso639-2b">dan</languageTerm>
+        </languageOfCataloging>
+        <recordCreationDate encoding="iso8601">[2014-04-03]</recordCreationDate>
+    </recordInfo>
+</mods>

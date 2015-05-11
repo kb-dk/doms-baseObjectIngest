@@ -12,16 +12,14 @@ echo "UPDATING Newspaper doms objects"
 
 DIR="$BASEDIR/scripts/NewspaperDatamodel/"
 
-for file in $(ls $DIR/*/setContent.xml); do
-    batchProcess $file
-done
+# No new objects since last release. If there are, add the new objects like this:
+# batchProcess $DIR/ContentModel_Batch/create.xml
+# batchProcess $DIR/ContentModel_Batch/setContent.xml
+# batchProcess $DIR/ContentModel_Batch/publish.xml
 
-
-for file in $(ls $DIR/*/publish.xml); do
-    batchProcess $file
-done
-
-
+# No changed objects since last release. If there are, add the changed objects like this:
+# batchProcess $DIR/ContentModel_Batch/setContent.xml
+# batchProcess $DIR/ContentModel_Batch/publish.xml
 
 echo "There should be no undeclared errors in this result. If there are, something has failed."
 echo ""

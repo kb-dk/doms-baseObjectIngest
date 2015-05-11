@@ -10,7 +10,7 @@
                 <owl:onProperty
                         rdf:resource="info:fedora/fedora-system:def/relations-external#hasPart"/>
                 <owl:allValuesFrom
-                        rdf:resource="info:fedora/doms:ContentModel_Run#class"/>
+                        rdf:resource="info:fedora/doms:ContentModel_RoundTrip#class"/>
             </owl:Restriction>
 
         </rdfs:subClassOf>

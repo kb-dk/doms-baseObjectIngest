@@ -1,0 +1,64 @@
+<dsCompositeModel xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+
+    <dsTypeModel ID="CONTENTS">
+        <form MIME="image/jp2"></form>
+        <extension name="SCAPE">
+            <mapsAs name="file_content"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="JPYLYZER" optional="true">
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="JPYLYZER_SCHEMA"/>
+        </extension>
+        <extension name="SCAPE">
+            <mapsAs name="file_technical"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="SCAPE_DESCRIPTIVE" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="SCAPE">
+            <mapsAs name="descriptive"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="SCAPE_LIFECYCLE" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="SCAPE">
+            <mapsAs name="lifecycle"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="SCAPE_RIGHTS" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="SCAPE">
+            <mapsAs name="rights"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="SCAPE_PROVENANCE" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="SCAPE">
+            <mapsAs name="provenance"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="SCAPE_SOURCE" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="SCAPE">
+            <mapsAs name="source"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="SCAPE_REPRESENTATION_TECHNICAL" optional="true">
+        <form MIME="text/xml"/>
+        <extension name="SCAPE">
+            <mapsAs name="representation_technical"/>
+        </extension>
+    </dsTypeModel>
+
+</dsCompositeModel>

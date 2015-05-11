@@ -6,12 +6,12 @@
     <parent>
         <groupId>org.sbforge</groupId>
         <artifactId>sbforge-parent</artifactId>
-        <version>12</version>
+        <version>16</version>
     </parent>
 
     <groupId>dk.statsbiblioteket.doms.installer</groupId>
     <artifactId>base-objects-ingester</artifactId>
-    <version>0.11.12-SNAPSHOT</version>
+    <version>1.15-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
@@ -20,14 +20,26 @@
         <connection>scm:git:git@github.com:statsbiblioteket/doms-baseObjectIngest.git</connection>
         <url>scm:git:git@github.com:statsbiblioteket/doms-baseObjectIngest.git</url>
         <developerConnection>scm:git:git@github.com:statsbiblioteket/doms-baseObjectIngest.git</developerConnection>
-    </scm>
+      <tag>HEAD</tag>
+  </scm>
 
     <properties>
+
+        <!--Item-->
+
+        <Basic.folder>${project.basedir}/src/main/resources/datamodel/BasicDatamodel</Basic.folder>
+        <Item.object.folder>${Basic.folder}/ContentModel_Item/datastreams</Item.object.folder>
+        <Item_DSCOMP_file>${Item.object.folder}/DS-COMPOSITE-MODEL.xml</Item_DSCOMP_file>
+        <Item_ONTOLOGY_file>${Item.object.folder}/ONTOLOGY.xml</Item_ONTOLOGY_file>
+        <Item_RELS-EXT_file>${Item.object.folder}/RELS-EXT.xml</Item_RELS-EXT_file>
+        <Item_VIEW_file>${Item.object.folder}/VIEW.xml</Item_VIEW_file>
+
+        <XLINK_file>${Basic.folder}/ThirdPartySchemas/XLINK_SCHEMA.xsd</XLINK_file>
+        <EVENTS_SCHEMA_file>${Basic.folder}/ThirdPartySchemas/EVENTS_SCHEMA.xsd</EVENTS_SCHEMA_file>
 
 
         <!--Reklamefilm-->
         <Reklamefilm.folder>${project.basedir}/src/main/resources/datamodel/ReklamefilmDatamodel</Reklamefilm.folder>
-
         <Reklamefilm.object.folder>${Reklamefilm.folder}/ContentModel_Reklamefilm/datastreams</Reklamefilm.object.folder>
         <Reklamefilm_DSCOMP_file>${Reklamefilm.object.folder}/DS-COMPOSITE-MODEL.xml</Reklamefilm_DSCOMP_file>
         <Reklamefilm_METHODS_file>${Reklamefilm.object.folder}/METHODS.xml</Reklamefilm_METHODS_file>
@@ -51,7 +63,6 @@
 
         <program.object.folder>${schema.folder}/ContentModel_Program/datastreams</program.object.folder>
         <radioTVFile.object.folder>${schema.folder}/ContentModel_RadioTVFile/datastreams</radioTVFile.object.folder>
-        <shard.object.folder>${schema.folder}/ContentModel_Shard/datastreams</shard.object.folder>
         <vhsFile.object.folder>${schema.folder}/ContentModel_VHSFile/datastreams</vhsFile.object.folder>
 
         <RadioTVFile_DSCOMP_file>${radioTVFile.object.folder}/DS-COMPOSITE-MODEL.xml</RadioTVFile_DSCOMP_file>
@@ -81,14 +92,6 @@
         <Annotations_file>${program.object.folder}/ANNOTATIONS_SCHEMA.xsd</Annotations_file>
         <Access_file>${program.object.folder}/ACCESS_SCHEMA.xsd</Access_file>
 
-        <Shard_DSCOMP_file>${shard.object.folder}/DS-COMPOSITE-MODEL.xml</Shard_DSCOMP_file>
-        <!--<Shard_METHODS_file>${shard.object.folder}/METHODS.xml</Shard_METHODS_file>-->
-        <Shard_ONTOLOGY_file>${shard.object.folder}/ONTOLOGY.xml</Shard_ONTOLOGY_file>
-        <Shard_RELS-EXT_file>${shard.object.folder}/RELS-EXT.xml</Shard_RELS-EXT_file>
-        <Shard_VIEW_file>${shard.object.folder}/VIEW.xml</Shard_VIEW_file>
-        <ShardMetadata_file>${shard.object.folder}/SHARD_METADATA_SCHEMA.xsd</ShardMetadata_file>
-
-
         <VHSFile_DSCOMP_file>${vhsFile.object.folder}/DS-COMPOSITE-MODEL.xml</VHSFile_DSCOMP_file>
         <VHSFile_METHODS_file>${vhsFile.object.folder}/METHODS.xml</VHSFile_METHODS_file>
         <VHSFile_ONTOLOGY_file>${vhsFile.object.folder}/ONTOLOGY.xml</VHSFile_ONTOLOGY_file>
@@ -100,6 +103,11 @@
 
         <!--Newspaper-->
         <Newspaper.folder>${project.basedir}/src/main/resources/datamodel/NewspaperDatamodel</Newspaper.folder>
+        <MIX_file>${Newspaper.folder}/ThirdPartySchemas/MIX_SCHEMA.xsd</MIX_file>
+        <MODS_file>${Newspaper.folder}/ThirdPartySchemas/MODS_SCHEMA.xsd</MODS_file>
+        <MODS_35_file>${Newspaper.folder}/ThirdPartySchemas/MODS_35_SCHEMA.xsd</MODS_35_file>
+        <ALTO_file>${Newspaper.folder}/ThirdPartySchemas/ALTO_SCHEMA.xsd</ALTO_file>
+        <XML_file>${Newspaper.folder}/ThirdPartySchemas/XML_SCHEMA.xsd</XML_file>
 
         <!--Batch-->
         <Batch.object.folder>${Newspaper.folder}/ContentModel_Batch/datastreams</Batch.object.folder>
@@ -108,19 +116,95 @@
         <Batch_RELS-EXT_file>${Batch.object.folder}/RELS-EXT.xml</Batch_RELS-EXT_file>
         <Batch_VIEW_file>${Batch.object.folder}/VIEW.xml</Batch_VIEW_file>
 
-        <!--Run-->
-        <Run.object.folder>${Newspaper.folder}/ContentModel_Run/datastreams</Run.object.folder>
-        <Run_DSCOMP_file>${Run.object.folder}/DS-COMPOSITE-MODEL.xml</Run_DSCOMP_file>
-        <Run_ONTOLOGY_file>${Run.object.folder}/ONTOLOGY.xml</Run_ONTOLOGY_file>
-        <Run_RELS-EXT_file>${Run.object.folder}/RELS-EXT.xml</Run_RELS-EXT_file>
-        <Run_VIEW_file>${Run.object.folder}/VIEW.xml</Run_VIEW_file>
-        <Run_EVENTS_SCHEMA_file>${Run.object.folder}/EVENTS_SCHEMA.xsd</Run_EVENTS_SCHEMA_file>
+        <!--RoundTrip-->
+        <RoundTrip.object.folder>${Newspaper.folder}/ContentModel_RoundTrip/datastreams</RoundTrip.object.folder>
+        <RoundTrip_DSCOMP_file>${RoundTrip.object.folder}/DS-COMPOSITE-MODEL.xml</RoundTrip_DSCOMP_file>
+        <RoundTrip_ONTOLOGY_file>${RoundTrip.object.folder}/ONTOLOGY.xml</RoundTrip_ONTOLOGY_file>
+        <RoundTrip_RELS-EXT_file>${RoundTrip.object.folder}/RELS-EXT.xml</RoundTrip_RELS-EXT_file>
+        <RoundTrip_VIEW_file>${RoundTrip.object.folder}/VIEW.xml</RoundTrip_VIEW_file>
 
+
+        <!-- JPEG2000 File -->
+        <Jpeg2000File.object.folder>${Newspaper.folder}/ContentModel_Jpeg2000File/datastreams</Jpeg2000File.object.folder>
+        <JPYLYZER_file>${Jpeg2000File.object.folder}/JPYLYZER_SCHEMA.xsd</JPYLYZER_file>
+        <Jpeg2000File_DSCOMP_file>${Jpeg2000File.object.folder}/DS-COMPOSITE-MODEL.xml</Jpeg2000File_DSCOMP_file>
+        <Jpeg2000File_ONTOLOGY_file>${Jpeg2000File.object.folder}/ONTOLOGY.xml</Jpeg2000File_ONTOLOGY_file>
+        <Jpeg2000File_RELS-EXT_file>${Jpeg2000File.object.folder}/RELS-EXT.xml</Jpeg2000File_RELS-EXT_file>
+        <Jpeg2000File_VIEW_file>${Jpeg2000File.object.folder}/VIEW.xml</Jpeg2000File_VIEW_file>
+
+        <!-- Page -->
+        <Page.object.folder>${Newspaper.folder}/ContentModel_Page/datastreams</Page.object.folder>
+        <Page_DSCOMP_file>${Page.object.folder}/DS-COMPOSITE-MODEL.xml</Page_DSCOMP_file>
+        <Page_ONTOLOGY_file>${Page.object.folder}/ONTOLOGY.xml</Page_ONTOLOGY_file>
+        <Page_RELS-EXT_file>${Page.object.folder}/RELS-EXT.xml</Page_RELS-EXT_file>
+        <Page_VIEW_file>${Page.object.folder}/VIEW.xml</Page_VIEW_file>
+
+        <!-- EditionPage -->
+        <EditionPage.object.folder>${Newspaper.folder}/ContentModel_EditionPage/datastreams</EditionPage.object.folder>
+        <EditionPage_DSCOMP_file>${EditionPage.object.folder}/DS-COMPOSITE-MODEL.xml</EditionPage_DSCOMP_file>
+        <EditionPage_ONTOLOGY_file>${EditionPage.object.folder}/ONTOLOGY.xml</EditionPage_ONTOLOGY_file>
+        <EditionPage_RELS-EXT_file>${EditionPage.object.folder}/RELS-EXT.xml</EditionPage_RELS-EXT_file>
+        <EditionPage_VIEW_file>${EditionPage.object.folder}/VIEW.xml</EditionPage_VIEW_file>
+
+
+        <!-- Brik -->
+        <Brik.object.folder>${Newspaper.folder}/ContentModel_Brik/datastreams</Brik.object.folder>
+        <Brik_DSCOMP_file>${Brik.object.folder}/DS-COMPOSITE-MODEL.xml</Brik_DSCOMP_file>
+        <Brik_ONTOLOGY_file>${Brik.object.folder}/ONTOLOGY.xml</Brik_ONTOLOGY_file>
+        <Brik_RELS-EXT_file>${Brik.object.folder}/RELS-EXT.xml</Brik_RELS-EXT_file>
+        <Brik_VIEW_file>${Brik.object.folder}/VIEW.xml</Brik_VIEW_file>
+
+        <!-- Edition -->
+        <Edition.object.folder>${Newspaper.folder}/ContentModel_Edition/datastreams</Edition.object.folder>
+        <Edition_DSCOMP_file>${Edition.object.folder}/DS-COMPOSITE-MODEL.xml</Edition_DSCOMP_file>
+        <Edition_ONTOLOGY_file>${Edition.object.folder}/ONTOLOGY.xml</Edition_ONTOLOGY_file>
+        <Edition_RELS-EXT_file>${Edition.object.folder}/RELS-EXT.xml</Edition_RELS-EXT_file>
+        <Edition_VIEW_file>${Edition.object.folder}/VIEW.xml</Edition_VIEW_file>
+
+        <!-- ISO-target -->
+        <IsoTarget.object.folder>${Newspaper.folder}/ContentModel_IsoTarget/datastreams</IsoTarget.object.folder>
+        <IsoTarget_DSCOMP_file>${IsoTarget.object.folder}/DS-COMPOSITE-MODEL.xml</IsoTarget_DSCOMP_file>
+        <IsoTarget_ONTOLOGY_file>${IsoTarget.object.folder}/ONTOLOGY.xml</IsoTarget_ONTOLOGY_file>
+        <IsoTarget_RELS-EXT_file>${IsoTarget.object.folder}/RELS-EXT.xml</IsoTarget_RELS-EXT_file>
+        <IsoTarget_VIEW_file>${IsoTarget.object.folder}/VIEW.xml</IsoTarget_VIEW_file>
+
+        <!-- Unmatched -->
+        <Unmatched.object.folder>${Newspaper.folder}/ContentModel_Unmatched/datastreams</Unmatched.object.folder>
+        <Unmatched_DSCOMP_file>${Unmatched.object.folder}/DS-COMPOSITE-MODEL.xml</Unmatched_DSCOMP_file>
+        <Unmatched_ONTOLOGY_file>${Unmatched.object.folder}/ONTOLOGY.xml</Unmatched_ONTOLOGY_file>
+        <Unmatched_RELS-EXT_file>${Unmatched.object.folder}/RELS-EXT.xml</Unmatched_RELS-EXT_file>
+        <Unmatched_VIEW_file>${Unmatched.object.folder}/VIEW.xml</Unmatched_VIEW_file>
+
+        <!-- Film -->
+        <Film.object.folder>${Newspaper.folder}/ContentModel_Film/datastreams</Film.object.folder>
+        <Film_DSCOMP_file>${Film.object.folder}/DS-COMPOSITE-MODEL.xml</Film_DSCOMP_file>
+        <Film_ONTOLOGY_file>${Film.object.folder}/ONTOLOGY.xml</Film_ONTOLOGY_file>
+        <Film_RELS-EXT_file>${Film.object.folder}/RELS-EXT.xml</Film_RELS-EXT_file>
+        <Film_VIEW_file>${Film.object.folder}/VIEW.xml</Film_VIEW_file>
+        <Film_FILM_file>${Film.object.folder}/FILM.xsd</Film_FILM_file>
+
+        <!-- Workshift -->
+        <Workshift.object.folder>${Newspaper.folder}/ContentModel_Workshift/datastreams</Workshift.object.folder>
+        <Workshift_DSCOMP_file>${Workshift.object.folder}/DS-COMPOSITE-MODEL.xml</Workshift_DSCOMP_file>
+        <Workshift_ONTOLOGY_file>${Workshift.object.folder}/ONTOLOGY.xml</Workshift_ONTOLOGY_file>
+        <Workshift_RELS-EXT_file>${Workshift.object.folder}/RELS-EXT.xml</Workshift_RELS-EXT_file>
+        <Workshift_VIEW_file>${Workshift.object.folder}/VIEW.xml</Workshift_VIEW_file>
+
+        <!-- Newspaper title -->
+        <Newspaper.object.folder>${Newspaper.folder}/ContentModel_Newspaper/datastreams</Newspaper.object.folder>
+        <Newspaper_DSCOMP_file>${Newspaper.object.folder}/DS-COMPOSITE-MODEL.xml</Newspaper_DSCOMP_file>
+        <Newspaper_ONTOLOGY_file>${Newspaper.object.folder}/ONTOLOGY.xml</Newspaper_ONTOLOGY_file>
+        <Newspaper_RELS-EXT_file>${Newspaper.object.folder}/RELS-EXT.xml</Newspaper_RELS-EXT_file>
+        <Newspaper_VIEW_file>${Newspaper.object.folder}/VIEW.xml</Newspaper_VIEW_file>
+
+        <!-- Newspaper title template -->
+        <Newspaper.template.folder>${Newspaper.folder}/Template_Newspaper/datastreams</Newspaper.template.folder>
+        <Newspaper_MODS_file>${Newspaper.template.folder}/MODS.xml</Newspaper_MODS_file>
 
     </properties>
     <build>
-        <plugins>
 
+      <plugins>
             <plugin>
                 <groupId>org.codehaus.gmaven</groupId>
                 <artifactId>gmaven-plugin</artifactId>

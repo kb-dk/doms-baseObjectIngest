@@ -1,0 +1,13 @@
+<dsCompositeModel
+        xmlns="info:fedora/fedora-system:def/dsCompositeModel#">
+    <dsTypeModel ID="MIX">
+        <form MIME="text/xml"/>
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="MIX_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
+</dsCompositeModel>
+

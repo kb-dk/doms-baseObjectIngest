@@ -3,7 +3,7 @@
     <def:modifyObject pid="doms:Template_Program" state="I"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
 
-    <def:modifyObject pid="doms:Template_Program" state="I"  label="Radio/TV File"
+    <def:modifyObject pid="doms:Template_Program" state="I"  label="Radio/TV Program"
                       logMessage="Updating objects as part of a doms install/upgrade"/>
     <def:modifyDatastream pid="doms:Template_Program" dsID="RELS-EXT"
                           dsLabel="Relationships"
@@ -16,7 +16,7 @@
         <def:xmlData>
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                      xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
-                     xmlns:ecm="http://ecm.sourceforge.net/relations/0/2/#"
+
                     >
                 <rdf:Description rdf:about="info:fedora/doms:Template_Program">
                     <hasModel rdf:resource="info:fedora/doms:ContentModel_Program"
@@ -25,7 +25,7 @@
                               xmlns="info:fedora/fedora-system:def/model#"/>
                     <doms:isPartOfCollection rdf:resource="info:fedora/doms:RadioTV_Collection"/>
                     <doms:hasLicense rdf:resource="info:fedora/doms:RadioTV_InhouseLicense"/>
-                    <ecm:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_Program"/>
+                    <doms:isTemplateFor rdf:resource="info:fedora/doms:ContentModel_Program"/>
                 </rdf:Description>
             </rdf:RDF>
         </def:xmlData>

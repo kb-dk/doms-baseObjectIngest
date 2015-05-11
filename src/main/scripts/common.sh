@@ -19,7 +19,7 @@ function batchProcess(){
   echo "$output" | grep "0 modify directives failed." > /dev/null
   returnvalue=$?
   if [ $returnvalue -eq 0 ]; then
-	rm $BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log
+	#rm $BASEDIR/logs/$(basename $(dirname $file))-$(basename $file .xml).log
 	return 0
   else
     #echo "$output"

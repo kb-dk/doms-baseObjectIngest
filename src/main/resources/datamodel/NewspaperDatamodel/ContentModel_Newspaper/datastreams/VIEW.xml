@@ -1,0 +1,19 @@
+<v:views xmlns:v="http://doms.statsbiblioteket.dk/types/view/default/0/1/#">
+    <v:viewangle name="SummaAuthority">
+        <v:relations xmlns:mods="http://www.loc.gov/mods/rdf/v1#">
+            <mods:relatedSucceeding/>
+        </v:relations>
+        <v:inverseRelations xmlns:mods="http://www.loc.gov/mods/rdf/v1#">
+            <mods:relatedSucceeding/>
+        </v:inverseRelations>
+    </v:viewangle>
+    <v:viewangle name="SummaVisible">
+        <v:relations xmlns:mods="http://www.loc.gov/mods/rdf/v1#">
+            <mods:relatedSucceeding/>
+        </v:relations>
+        <v:inverseRelations xmlns:mods="http://www.loc.gov/mods/rdf/v1#">
+            <mods:relatedSucceeding/>
+        </v:inverseRelations>
+    </v:viewangle>
+</v:views>
+
