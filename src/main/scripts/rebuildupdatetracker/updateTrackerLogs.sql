@@ -24,7 +24,7 @@ CREATE TABLE updatetrackerlogs (
     pid character varying(64) NOT NULL,
     happened timestamp with time zone NOT NULL,
     method character varying(64) NOT NULL,
-    param character varying(64)
+    param character varying(255)
 );
 
 
