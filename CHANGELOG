@@ -1,3 +1,9 @@
+0.11.11.12
+Added the missing changelog for the previous version.
+
+0.11.11.11
+Modified schema in ContentModel_VHSFile VHS_METADATA_SCHEMA to add new optional elements for the VHS2 workflow.
+
 0.11.11.10
 Allow for format uri 'info:mime/video/MP2T;codecs="mp1,mp2,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 
