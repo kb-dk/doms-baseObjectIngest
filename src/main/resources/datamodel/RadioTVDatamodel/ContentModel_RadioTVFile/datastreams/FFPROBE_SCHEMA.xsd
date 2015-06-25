@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://www.ffmpeg.org/schema/ffprobe"
     xmlns:ffprobe="http://www.ffmpeg.org/schema/ffprobe">
 
+    <!--
+    This is a customised version of the ffprobe schema, based on the original version downloaded from
+    https://raw.githubusercontent.com/FFmpeg/FFmpeg/master/doc/ffprobe.xsd
+    The only change is that the attribute nb_programs is optional, in order to make this schema
+    consistent with output from earlier versions of ffprobe.
+    -->
     <xsd:element name="ffprobe" type="ffprobe:ffprobeType"/>
 
     <xsd:complexType name="ffprobeType">

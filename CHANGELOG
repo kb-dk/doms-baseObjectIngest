@@ -1,3 +1,7 @@
+0.11.11.14
+Removed a stray xml processing directive. Note that the ffprobe schema is consisted with version 0.10 and 2.6, not "0.1" as
+stated below.
+
 0.11.11.13
 Added a custom schema for ffprobe which is satisfied by output from both the old (0.1) and new (2.6) versions of ffprobe.
 
