@@ -1,3 +1,6 @@
+0.11.11.13
+Added a custom schema for ffprobe which is satisfied by output from both the old (0.1) and new (2.6) versions of ffprobe.
+
 0.11.11.12
 Added the missing changelog for the previous version.
 
