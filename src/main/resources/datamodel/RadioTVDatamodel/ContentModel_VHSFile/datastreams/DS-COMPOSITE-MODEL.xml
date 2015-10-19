@@ -3,6 +3,7 @@
     <dsTypeModel ID="CONTENTS">
         <form FORMAT_URI="info:pronom/x-fmt/386"/><!--MPEG 2-->
         <form FORMAT_URI="info:pronom/x-fmt/385"/><!--MPEG 1-->
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp2&quot;"></form><!--TS-->
     </dsTypeModel>
     <dsTypeModel ID="FFPROBE" optional="true">
         <extension name="GUI">
@@ -18,6 +19,15 @@
         </extension>
         <extension name="SCHEMA">
             <reference type="datastream" value="FFPROBE_ERROR_LOG_SCHEMA"/>
+        </extension>
+    </dsTypeModel>
+
+    <dsTypeModel ID="CROSSCHECK" optional="true">
+        <extension name="GUI">
+            <presentAs type="readonly"/>
+        </extension>
+        <extension name="SCHEMA">
+            <reference type="datastream" value="CROSSCHECK_SCHEMA"/>
         </extension>
     </dsTypeModel>
 
