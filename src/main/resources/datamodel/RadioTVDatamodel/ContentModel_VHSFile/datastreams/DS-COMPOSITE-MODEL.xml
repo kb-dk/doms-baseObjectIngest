@@ -3,7 +3,6 @@
     <dsTypeModel ID="CONTENTS">
         <form FORMAT_URI="info:pronom/x-fmt/386"/><!--MPEG 2-->
         <form FORMAT_URI="info:pronom/x-fmt/385"/><!--MPEG 1-->
-        <form FORMAT_URI="info:mime/video/MP2T;&quot;codecs=h264,mp2&quot;"/><!--TS-->
     </dsTypeModel>
     <dsTypeModel ID="FFPROBE" optional="true">
         <extension name="GUI">
