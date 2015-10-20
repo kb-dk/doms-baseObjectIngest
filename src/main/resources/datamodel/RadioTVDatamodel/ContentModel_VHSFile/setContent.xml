@@ -63,6 +63,17 @@
             ${VHSMetadata_file_contents}
         </def:xmlData>
     </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:ContentModel_VHSFile" dsID="CROSSCHECK_SCHEMA"
+                          dsLabel="CROSSCHECK metadata schema"
+                          dsMIME="text/xml"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="Updating objects as part of a doms install/upgrade">
+        <def:xmlData>
+            ${Crosscheck_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
     <def:modifyDatastream pid="doms:ContentModel_VHSFile" dsID="RELS-EXT"
                           dsLabel="Relationships"
                           dsMIME="application/rdf+xml"
