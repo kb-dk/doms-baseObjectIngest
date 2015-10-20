@@ -1,3 +1,6 @@
+0.11.11.15
+added TS and crosscheck to VHSFile contentmodel
+
 0.11.11.14
 Removed a stray xml processing directive. Note that the ffprobe schema is consisted with version 0.10 and 2.6, not "0.1" as
 stated below.
