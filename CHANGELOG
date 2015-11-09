@@ -1,5 +1,8 @@
 1.16
 * Newspaper editions no longer bundle all authority records
+* To update from a previous version
+  * run migrate_1.16.sh
+  * updateAll.sh
 
 1.15
 * To update from a previous version
