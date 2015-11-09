@@ -56,7 +56,6 @@ addMembershipsForAllRecords
 ## SummaVisible newspaper memberships
 
 addMembershipsForInverseRelation "http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEditionPage" "doms:Newspaper_Collection" "SummaVisible" "doms:ContentModel_EditionPage"
-addLinkedListRelationsFromInverseForwardCombinedRelations "http://www.loc.gov/mods/rdf/v1#relatedSucceeding" "doms:ContentModel_Newspaper" "http://doms.statsbiblioteket.dk/relations/default/0/1/#hasEditionPage" "http://doms.statsbiblioteket.dk/relations/default/0/1/#isPartOfNewspaper" "SummaVisible" "doms:Newspaper_Collection" "doms:ContentModel_EditionPage"
 
 ## SummaAuthority newspaper memberships
 
