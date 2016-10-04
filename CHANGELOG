@@ -1,3 +1,9 @@
+0.11.11.17
+Allow for format uri 'info:mime/video/MP2T;codecs="aac,mp2,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+
+0.11.11.16
+Fix to https://sbprojects.statsbiblioteket.dk/jira/browse/DITV-147 . The schema is now identical to the one we are using for export in the latest version of digitv (v2.3).
+
 0.11.11.15
 added TS and crosscheck to VHSFile contentmodel
 
