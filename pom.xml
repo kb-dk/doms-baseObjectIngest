@@ -201,6 +201,24 @@
         <Newspaper.template.folder>${Newspaper.folder}/Template_Newspaper/datastreams</Newspaper.template.folder>
         <Newspaper_MODS_file>${Newspaper.template.folder}/MODS.xml</Newspaper_MODS_file>
 
+        <!--DPA-->
+        <DPA.folder>${project.basedir}/src/main/resources/datamodel/DPADatamodel</DPA.folder>
+
+        <!--Batch-->
+        <Delivery.object.folder>${DPA.folder}/ContentModel_Delivery/datastreams</Delivery.object.folder>
+        <Delivery_DSCOMP_file>${Delivery.object.folder}/DS-COMPOSITE-MODEL.xml</Delivery_DSCOMP_file>
+        <Delivery_ONTOLOGY_file>${Delivery.object.folder}/ONTOLOGY.xml</Delivery_ONTOLOGY_file>
+        <Delivery_RELS-EXT_file>${Delivery.object.folder}/RELS-EXT.xml</Delivery_RELS-EXT_file>
+        <Delivery_VIEW_file>${Delivery.object.folder}/VIEW.xml</Delivery_VIEW_file>
+
+        <!--RoundTrip-->
+        <DPARoundTrip.object.folder>${DPA.folder}/ContentModel_DPARoundTrip/datastreams</DPARoundTrip.object.folder>
+        <DPARoundTrip_DSCOMP_file>${DPARoundTrip.object.folder}/DS-COMPOSITE-MODEL.xml</DPARoundTrip_DSCOMP_file>
+        <DPARoundTrip_ONTOLOGY_file>${DPARoundTrip.object.folder}/ONTOLOGY.xml</DPARoundTrip_ONTOLOGY_file>
+        <DPARoundTrip_RELS-EXT_file>${DPARoundTrip.object.folder}/RELS-EXT.xml</DPARoundTrip_RELS-EXT_file>
+        <DPARoundTrip_VIEW_file>${DPARoundTrip.object.folder}/VIEW.xml</DPARoundTrip_VIEW_file>
+
+
     </properties>
     <build>
 

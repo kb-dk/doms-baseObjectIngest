@@ -1,0 +1,29 @@
+
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+
+
+    <def:addObject pid="doms:Template_Delivery" label="DPA Delivery"
+                   contentModel="string" logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
+    <def:modifyObject pid="doms:Template_Delivery" state="I"
+                      logMessage="base-objects-ingester version ${project.version} - Creating objects"/>
+    <def:addDatastream pid="doms:Template_Delivery" dsID="RELS-EXT"
+                       dsLabel="Relationships"
+                       dsMIME="application/rdf+xml"
+                       formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                       versionable="true"
+                       altIDs="" dsControlGroupType="X" dsState="A"
+                       checksumType="DISABLED"
+                       logMessage="base-objects-ingester version ${project.version} - Creating objects">
+        <def:xmlData>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                     xmlns:doms="http://doms.statsbiblioteket.dk/relations/default/0/1/#"
+
+                    >
+                <rdf:Description rdf:about="info:fedora/doms:Template_Delivery"/>
+            </rdf:RDF>
+        </def:xmlData>
+    </def:addDatastream>
+
+</def:batchModify>
