@@ -31,6 +31,9 @@ addRecordsForContentModel "doms:ContentModel_RoundTrip" "doms:Newspaper_Collecti
 addRecordsForContentModel "doms:ContentModel_Newspaper" "doms:Newspaper_Collection" "SBOI"
 addRecordsForContentModel "doms:ContentModel_Edition" "doms:Newspaper_Collection" "SBOI"
 
+## SBOI for DPARoundtrip
+addRecordsForContentModel "doms:ContentModel_DPARoundtrip" "doms:DPA_Collection" "SBOI"
+
 ## GUI for newspapers & editions
 addRecordsForContentModel "doms:ContentModel_Newspaper" "doms:Newspaper_Collection" "GUI"
 addRecordsForContentModel "doms:ContentModel_Edition" "doms:Newspaper_Collection" "GUI"
@@ -64,6 +67,7 @@ addLinkedListRelations "http://www.loc.gov/mods/rdf/v1#relatedSucceeding" "doms:
 ## SBOI memberships
 
 addMembershipsForInverseRelation "info:fedora/fedora-system:def/relations-external#hasPart" "doms:Newspaper_Collection" "SBOI" "doms:ContentModel_RoundTrip"
+addMembershipsForInverseRelation "info:fedora/fedora-system:def/relations-external#hasPart" "doms:Newspaper_Collection" "SBOI" "doms:ContentModel_DPARoundTrip"
 
 ## GUI memberships for newspapers
 

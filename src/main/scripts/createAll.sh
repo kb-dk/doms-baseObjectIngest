@@ -6,3 +6,4 @@ $SCRIPT_DIR/createBasicObjects.sh
 $SCRIPT_DIR/createRadioTVObjects.sh
 $SCRIPT_DIR/createReklamefilmObjects.sh
 $SCRIPT_DIR/createNewspaperObjects.sh
+$SCRIPT_DIR/createDPAObjects.sh

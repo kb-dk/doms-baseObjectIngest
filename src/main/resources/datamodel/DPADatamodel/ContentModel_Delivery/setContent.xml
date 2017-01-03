@@ -1,0 +1,55 @@
+<def:batchModify xmlns:def="http://www.fedora.info/definitions/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.fedora.info/definitions/ http://naiad:7880/schemaStore/batchModifySchema.xsd">
+
+
+    <!--ContentModel_Delivery-->
+    <def:modifyObject pid="doms:ContentModel_Delivery" state="I"
+                      logMessage="base-objects-ingester version ${project.version} - Setting content"/>
+    <def:modifyDatastream pid="doms:ContentModel_Delivery" dsID="DS-COMPOSITE-MODEL"
+                          dsLabel=""
+                          dsMIME="text/xml"
+                          formatURI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
+        <def:xmlData>
+            ${Delivery_DSCOMP_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:ContentModel_Delivery" dsID="RELS-EXT"
+                          dsLabel="Relationships"
+                          dsMIME="application/rdf+xml"
+                          formatURI="info:fedora/fedora-system:FedoraRELSExt-1.0"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
+        <def:xmlData>
+            ${Delivery_RELS-EXT_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:ContentModel_Delivery" dsID="VIEW"
+                          dsLabel="VIEW datastream"
+                          dsMIME="application/rdf+xml"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
+        <def:xmlData>
+            ${Delivery_VIEW_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
+    <def:modifyDatastream pid="doms:ContentModel_Delivery" dsID="ONTOLOGY"
+                          dsLabel="Local ontology"
+                          dsMIME="application/rdf+xml"
+                          formatURI="info:fedora/fedora-system:FedoraOntology-1.0"
+                          versionable="true"
+                          altIDs="" dsControlGroupType="X" dsState="A"
+                          checksumType="MD5"
+                          logMessage="base-objects-ingester version ${project.version} - Setting content">
+        <def:xmlData>
+            ${Delivery_ONTOLOGY_file_contents}
+        </def:xmlData>
+    </def:modifyDatastream>
+</def:batchModify>

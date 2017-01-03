@@ -1,3 +1,9 @@
+1.17
+* Add DPA Collection
+* To update from a previous version
+  * run migrate_1.17.sh
+  * updateAll.sh
+
 1.16
 * Newspaper editions no longer bundle all authority records
 * To update from a previous version
