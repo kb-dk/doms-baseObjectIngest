@@ -13,6 +13,7 @@
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp2&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp1,mp2&quot;"></form>
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp1,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp2,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;h264,mp1,mp2,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;ac3,h264&quot;"></form>
