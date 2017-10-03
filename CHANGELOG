@@ -1,5 +1,13 @@
 0.11.11.18
+Allow for format uri 'info:mime/video/MP2T;codecs="h264,mp1,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Allow for format uri 'info:mime/video/MP2T;codecs="ac3,h264,mp1,mp3"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Allow for format uri 'info:mime/video/MP2T;codecs="mp3,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Allow for format uri 'info:mime/video/MP2T;codecs="mp1,mp3,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+
+
+0.11.11.18
 Allow for format uri 'info:mime/video/MP2T;codecs="aac_latm,ac3,h264"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
+Allow for format uri 'info:mime/video/MP2T;codecs="ac3,h264,mp1"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
 
 0.11.11.17
 Allow for format uri 'info:mime/video/MP2T;codecs="aac,mp2,mpeg2video"' in ContentModel_RadioTVFile DS-COMPOSITE-MODEL
