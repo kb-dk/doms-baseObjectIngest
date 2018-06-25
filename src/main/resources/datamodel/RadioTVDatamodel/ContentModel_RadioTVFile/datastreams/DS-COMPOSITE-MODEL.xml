@@ -26,6 +26,7 @@
         <!--Regional channels-->
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac,h264&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,ac3,h264&quot;"></form>
+        <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,ac3,h264,mp3&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,h264&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,h264,mp2&quot;"></form>
         <form FORMAT_URI="info:mime/video/MP2T;codecs=&quot;aac_latm,h264,mp3&quot;"></form>
